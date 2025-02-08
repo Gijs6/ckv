@@ -15,9 +15,9 @@ body {
     align-items: stretch;
     flex-wrap: nowrap;
     margin: 0;
-    /* width: 100vw; */
     height: 100vh;
     font-family: Sora, sans-serif;
+    color: var(--zwart);
 }
 
 h1, h2, p {
@@ -31,13 +31,14 @@ h1, h2, p {
 #header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     gap: 10%;
-    padding: 2% 5%;
+    padding: 2% 2% 2% 5%;
     background: var(--blauw);
     color: var(--wit);
+    align-content: center;
 }
 
 #menu {
@@ -45,10 +46,10 @@ h1, h2, p {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    flex-wrap: wrap;
-    gap: clamp(5px, 1vw, 15px);
-
+    gap: clamp(5px, 0.5vw, 15px);
     position: relative;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .menu-item {
@@ -64,14 +65,11 @@ h1, h2, p {
 }
 
 .menuitemtext {
-    padding: clamp(10px, 2vw, 20px);
-
+    padding: clamp(10px, 2vw, 20px) clamp(5px, 1vw, 10px);
     position: relative;
     z-index: 100;
-
     font-weight: 700;
     font-size: 1.1em;
-
     transition: 300ms all ease-in-out;
 }
 
@@ -130,6 +128,7 @@ h1, h2, p {
 /* Veelgebruikt */
 .paginablok {
     margin: 0;
+    padding: 2%;
 }
 
 .kleurvak-buiten {
@@ -138,6 +137,10 @@ h1, h2, p {
 
 .kleurvak-buiten.geel {
     background: var(--geel);
+}
+
+.kleurvak-buiten.groen {
+    background: var(--groen);
 }
 
 .kleurvak-binnen {
@@ -151,14 +154,57 @@ h1, h2, p {
 .knop {
     text-decoration: none;
     padding: 15px;
-    background: var(--wit);
     border-radius: 50px;
     font-weight: 700;
-    color: var(--zwart);
     transition: all 300ms ease;
 }
 
-.knop:hover {
+.knop.wit {
+    background: var(--wit);
+    color: var(--zwart);
+}
+
+.knop.wit:hover {
     background: var(--zwart);
     color: var(--wit);
+}
+
+.knop.blauw {
+    background: var(--blauw);
+    color: var(--wit);
+}
+
+.knop.blauw:hover {
+    background: var(--wit);
+    color: var(--blauw);
+}
+
+.paginatitel {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.tweekolommen {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.tweekolommenlinks {
+    max-width: 40%;
+    background: var(--geel);
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    font-weight: 600;
+}
+
+.tweekolommenrechts {
+    padding: 2%;
+}
+
+.paginablok.tweekolommen {
+    padding: 0;
 }

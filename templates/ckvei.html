@@ -4,6 +4,30 @@
 
 {% block title %}Eigen initiatieven{% endblock %}
 
+{% block extra_headers %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvei.css') }}">
+{% endblock %}
+
 {% block content %}
-Hier komt iets heel leuks
+<div class="paginablok grotepaginatitel" id="paginatitelblokei">
+    Eigen initiatieven
+</div>
+<div class="paginablok lijst" id="eierlijst">
+    <div class="eiitem kleurvak-buiten groen">
+        <div class="kleurvak-binnen eiitembinnen">
+            <div class="eiitemlinks">
+                <span class="eititel">Eigen Initiatief 1</span>
+                <span class="eiactiviteit">Zoeken naar Zingeving</span>
+                <span class="eilocatie">Kröller-Müller Museum</span>
+                <span class="eidatum">Bezoek op 30 oktober 2024</span>
+                <a href="https://drive.google.com/file/d/1xboTQ_8eThOB0Chj42haLPaBuYw0eQkX/view?usp=drive_link" class="knop blauw eiverslag">Bekijk verslag</a>
+            </div>
+            <div class="eiitemrechts">
+                <img src="https://krollermuller.nl/media/cache/collection_item/media/collectionitempage/tmsImage/olijfgaard-vincent-van-gogh-44523-copyright-kroller-muller-museum.jpg?17e1159c8637">
+                <span class="kunstwerkei">Olijfgaard (1889)</span>
+                <span class="kunstenaarei">Vincent van Gogh</span>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

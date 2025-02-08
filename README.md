@@ -1,4 +1,4 @@
-# My own CKV website
+# My own _CKV_ website
 
 At my school, everyone has to make a website for the subject CKV (_culturele en kunstzinnige vorming_, so basically "culture and art") for all reports etc.
 Practically everyone makes their website in Wix, but I wrote it myself, so I can just adjust literally everything.
