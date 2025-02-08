@@ -1,0 +1,99 @@
+#bollen {
+	position: relative;
+	min-height: 75vh;
+}
+
+#naamtextbox {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#naamtextbox h1 {
+    z-index: 10;
+    position: relative;
+    font-size: clamp(50px, 6vw, 100px);
+}
+
+#naamtextbox h2 {
+    font-size: clamp(50px, 4vw, 70px);
+}
+
+.pagitemrechts img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+#pagoverzicht {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 2%;
+}
+
+.pagitem {
+    background: var(--blauw);
+    padding: 20px;
+    color: var(--wit);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-grow: 1;
+    border-radius: 30px;
+    max-width: 60%;
+}
+
+.pagitemrechts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagitemlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagitemtextmain {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.pagitemtexto1 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.pagitemtexto2 {
+    font-size: 1.2em;
+}
+
+.pagitemtextimgb2 {
+    font-weight: 700;
+}
+
+.pagitemtextlink {
+    margin-top: 20px;
+}

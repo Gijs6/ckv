@@ -14,12 +14,9 @@ body {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: nowrap;
-
     margin: 0;
-
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
-
     font-family: Sora, sans-serif;
 }
 
@@ -34,11 +31,11 @@ h1, h2, p {
 #header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 10%;
-    padding: 25px;
+    padding: 2% 5%;
     background: var(--blauw);
     color: var(--wit);
 }
@@ -107,8 +104,10 @@ h1, h2, p {
 
 #content {
     flex-grow: 1;
-
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 
@@ -121,8 +120,45 @@ h1, h2, p {
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    padding: 25px;
+    padding: 2% 5%;
     background: var(--blauw);
     color: var(--wit);
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+
+/* Veelgebruikt */
+.paginablok {
+    margin: 0;
+}
+
+.kleurvak-buiten {
+    padding: 5%;
+}
+
+.kleurvak-buiten.geel {
+    background: var(--geel);
+}
+
+.kleurvak-binnen {
+    background: var(--wit);
+    padding: 2%;
+    border-radius: 1em;
+    max-width: 75%;
+    margin: auto;
+}
+
+.knop {
+    text-decoration: none;
+    padding: 15px;
+    background: var(--wit);
+    border-radius: 50px;
+    font-weight: 700;
+    color: var(--zwart);
+    transition: all 300ms ease;
+}
+
+.knop:hover {
+    background: var(--zwart);
+    color: var(--wit);
 }

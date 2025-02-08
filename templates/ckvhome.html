@@ -4,6 +4,70 @@
 
 {% block title %}Home{% endblock %}
 
+{% block extra_headers %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvhome.css') }}">
+{% endblock %}
+
 {% block content %}
-Hier komt iets heel leuks
+    <div id="bollen">
+        <div id="naamtextbox">
+            <h1>Gijs ten Berg</h1>
+            <h2>CKV-website</h2>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="paginablok kleurvak-buiten geel" id="introductie">
+        <div class="textblok kleurvak-binnen" id="introductietext">
+            <h1>Welkom!</h1>
+            <p>Deze website is mijn digitale CKV-dossier voor het schooljaar 2024-2025.
+            In het menu hier onder staat voor elke pagina wat informatie over die pagina.
+            U kunt uiteraard ook het menu bovenaan elke pagina gebruiken.
+            <br>
+            Op deze website gebruik ik veel (afbeeldingen, audiofragmenten en/of video's van) kunstwerken.
+            De naam van het kunstwerk en de kunstenaar (dus ook fotograaf, regisseur, componist enz.) staan er altijd boven, onder of naast, zodat u altijd weet waar het vandaan komt.</p>
+        </div>
+    </div>
+    <div class="paginablok" id="pagoverzicht">
+        {% for item in pagdata %}
+            <div class="pagitem">
+                <div class="pagitemlinks">
+                    <div class="pagitemtextmain">{{ item.Menuitemnaam }}</div>
+                    {% if item.Onder1 %}
+                        <div class="pagitemtexto1">{{ item.Onder1 }}</div>
+                    {% endif %}
+                    {% if item.Onder2 %}
+                        <div class="pagitemtexto2">{{ item.Onder2 }}</div>
+                    {% endif %}
+                    <a href="{{ item.Paglink }}" class="knop wit pagitemtextlink">Naar pagina</a>
+                </div>
+                <div class="pagitemrechts">
+                    <img src="{{ item.Afb }}">
+                    {% if item.afbbij1 %}
+                        <div class="pagitemtextimgb1">{{ item.afbbij1 }}</div>
+                    {% endif %}
+                    {% if item.afbbij2 %}
+                        <div class="pagitemtextimgb2">{{ item.afbbij2 }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <script type="module">
+        import Spheres2Background from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.8/build/backgrounds/spheres2.cdn.min.js';
+
+        try {
+            const bg = Spheres2Background(document.getElementById("canvas"), {
+                count: 275,
+                colors: [0xeaf2ef, 0x197bbd, 0x04a777],
+                minSize: 0.7,
+                maxSize: 1.2
+            });
+
+        } catch (error) {
+            console.error('Fout bij het laden van de achtergrond:', error);
+            const bollen = document.getElementById("bollen")
+            bollen.style.background = "url('https://picsum.photos/id/347/5000/4000') no-repeat center center fixed";
+            bollen.style.backgroundSize = "cover";
+        }
+    </script>
 {% endblock %}

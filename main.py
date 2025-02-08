@@ -1,12 +1,14 @@
 from flask import Flask, render_template
-
+import json
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def index():
-    return render_template("ckvhome.html")
+    with open("paglijst.json", "r") as file:
+        paglijst = json.load(file)
+    return render_template("ckvhome.html", pagdata=paglijst)
 
 @app.route("/over-mij")
 def over_mij():
