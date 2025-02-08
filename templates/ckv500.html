@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>500 Internal Server Error</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favs/error.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvmin.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Oeps! Er is iets misgegaan</h1>
+            <p>Onze excuses, er lijkt een probleem te zijn aan onze kant.</p>
+            <p>Probeer het over een tijdje nog eens.</p>
+            <p>Als het probleem blijft bestaan, neem dan contact op met de eigenaar van deze website.</p>
+            <br>
+            <br>
+            <br>
+            <small>{{ e }}</small>
+        </div>
+    </body>
+</html>
