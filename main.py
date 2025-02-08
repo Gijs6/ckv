@@ -1,42 +1,53 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, redirect
 import json
 
 app = Flask(__name__)
 
 
-@app.route("/")
-def index():
+@app.route("/gijsckv")
+def home():
     with open("paglijst.json", "r") as file:
         paglijst = json.load(file)
     return render_template("ckvhome.html", pagdata=paglijst)
 
-@app.route("/over-mij")
+@app.route("/")
+def redirecthome():
+    return redirect(url_for('home')), 301
+
+
+@app.route("/gijsckv/over-mij")
 def over_mij():
     return render_template("ckvovermij.html")
 
-@app.route("/introductielessen")
+@app.route("/gijsckv/introductielessen")
 def introductie():
     return render_template("ckvintro.html")
 
-@app.route("/eigen-initiatieven")
+@app.route("/gijsckv/eigen-initiatieven")
 def eigen_initiatieven():
     return render_template("ckvei.html")
 
-@app.route("/blok-1")
+@app.route("/gijsckv/blok-1")
 def blok1():
     return render_template("ckvb1.html")
 
-@app.route("/blok-2")
+@app.route("/gijsckv/blok-2")
 def blok2():
     return render_template("ckvb2.html")
 
-@app.route("/blok-3")
+@app.route("/gijsckv/blok-3")
 def blok3():
     return render_template("ckvb3.html")
 
-@app.route("/blok-4")
+@app.route("/gijsckv/blok-4")
 def blok4():
     return render_template("ckvb4.html")
+
+@app.route('/<path:path>')
+def redirecter(path):
+    if not path.startswith("gijsckv"):
+        return redirect(f"/gijsckv/{path}")
+    return render_template("ckv404.html", e="Error redirecting"), 404
 
 
 @app.errorhandler(404)

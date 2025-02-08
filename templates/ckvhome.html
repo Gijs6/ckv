@@ -31,22 +31,22 @@
         {% for item in pagdata %}
             <div class="pagitem">
                 <div class="pagitemlinks">
-                    <div class="pagitemtextmain">{{ item.Menuitemnaam }}</div>
+                    <span class="pagitemtextmain">{{ item.Menuitemnaam }}</span>
                     {% if item.Onder1 %}
-                        <div class="pagitemtexto1">{{ item.Onder1 }}</div>
+                        <span class="pagitemtexto1">{{ item.Onder1 }}</span>
                     {% endif %}
                     {% if item.Onder2 %}
-                        <div class="pagitemtexto2">{{ item.Onder2 }}</div>
+                        <span class="pagitemtexto2">{{ item.Onder2 }}</span>
                     {% endif %}
                     <a href="{{ item.Paglink }}" class="knop wit pagitemtextlink">Naar pagina</a>
                 </div>
                 <div class="pagitemrechts">
                     <img src="{{ item.Afb }}">
                     {% if item.afbbij1 %}
-                        <div class="pagitemtextimgb1">{{ item.afbbij1 }}</div>
+                        <span class="pagitemtextimgb1">{{ item.afbbij1 }}</span>
                     {% endif %}
                     {% if item.afbbij2 %}
-                        <div class="pagitemtextimgb2">{{ item.afbbij2 }}</div>
+                        <span class="pagitemtextimgb2">{{ item.afbbij2 }}</span>
                     {% endif %}
                 </div>
             </div>
