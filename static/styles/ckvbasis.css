@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --zwart: #011627;
+    --wit: #d5e0eb;
+    --geel: #ffca3a;
+    --rood: #ff4a1c;
+    --blauw: #197bbd;
+    --groen: #04a777;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Sora, sans-serif;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+
+
+/* Header */
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding: 25px;
+    background: var(--blauw);
+    color: var(--wit);
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: clamp(5px, 1vw, 15px);
+
+    position: relative;
+}
+
+.menu-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    position: relative;
+
+    color: var(--wit);
+
+    text-decoration: none;
+}
+
+.menuitemtext {
+    padding: clamp(10px, 2vw, 20px);
+
+    position: relative;
+    z-index: 100;
+
+    font-weight: 700;
+    font-size: 1.1em;
+
+    transition: 300ms all ease-in-out;
+}
+
+.menuitemslide {
+    z-index: 50;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+
+    border-radius: 0.5em;
+
+    background: var(--blauw);
+
+    transition: 300ms all ease-in-out;
+}
+
+.menu-item:hover > .menuitemslide, .menu-item.active > .menuitemslide {
+    height: 100%;
+
+    background: var(--wit);
+}
+
+.menu-item:hover > .menuitemtext, .menu-item.active > .menuitemtext {
+    color: var(--blauw);
+}
+
+
+
+/* Content */
+
+#content {
+    flex-grow: 1;
+
+    width: 100%;
+}
+
+
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px;
+    background: var(--blauw);
+    color: var(--wit);
+    justify-content: space-evenly;
+}
