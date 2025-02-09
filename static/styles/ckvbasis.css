@@ -71,6 +71,15 @@ h1, h2, p {
     font-weight: 700;
     font-size: 1.1em;
     transition: 300ms all ease-in-out;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.menuitemtext svg {
+    height: 1em;
+    fill: var(--wit);
+    transition: 300ms all ease-in-out;
 }
 
 .menuitemslide {
@@ -88,12 +97,17 @@ h1, h2, p {
 
 .menu-item:hover > .menuitemslide, .menu-item.active > .menuitemslide {
     height: 100%;
-
     background: var(--wit);
 }
 
 .menu-item:hover > .menuitemtext, .menu-item.active > .menuitemtext {
     color: var(--blauw);
+
+}
+
+.menu-item:hover > .menuitemtext svg, .menu-item.active > .menuitemtext svg {
+    fill: var(--blauw);
+
 }
 
 
