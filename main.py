@@ -1,9 +1,12 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, send_from_directory
 import json
 
 
 app = Flask(__name__)
 
+
+
+# Redirecters
 
 @app.route("/")
 def redirecthome():
@@ -12,17 +15,44 @@ def redirecthome():
 
 @app.route('/<path:path>')
 def redirecter(path):
-    if not path.startswith("gijsckv"):
+    if path in ["favicon", "security", "robots"]:
+        return redirect(f"/{path}")
+    elif not path.startswith("gijsckv"):
         return redirect(f"/gijsckv/{path}")
     return render_template("ckv404.html", e="Error redirecting"), 404
 
 
+
+# File stuff
+
+@app.route('/favicon.ico')
+@app.route('/favicon')
+def favicon():
+    return send_from_directory('static', "favs/tijdelijk.ico", mimetype='image/vnd.microsoft.icon')
+
+
+@app.route("/.well-known/security.txt")
+def securitytxt():
+    return send_from_directory('static', "security.txt", mimetype="text/plain")
+
+@app.route("/security.txt")
+def securitytxtredirect():
+    return redirect(url_for('securitytxt')), 301
+
+@app.route("/robots")
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("static", "robots.txt", mimetype="text/plain")
+
+
+
+# Pages
+
 @app.route("/gijsckv")
 def home():
-    with open("/data/paglijst.json", "r") as file:
+    with open("data/paglijst.json", "r") as file:
         paglijst = json.load(file)
     return render_template("ckvhome.html", pagdata=paglijst)
-
 
 @app.route("/gijsckv/over-mij")
 def over_mij():
@@ -56,6 +86,9 @@ def blok4():
 def colofon():
     return render_template("ckvcolofon.html")
 
+
+
+# Error pages
 
 @app.errorhandler(404)
 def not_found(e):
