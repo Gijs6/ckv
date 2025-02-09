@@ -1,0 +1,44 @@
+{% extends "ckvbasis.html" %}
+
+{% block title %}Colofon{% endblock %}
+{% set active_page = "colofon" %}
+
+{% block extra_headers %}
+<style>
+#colofonblok {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#colofonblok a {
+    color: var(--blauw);
+}
+</style>
+{% endblock %}
+
+
+{% block content %}
+<div class="paginablok" id="colofonblok">
+    <p>
+        Alle <strong>originele</strong> inhoud op alle pagina's van deze website, inclusief maar niet beperkt tot tekst, afbeeldingen, video's en andere media, evenals de <strong>originele</strong> code die is gebruikt om de website te maken en te ontwerpen, is <strong>volledig vrijgegeven in het publieke domein</strong>. Deze vrijgave is in overeenstemming met de <a href="https://unlicense.org/" target="_blank">Unlicense</a> en <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a>. Dit betekent dat je vrij bent om alle originele inhoud en code van de website te gebruiken, aan te passen, te verspreiden en verder te ontwikkelen zonder enige beperkingen.
+    </p>
+    <p>
+        Houd er echter rekening mee dat externe bronnen die op de website worden gebruikt, zoals lettertypes, frameworks, pictogrammen en vooral afbeeldingen, audiofragmenten en video's van kunstwerken, <strong>onder hun eigen licenties kunnen vallen</strong>. Deze externe bronnen zijn niet vrijgegeven in het publieke domein en moeten worden gebruikt in overeenstemming met de voorwaarden van hun respectieve licenties.
+    </p>
+    <p>
+        Gemaakt met <a href="https://github.com/pallets/flask" target="_blank">Flask</a> en <a href="https://github.com/pallets/jinja" target="_blank">Jinja</a>, gehost door <a href="https://eu.pythonanywhere.com/" target="_blank">PythonAnywhere</a>.
+    </p>
+    <p>
+        Bekijk de <a href="https://github.com/Gijs6/CKVsite" target="_blank">broncode op GitHub</a>
+    </p>
+    <p><strong>De module <span class="font-style:italic;">Spheres2</span> die wordt gebruikt op de homepagina is beschikbaar onder de MIT-license:</strong><br><code>Copyright (c) 2024 by Kevin Levron (https://codepen.io/soju22/pen/BaXgmpO)
+    <br>
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    <br>
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    <br>
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    </code></p>
+</div>
+{% endblock %}

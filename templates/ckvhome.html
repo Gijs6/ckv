@@ -20,11 +20,10 @@
         <div class="textblok kleurvak-binnen" id="introductietext">
             <h1>Welkom!</h1>
             <p>Deze website is mijn digitale CKV-dossier voor het schooljaar 2024-2025.
-            In het menu hier onder staat voor elke pagina wat informatie over die pagina.
-            U kunt uiteraard ook het menu bovenaan elke pagina gebruiken.
+            Hieronder vindt u een kort overzicht van de inhoud van elke pagina.
+            U kunt uiteraard ook het menu bovenaan elke pagina gebruiken om tussen de pagina's te navigeren.
             <br>
-            Op deze website gebruik ik veel (afbeeldingen, audiofragmenten en/of video's van) kunstwerken.
-            De naam van het kunstwerk en de kunstenaar (dus ook fotograaf, regisseur, componist enz.) staan er altijd boven, onder of naast, zodat u altijd weet waar het vandaan komt.</p>
+            Veel leesplezier!
         </div>
     </div>
     <div class="paginablok" id="pagoverzicht">
@@ -38,7 +37,7 @@
                     {% if item.Onder2 %}
                         <span class="pagitemtexto2">{{ item.Onder2 }}</span>
                     {% endif %}
-                    <a href="{{ item.Paglink }}" class="knop wit pagitemtextlink">Naar pagina</a>
+                    <a href="{{ item.Paglink }}" class="knop wit pagitemtextlink">Naar pagina&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="pagitemrechts">
                     <img src="{{ item.Afb }}">

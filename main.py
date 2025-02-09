@@ -1,18 +1,27 @@
 from flask import Flask, render_template, url_for, redirect
 import json
 
+
 app = Flask(__name__)
 
-
-@app.route("/gijsckv")
-def home():
-    with open("paglijst.json", "r") as file:
-        paglijst = json.load(file)
-    return render_template("ckvhome.html", pagdata=paglijst)
 
 @app.route("/")
 def redirecthome():
     return redirect(url_for('home')), 301
+
+
+@app.route('/<path:path>')
+def redirecter(path):
+    if not path.startswith("gijsckv"):
+        return redirect(f"/gijsckv/{path}")
+    return render_template("ckv404.html", e="Error redirecting"), 404
+
+
+@app.route("/gijsckv")
+def home():
+    with open("/data/paglijst.json", "r") as file:
+        paglijst = json.load(file)
+    return render_template("ckvhome.html", pagdata=paglijst)
 
 
 @app.route("/gijsckv/over-mij")
@@ -43,11 +52,9 @@ def blok3():
 def blok4():
     return render_template("ckvb4.html")
 
-@app.route('/<path:path>')
-def redirecter(path):
-    if not path.startswith("gijsckv"):
-        return redirect(f"/gijsckv/{path}")
-    return render_template("ckv404.html", e="Error redirecting"), 404
+@app.route("/gijsckv/colofon")
+def colofon():
+    return render_template("ckvcolofon.html")
 
 
 @app.errorhandler(404)
