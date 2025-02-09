@@ -83,6 +83,7 @@
 .blokheader {
     font-size: 2em;
     font-weight: 900;
+    text-align: center;
 }
 
 .lijstvanvoorbeelden {
@@ -118,4 +119,82 @@
 
 .voorbeelditem audio {
     margin: 15px 0;
+}
+
+.lesvbverg {
+    background: var(--geel);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vergelijkinggraphic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    gap: 20px;
+}
+
+.verggraph {
+    width: 20%;
+    font-style: italic;
+}
+
+.vergelijkinggraphic i {
+    font-size: 2em;
+}
+
+.verschillenovereenkomsten {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.verg {
+    padding: 25px;
+    width: 50%;
+}
+
+.vergelijkingsonderdeeltekst {
+    font-size: 1.2em;
+}
+
+.vergelijkingsonderdeeltitel {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.voorbeelditem img {
+    width: 50%;
+}
+
+.verggraph img {
+    width: 75%;
+}
+
+.verg.links {
+    text-align: end;
+}
+
+.verggraph.links {text-align: end;}
+
+.eigenwerk {
+    display: flex;
+    flex-direction: row;
+}
+
+#eigenwerkgrafischlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+#eigenwerkgrafischrechts img {
+    width: 100%;
 }
