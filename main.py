@@ -28,8 +28,7 @@ def redirecter(path):
 @app.route('/favicon.ico')
 @app.route('/favicon')
 def favicon():
-    return send_from_directory('static', "favs/tijdelijk.ico", mimetype='image/vnd.microsoft.icon')
-
+    return send_from_directory('static', "favs/cirkels.ico", mimetype='image/vnd.microsoft.icon')
 
 @app.route("/.well-known/security.txt")
 def securitytxt():
