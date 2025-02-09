@@ -7,6 +7,7 @@
     --rood: #ff4a1c;
     --blauw: #197bbd;
     --groen: #04a777;
+    --dblauw: #28589A;
 }
 
 body {
@@ -140,6 +141,7 @@ h1, h2, p {
 
 
 /* Veelgebruikt */
+
 .paginablok {
     margin: 0;
     padding: 2%;
@@ -147,6 +149,7 @@ h1, h2, p {
 
 .kleurvak-buiten {
     padding: 5%;
+    text-align: center;
 }
 
 .kleurvak-buiten.geel {
@@ -157,6 +160,10 @@ h1, h2, p {
     background: var(--groen);
 }
 
+.kleurvak-buiten.rood {
+    background: var(--rood);
+}
+
 .kleurvak-binnen {
     background: var(--wit);
     padding: 2%;
@@ -164,6 +171,14 @@ h1, h2, p {
     max-width: 75%;
     margin: auto;
     font-size: 1.2em;
+}
+
+.paginablok.deeltitel {
+    font-weight: 900;
+}
+
+.deeltitel .kleurvak-binnen h1 {
+    font-size: 2.5em;
 }
 
 .knop {
@@ -233,4 +248,21 @@ h1, h2, p {
 
 #footerrechts a {
     color: var(--wit);
+}
+
+.kunstwerkmetcredits img {
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.kunstwerkmetcredits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.kunstenaarnaam {
+    font-weight: 700;
 }

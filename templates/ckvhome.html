@@ -40,7 +40,7 @@
                     <a href="{{ item.Paglink }}" class="knop wit pagitemtextlink">Naar pagina&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="pagitemrechts">
-                    <img src="{{ item.Afb }}">
+                    <img src="{{ item.Afb }}" class="{{ item.Afbstat }}">
                     {% if item.afbbij1 %}
                         <span class="pagitemtextimgb1">{{ item.afbbij1 }}</span>
                     {% endif %}

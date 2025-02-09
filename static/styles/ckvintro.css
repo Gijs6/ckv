@@ -1,0 +1,121 @@
+#paginatitelblokintro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#introtitellinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introtiteltxt {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+#thematiteltxt {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+#titelafb {
+    font-size: 1.5em;
+}
+
+#titelafb img {
+    width: 300px;
+}
+
+#gevolgddiscicontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--blauw);
+    color: var(--wit);
+}
+
+#gevolgddiscilijst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gevolgddisciitem {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 2%;
+    width: 50%;
+}
+
+.gevolgddisciitem i {
+    font-size: 3em;
+}
+
+.gevolgddiscidisci {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+#gevolgddiscicontainer h1 {
+    font-size: 2.5em;
+}
+
+.gevolgddiscitekstje {
+    font-size: 1.2em;
+}
+
+
+.lesvoorbeelden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.blokheader {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.lijstvanvoorbeelden {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.voorbeelditem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.voorbeelditemkunstwerk {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.voorbeelditemkunstenaar {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.voorbeeldbeschrijving {
+    font-size: 1.2em;
+}
+
+.voorbeelditem audio {
+    margin: 15px 0;
+}

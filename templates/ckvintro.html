@@ -4,6 +4,73 @@
 
 {% block title %}Introductielessen{% endblock %}
 
+{% block extra_headers %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvintro.css') }}">
+{% endblock %}
+
 {% block content %}
-Aan deze pagina wordt nog hard gewerkt!
+<div class="paginablok grotepaginatitel" id="paginatitelblokintro">
+    <div id="introtitellinks">
+        <span id="introtiteltxt">Introductielessen</span>
+        <span id="thematiteltxt">Liefde</span>
+    </div>
+    <div id="titelafb" class="kunstwerkmetcredits">
+        <img src="https://www.haring.com/!/wp-content/uploads/2012/12/editions89_p153.jpg">
+        <span class="kunstwerknaam">Untitled (1989)</span>
+        <span class="kunstenaarnaam">Keith Haring</span>
+    </div>
+</div>
+<div class="paginablok" id="gevolgddiscicontainer">
+    <h1>Gevolgde disciplines</h1>
+    <div id="gevolgddiscilijst">
+        <div class="gevolgddisciitem">
+            <i class="fa-solid fa-music"></i>
+            <span class="gevolgddiscidisci">Muziek</span>
+            <span class="gevolgddiscitekstje">De eerste introductieles, op 12 september, was ik ingedeeld bij de discipline muziek, gegeven door <strong>dhr. Zanen</strong>.</span>
+        </div>
+        <div class="gevolgddisciitem">
+            <i class="fa-solid fa-pencil"></i>
+            <span class="gevolgddiscidisci">Grafisch/illustratie</span>
+            <span class="gevolgddiscitekstje">De tweede introductieles, op 19 september, was ik ingedeeld bij de discipline grafisch/illustratie, gegeven door <strong>mw. Elward</strong>.</span>
+        </div>
+    </div>
+</div>
+<div class="paginablok deeltitel kleurvak-buiten rood">
+    <div class="textblok kleurvak-binnen">
+        <h1>Muziek</h1>
+    </div>
+</div>
+<div class="paginablok lesvoorbeelden">
+    <span class="blokheader">Voorbeelden uit de les</span>
+    <div class="lijstvanvoorbeelden">
+        <div class="voorbeelditem">
+            <span class="voorbeelditemkunstwerk">Love of my life (1999)</span>
+            <span class="voorbeelditemkunstenaar">Santana ft. Dave Matthews</span>
+            <audio controls src="/static/muziek/Santana.mp3" controlslist="nodownload"></audio>
+            <p class="voorbeeldbeschrijving">
+                <strong>Vorm</strong>: Een rocknummer over liefde. Het nummer heeft een kenmerkende melodie. Er komen veel verschillende (kenmerken van) muziekstijlen terug in het nummer, zoals hiphop, rap en zelfs salsa. Het nummer is veel beïnvloed door muziek uit Spanje, Portugal en Cuba.
+                <br>
+                <strong>Inhoud</strong>: De liefde voor een persoon. De liefde draait in dit geval om hoop en verlangen.
+                <br>
+                <strong>Materiaal</strong>: Gitaar, zang, keyboard, bas, drums en een conga (slaginstrument uit Cuba).
+                <br><br>
+                Als je de <strong>vorm</strong> zou veranderen zou het lied - vooral de tekst - erg anders overkomen. Als dit een bijvoorbeeld een hiphopnummer was geweest, was de songtekst een veel belangrijker element geweest, waardoor de boodschap ook duidelijker was geweest. Dit zou ook de sfeer en de emotie van dit nummer veranderen. Het veranderen van de vorm zou dus veel invloed hebben op de inhoud.
+            </p>
+        </div>
+        <div class="voorbeelditem">
+            <span class="voorbeelditemkunstwerk">Hij is van mij (2018)</span>
+            <span class="voorbeelditemkunstenaar">Kriss Kross Amsterdam, Maan & Tabitha ft. Bizzey</span>
+            <audio controls src="/static/muziek/Hivm.mp3" controlslist="nodownload"></audio>
+            <p class="voorbeeldbeschrijving">
+                <strong>Vorm</strong>: Een dancenummer over de liefde.
+                <br>
+                <strong>Inhoud</strong>: Het nummer gaat over het verdriet van 2 vrouwen die allebei verliefd zijn op dezelfde man. In het nummer hoor je dit ook terug: het lijkt op een soort strijd tussen zangeressen Maan en Tabitha.
+                <br>
+                <strong>Materiaal</strong>: Gitaar, zang, drums
+                <br><br>
+                Als je het <strong>materiaal</strong> zou veranderen, zouden de overgebrachte emoties erg verschillend kunnen zijn. Als dit nummer gespeeld zou worden door een orkest, zou de emotie van liefdesverdriet en de strijd tussen personen veel duidelijker worden, en de tekst zou een stuk minder belangrijk worden.
+            </p>
+        </div>
+    </div>
+</div>
 {% endblock %}
