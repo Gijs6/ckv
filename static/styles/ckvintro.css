@@ -179,7 +179,9 @@
     text-align: end;
 }
 
-.verggraph.links {text-align: end;}
+.verggraph.links {
+    text-align: end;
+}
 
 .eigenwerk {
     display: flex;
@@ -195,6 +197,94 @@
     width: 50%;
 }
 
+
 #eigenwerkgrafischrechts img {
     width: 100%;
+}
+
+
+.vergelijkinggraphic.extra .verggraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: unset;
+}
+
+.vergelijkinggraphic.extra .verggraph img {
+    height: 300px;
+    width: unset;
+}
+
+.vergelijkinggraphic.extra .verggraph.rechts img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.vergelijkkunstenaar {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.vergelijkkunstwerk {
+    font-style: normal;
+}
+
+.vergelijkingsonderdeeltekstcontainer {
+    padding: 0% 5%;
+}
+
+.verschilextra {
+    background: var(--groen);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.verschilextra .blokheader {
+    text-align: center;
+    font-size: 3em;
+}
+
+.vergelijkinggroot {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#vergelijkinggrootlinks {
+    padding: 5%;
+    width: 50%;
+}
+
+#vergelijkinggrootrechts {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding: 5%;
+}
+
+.voorbeeldkunstwerkinlijst img {
+    height: 13em;
+}
+
+.voorbeeldkunstwerkinlijst audio {
+    margin-bottom: 15px;
+}
+
+.voorbeeldkunstwerkinlijst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+#heelveelvergelijkingstekst {
+    margin-top: 20px;
 }

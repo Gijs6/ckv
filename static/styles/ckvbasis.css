@@ -164,6 +164,10 @@ h1, h2, p {
     background: var(--rood);
 }
 
+.kleurvak-buiten.blauw {
+    background: var(--blauw);
+}
+
 .kleurvak-binnen {
     background: var(--wit);
     padding: 2%;
