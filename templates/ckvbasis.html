@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}{% endblock %} - CKV - Gijs</title>
+        <title>{% block title %}{% endblock %} - CKV - Gijs ten Berg</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvbasis.css') }}">
         <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favs/cirkels.ico') }}">
         <script src="https://kit.fontawesome.com/4a94c21782.js" crossorigin="anonymous"></script>
@@ -12,9 +12,8 @@
     <body>
 
         <div id="header">
-            <div id="headerlinks">
-                <h1>Gijs ten Berg</h1>
-                <h2>4A2</h2>
+            <div id="headerboven">
+                Gijs ten Berg - 4A2
             </div>
             <div id="menu">
                 <a class="menu-item {% if active_page == 'home' %}active{% endif %}" href="/">
@@ -82,6 +81,44 @@
                 <h2><a href="/colofon">Colofon</a></h2>
             </div>
         </div>
+
+
+        <script>
+            function updateMargin() {
+                const mediaQuery = window.matchMedia("(max-width: 750px), (max-height: 550px)");
+                if (!mediaQuery.matches) {
+                    // Als er een sidebar is
+                    const sidebar = document.getElementById('header');
+                    const content = document.getElementById('content');
+                    const footer = document.getElementById('footer');
+
+                    if (sidebar && content && footer) {
+                        const sidebarWidth = sidebar.offsetWidth;
+                        content.style.marginLeft = `${sidebarWidth}px`;
+                        footer.style.marginLeft = `${sidebarWidth}px`;
+
+                        content.style.marginTop = "0";
+                    }
+                } else {
+                    // Als er een header is
+                    const sidebar = document.getElementById('header');
+                    const content = document.getElementById('content');
+
+                    if (sidebar && content && footer) {
+                        const sidebarHeight = sidebar.offsetHeight;
+                        content.style.marginTop = `${sidebarHeight}px`;
+
+                        content.style.marginLeft = "0";
+                        footer.style.marginLeft = "0";
+                    }
+                }
+            }
+
+            window.addEventListener('load', updateMargin);
+            window.addEventListener('resize', updateMargin);
+
+        </script>
+
 
     </body>
 </html>

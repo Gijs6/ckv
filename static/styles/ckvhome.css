@@ -1,6 +1,6 @@
 #bollen {
 	position: relative;
-	min-height: 75vh;
+	min-height: 80vh;
 }
 
 #naamtextbox {
@@ -62,6 +62,7 @@ canvas {
     flex-grow: 1;
     border-radius: 30px;
     transition: 300ms all ease-in-out;
+    flex-wrap: wrap;
 }
 
 .pagitemrechts {

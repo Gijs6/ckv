@@ -35,33 +35,37 @@ h1, h2, p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 10%; */
     background: var(--blauw);
     color: var(--wit);
     align-content: center;
     position: fixed;
     top: 0;
-    height: 100%;
+    /* height: 100%; */
     z-index: 1000;
-    max-width: 15vw;
-    min-width: 15vw;
+    /* max-width: 18vw; */
+    /* min-width: 18vw; */
+    border-right: 1px var(--wit) solid;
+    box-sizing: border-box;
+    padding: 1%;
+    height: 100%;
+    gap: 3%;
 }
 
-
-#headerlinks {
-    padding: 10% 0 0 0;
+#headerboven {
+    font-size: 1.3em;
+    font-weight: 900;
 }
 
 #menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: stretch;
-    gap: clamp(5px, 0.5vw, 15px);
+    gap: 1.5%;
     position: relative;
     align-content: center;
     flex-wrap: wrap;
-    margin: auto;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .menu-item {
@@ -72,10 +76,11 @@ h1, h2, p {
     color: var(--wit);
     text-decoration: none;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .menuitemtext {
-    padding: clamp(10px, 2vw, 20px) clamp(5px, 1vw, 10px);
+    padding: 10px;
     position: relative;
     z-index: 100;
     font-weight: 700;
@@ -84,9 +89,9 @@ h1, h2, p {
     display: flex;
     gap: 0.5em;
     align-items: center;
-    /* width: 100%; */
     text-align: center;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .menuitemtext svg {
@@ -131,7 +136,8 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-left: 15vw;
+    margin-left: 17vw;
+    transition: margin 250ms ease-in-out;
 }
 
 
@@ -149,6 +155,7 @@ h1, h2, p {
     color: var(--wit);
     justify-content: space-between;
     margin-left: 15vw;
+    border-top: 1px var(--wit) solid;
 }
 
 
@@ -268,7 +275,6 @@ h1, h2, p {
 
 .kunstwerkmetcredits img {
     object-fit: cover;
-    border-radius: 20px;
     margin-bottom: 10px;
 }
 
@@ -281,4 +287,51 @@ h1, h2, p {
 
 .kunstenaarnaam {
     font-weight: 700;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px), (max-height: 550px) {
+    #header {
+        flex-direction: row;
+        align-content: center;
+        position: fixed;
+        top: 0;
+        height: unset;
+        width: 100%;
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+
+    #content {
+        margin-left: 0;
+        margin-top: 12.5vh;
+    }
+
+    #footer {
+        margin-left: 0;
+    }
+
+
+    .menu-item {
+        flex-direction: row;
+    }
+
+
+    .menuitemslide {
+        width: 100%;
+        height: 0%;
+    }
+
+    .menu-item:hover > .menuitemslide, .menu-item.active > .menuitemslide {
+        height: 100%;
+    }
+
 }
