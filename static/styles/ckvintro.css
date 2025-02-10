@@ -121,6 +121,10 @@
     margin: 15px 0;
 }
 
+.voorbeelditem audio::-webkit-media-controls-panel {
+  background-color: #c1dae3;
+}
+
 .lesvbverg {
     background: var(--geel);
     display: flex;
@@ -138,7 +142,7 @@
 }
 
 .verggraph {
-    width: 20%;
+    width: 40%;
     font-style: italic;
 }
 
@@ -186,6 +190,7 @@
 .eigenwerk {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 #eigenwerkgrafischlinks {

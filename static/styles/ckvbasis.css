@@ -2,7 +2,7 @@
 
 :root {
     --zwart: #011627;
-    --wit: #d5e0eb;
+    --wit: #e9f0f3;
     --geel: #ffca3a;
     --rood: #ff4a1c;
     --blauw: #197bbd;
@@ -40,11 +40,8 @@ h1, h2, p {
     align-content: center;
     position: fixed;
     top: 0;
-    /* height: 100%; */
     z-index: 1000;
-    /* max-width: 18vw; */
-    /* min-width: 18vw; */
-    border-right: 1px var(--wit) solid;
+    border-right: 2px var(--wit) solid;
     box-sizing: border-box;
     padding: 1%;
     height: 100%;
@@ -155,7 +152,7 @@ h1, h2, p {
     color: var(--wit);
     justify-content: space-between;
     margin-left: 15vw;
-    border-top: 1px var(--wit) solid;
+    border-top: 2px var(--wit) solid;
 }
 
 
@@ -164,6 +161,7 @@ h1, h2, p {
 .paginablok {
     margin: 0;
     padding: 2%;
+    background: var(--wit);
 }
 
 .kleurvak-buiten {
@@ -304,6 +302,8 @@ h1, h2, p {
         top: 0;
         height: unset;
         width: 100%;
+        border-right: none;
+        border-bottom: 2px var(--wit) solid;
     }
 
     #menu {

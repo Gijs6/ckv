@@ -2,9 +2,9 @@
     background-image: url("/static/afbs/strand.jpg");
     background-position: center 65%;
     background-repeat: no-repeat;
-    aspect-ratio: 3 / 1;
+    aspect-ratio: 10 / 4;
     background-size: cover;
-    background-position: center 25%;
+    background-position: center top;
     min-height: 500px;
     display: flex;
     align-items: flex-end;
@@ -63,4 +63,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.eivoorbeeld img {
+    border-radius: 20px;
 }
