@@ -61,7 +61,7 @@ canvas {
     gap: 15px;
     flex-grow: 1;
     border-radius: 30px;
-    max-width: 40%;
+    transition: 300ms all ease-in-out;
 }
 
 .pagitemrechts {
@@ -101,4 +101,8 @@ canvas {
 
 .pagitemrechts img.Deels {
     aspect-ratio: 7/10;
+}
+
+.pagitem:hover {
+    transform: scale(1.025);
 }

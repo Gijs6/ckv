@@ -66,14 +66,12 @@ h1, h2, p {
 
 .menu-item {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
-
     position: relative;
-
     color: var(--wit);
-
     text-decoration: none;
+    flex-direction: column;
 }
 
 .menuitemtext {
@@ -81,11 +79,14 @@ h1, h2, p {
     position: relative;
     z-index: 100;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.2em;
     transition: 300ms all ease-in-out;
     display: flex;
     gap: 0.5em;
     align-items: center;
+    /* width: 100%; */
+    text-align: center;
+    justify-content: center;
 }
 
 .menuitemtext svg {
@@ -97,8 +98,8 @@ h1, h2, p {
 .menuitemslide {
     z-index: 50;
     position: absolute;
-    height: 0%;
-    width: 100%;
+    height: 100%;
+    width: 0%;
 
     border-radius: 0.5em;
 
@@ -108,13 +109,12 @@ h1, h2, p {
 }
 
 .menu-item:hover > .menuitemslide, .menu-item.active > .menuitemslide {
-    height: 100%;
+    width: 100%;
     background: var(--wit);
 }
 
 .menu-item:hover > .menuitemtext, .menu-item.active > .menuitemtext {
     color: var(--blauw);
-
 }
 
 .menu-item:hover > .menuitemtext svg, .menu-item.active > .menuitemtext svg {
@@ -145,7 +145,7 @@ h1, h2, p {
     flex-wrap: wrap;
     gap: 25px;
     padding: 2% 5%;
-    background: var(--blauw);
+    background: var(--groen);
     color: var(--wit);
     justify-content: space-between;
     margin-left: 15vw;
