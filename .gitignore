@@ -1,6 +1,8 @@
 robots.txt
 .venv/
 .idea/
+vids/
 
-# Copyright stuff and just large files
+# Just large files
 *.mp3
+*.mp4

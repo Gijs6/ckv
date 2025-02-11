@@ -4,6 +4,22 @@
 
 {% block title %}Blok 1{% endblock %}
 
+{% block extra_headers %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvb1.css') }}">
+{% endblock %}
+
 {% block content %}
-Aan deze pagina wordt nog hard gewerkt!
+<div class="paginablok megapaginatitel" id="megapaginatitelBlok1">
+    <video autoplay muted loop id="megapaginatitelbalken">
+      <source src="/static/vids/balken4.mp4" type="video/mp4">
+    </video>
+    <div class="megatitel-titeltekst">
+        <span class="megatitel-activiteit">Het onzichtbare zichtbaar maken</span>
+        <span class="megatitel-blokendisci">Blok 1 - Beeldend</span>
+    </div>
+    <div class="megatitel-credits">
+        <span class="megatitelkunstwerk">Windows of the Soul II (2010)</span>
+        <span class="megatitelkunstenaar">Sonia Falcone</span>
+    </div>
+</div>
 {% endblock %}

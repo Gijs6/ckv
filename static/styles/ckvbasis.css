@@ -141,9 +141,10 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-left: 17vw;
-    transition: margin 250ms ease-in-out;
+    margin-left: 15vw;
+    transition: margin 100ms ease-in-out;
     background: var(--wit);
+    position: relative;
 }
 
 
@@ -162,6 +163,53 @@ h1, h2, p {
     justify-content: space-between;
     margin-left: 15vw;
     border-top: 2px var(--wit) solid;
+}
+
+
+/* Top/sidebar stuff */
+
+@media screen and (max-width: 750px), (max-height: 550px) {
+    /* Other margin stuff in JS! */
+
+    #header {
+        flex-direction: row;
+        align-content: center;
+        position: fixed;
+        top: 0;
+        height: unset;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px var(--wit) solid;
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+
+    #content {
+        margin-left: 0;
+        margin-top: 12.5vh;
+    }
+
+    #footer {
+        margin-left: 0;
+    }
+
+
+    .menu-item {
+        flex-direction: row;
+    }
+
+
+    .menuitemslide {
+        width: 100%;
+        height: 0%;
+    }
+
+    .menu-item:hover > .menuitemslide, .menu-item.active > .menuitemslide {
+        height: 100%;
+    }
+
 }
 
 
@@ -298,54 +346,52 @@ h1, h2, p {
 }
 
 
-
-
-
-
-
-
-@media screen and (max-width: 750px), (max-height: 550px) {
-    /* Top bar instead of sidebar */
-    /* Margin stuff in JS */
-
-
-    #header {
-        flex-direction: row;
-        align-content: center;
-        position: fixed;
-        top: 0;
-        height: unset;
-        width: 100%;
-        border-right: none;
-        border-bottom: 2px var(--wit) solid;
-    }
-
-    #menu {
-        flex-direction: row;
-    }
-
-    #content {
-        margin-left: 0;
-        margin-top: 12.5vh;
-    }
-
-    #footer {
-        margin-left: 0;
-    }
-
-
-    .menu-item {
-        flex-direction: row;
-    }
-
-
-    .menuitemslide {
-        width: 100%;
-        height: 0%;
-    }
-
-    .menu-item:hover > .menuitemslide, .menu-item.active > .menuitemslide {
-        height: 100%;
-    }
-
+.megapaginatitel {
+    padding: 0;
+    position: relative;
 }
+
+.megatitel-titeltekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--wit);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.megatitel-activiteit {
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.megatitel-blokendisci {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.megatitel-credits {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--wit);
+    display: flex;
+    flex-direction: column;
+}
+
+.megatitelkunstwerk {
+    font-size: 1.3em;
+}
+
+.megatitelkunstenaar {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+
+
+
