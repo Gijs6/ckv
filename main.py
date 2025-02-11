@@ -49,7 +49,7 @@ def robots():
 
 @app.route("/gijsckv")
 def home():
-    with open("data/paglijst.json", "r") as file:
+    with open("/data/paglijst.json", "r") as file:
         paglijst = json.load(file)
     return render_template("ckvhome.html", pagdata=paglijst)
 
