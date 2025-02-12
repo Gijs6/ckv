@@ -52,7 +52,7 @@ h1, h2, p {
 }
 
 #headerboven {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 900;
     display: flex;
     justify-content: space-between;
@@ -90,8 +90,8 @@ h1, h2, p {
     padding: 10px;
     position: relative;
     z-index: 100;
-    font-weight: 700;
-    font-size: 1.2em;
+    font-weight: 900;
+    font-size: 1.1em;
     transition: 300ms all ease-in-out;
     display: flex;
     gap: 0.5em;
@@ -233,7 +233,6 @@ h1, h2, p {
 
 .kleurvak-buiten {
     padding: 5%;
-    text-align: center;
 }
 
 .kleurvak-buiten.geel {
@@ -259,6 +258,11 @@ h1, h2, p {
     max-width: 75%;
     margin: auto;
     font-size: 1.2em;
+    text-align: center;
+}
+
+.kleurvak-binnen.textleft {
+    text-align: left;
 }
 
 .paginablok.deeltitel {
@@ -353,6 +357,7 @@ h1, h2, p {
 
 .kunstenaarnaam {
     font-weight: 700;
+    text-align: center;
 }
 
 
@@ -404,47 +409,10 @@ h1, h2, p {
 }
 
 
-
-
-
-
-.alginfoblok {
+.scheiding.geel {
     background: var(--geel);
-    padding: 0;
-    position: relative;
 }
 
-.alginfo-imgbackground {
+.museumtabelkunstwerktekst {
     width: 60%;
-    height: 60%;
-    background-size: cover;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-}
-
-.alginfo-textcontainer {
-    display: flex;
-    position: relative;
-    padding: 20vh 5% 5% 5%;
-    align-items: flex-end;
-    gap: 5%;
-    justify-content: space-between;
-}
-
-.alginfo-alginfobox {
-    padding: 5%;
-    background: var(--wit);
-    border-radius: 20px;
-    max-width: 55%;
-}
-
-.alginfo-imgcredits {
-    font-size: 1.1em;
-    margin-bottom: 2%;
-}
-
-
-.alginfo-kunstenaar {
-    font-weight: 800;
 }

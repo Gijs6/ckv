@@ -1,0 +1,112 @@
+/* Dingen die op veel blokpagina's worden gebruikt! */
+
+
+.alginfoblok {
+    background: var(--geel);
+    padding: 0;
+    position: relative;
+}
+
+.alginfo-imgbackground {
+    width: 60%;
+    height: 60%;
+    background-size: cover;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+}
+
+.alginfo-textcontainer {
+    display: flex;
+    position: relative;
+    padding: 20vh 5% 5% 5%;
+    align-items: flex-end;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.alginfo-alginfobox {
+    padding: 5%;
+    background: var(--wit);
+    border-radius: 20px;
+    max-width: 55%;
+}
+
+.alginfo-imgcredits {
+    font-size: 1.1em;
+    margin-bottom: 2%;
+}
+
+
+.alginfo-kunstenaar {
+    font-weight: 800;
+}
+
+.verslagtekst-eigenwerk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+.kunstwerkmetcredits.eigenwerk img {
+    width: 100%;
+}
+
+.kunstwerkmetcredits.eigenwerk {
+    width: 50%;
+}
+
+.verslagtekst-eigenwerklinks {
+    width: 50%;
+}
+
+.museumtabel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.museumtabelkunstwerkfotos img {
+    width: 20vh;
+    object-fit: cover;
+    aspect-ratio: 3/5;
+}
+
+.museumtabelkunstwerk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.museumtabelkunstwerkfotos {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.mstkwt-kunstwerk {
+    font-size: 1.25em;
+}
+
+.mstkwt-kunstenaar {
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+.museumtabelkunstwerktekst p {
+    margin-top: 10px;
+}
+
+
+.museumtabelkunstwerktekst {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
