@@ -84,6 +84,8 @@
         </div>
 
 
+        <!--
+
         <script>
             function updateMargin() {
                 const mediaQuery = window.matchMedia("(max-width: 750px), (max-height: 550px)");
@@ -94,6 +96,7 @@
                     const footer = document.getElementById('footer');
 
                     if (sidebar && content && footer) {
+                        sidebar.style.width = "unset";
                         const sidebarWidth = sidebar.offsetWidth;
                         content.style.marginLeft = `${sidebarWidth}px`;
                         footer.style.marginLeft = `${sidebarWidth}px`;
@@ -106,6 +109,7 @@
                     const content = document.getElementById('content');
 
                     if (sidebar && content && footer) {
+                        sidebar.style.height = "unset";
                         const sidebarHeight = sidebar.offsetHeight;
                         content.style.marginTop = `${sidebarHeight}px`;
 
@@ -119,6 +123,8 @@
             window.addEventListener('resize', updateMargin);
 
         </script>
+
+        -->
 
 
     </body>

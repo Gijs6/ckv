@@ -1,3 +1,7 @@
 #megapaginatitelbalken {
     width: 100%;
 }
+
+#alginfo-imgbackground-blok1 {
+    background-image: url("/static/afbs/obliteration.jpg");
+}

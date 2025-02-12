@@ -44,19 +44,21 @@ h1, h2, p {
     z-index: 1000;
     border-right: 2px var(--wit) solid;
     box-sizing: border-box;
-    padding: 2%;
+    padding: 1%;
     height: 100%;
     gap: 3%;
+    width: 18vw;
+    transition: all 100ms ease-in-out;
 }
 
 #headerboven {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 900;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* gap: 10px; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     align-content: center;
     align-items: center;
 }
@@ -141,7 +143,7 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-left: 15vw;
+    margin-left: 18vw;
     transition: margin 100ms ease-in-out;
     background: var(--wit);
     position: relative;
@@ -161,25 +163,33 @@ h1, h2, p {
     background: var(--groen);
     color: var(--wit);
     justify-content: space-between;
-    margin-left: 15vw;
+    margin-left: 18vw;
     border-top: 2px var(--wit) solid;
 }
 
 
 /* Top/sidebar stuff */
 
-@media screen and (max-width: 750px), (max-height: 550px) {
+@media screen and (max-width: 1500px), (max-height: 550px) {
     /* Other margin stuff in JS! */
 
     #header {
         flex-direction: row;
         align-content: center;
-        position: fixed;
+        position: relative;
         top: 0;
         height: unset;
         width: 100%;
         border-right: none;
         border-bottom: 2px var(--wit) solid;
+        padding: 1%;
+    }
+
+    #headerboven {
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     #menu {
@@ -188,7 +198,7 @@ h1, h2, p {
 
     #content {
         margin-left: 0;
-        margin-top: 12.5vh;
+        margin-top: 0;
     }
 
     #footer {
@@ -349,6 +359,7 @@ h1, h2, p {
 .megapaginatitel {
     padding: 0;
     position: relative;
+    display: flex;
 }
 
 .megatitel-titeltekst {
@@ -395,3 +406,45 @@ h1, h2, p {
 
 
 
+
+
+.alginfoblok {
+    background: var(--geel);
+    padding: 0;
+    position: relative;
+}
+
+.alginfo-imgbackground {
+    width: 60%;
+    height: 60%;
+    background-size: cover;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+}
+
+.alginfo-textcontainer {
+    display: flex;
+    position: relative;
+    padding: 20vh 5% 5% 5%;
+    align-items: flex-end;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.alginfo-alginfobox {
+    padding: 5%;
+    background: var(--wit);
+    border-radius: 20px;
+    max-width: 55%;
+}
+
+.alginfo-imgcredits {
+    font-size: 1.1em;
+    margin-bottom: 2%;
+}
+
+
+.alginfo-kunstenaar {
+    font-weight: 800;
+}
