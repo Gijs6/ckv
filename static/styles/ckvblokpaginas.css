@@ -34,7 +34,7 @@
 
 .alginfo-imgcredits {
     font-size: 1.1em;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 
@@ -91,6 +91,7 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 10px;
+    max-width: 60%;
 }
 
 .mstkwt-kunstwerk {
