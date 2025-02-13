@@ -1,5 +1,7 @@
 #megapaginatitelbalken {
     width: 100%;
+    height: 75vh;
+    object-fit: cover;
 }
 
 #alginfo-imgbackground-blok1 {
