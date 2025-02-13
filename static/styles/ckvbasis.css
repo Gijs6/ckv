@@ -280,6 +280,7 @@ h1, h2, p {
     font-weight: 700;
     transition: all 300ms ease;
     border: 3px solid;
+    display: inline-block;
 }
 
 .knop.wit {
@@ -411,6 +412,10 @@ h1, h2, p {
 
 .scheiding.geel {
     background: var(--geel);
+}
+
+.scheiding.blauw {
+    background: var(--blauw);
 }
 
 .museumtabelkunstwerktekst {

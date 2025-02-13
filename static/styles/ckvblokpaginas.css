@@ -112,3 +112,31 @@
     display: flex;
     flex-direction: column;
 }
+
+.verslagtekst-afbeeldingenalg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.verslagtekst-afbeeldingenalg img {
+    height: 25em;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+
+.vtxtafb-vierkant {
+    aspect-ratio: 1/1 !important;
+}
+
+.vtxtafb-lang {
+    aspect-ratio: 3 / 2 !important;
+}
+
+
+.kunstwerkmetcredits.eindwerk {
+    width: unset !important;
+}
