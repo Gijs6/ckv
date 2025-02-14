@@ -17,4 +17,4 @@ So yeah, while everyone else is dragging and dropping elements in Wix, I'm over 
 ***
 ## To do
 
-- [ ] Add alt txt to images
+- [x] Add alt txt to images (-> "_artwork_ - _artist_" for artworks and for other tings just a description)

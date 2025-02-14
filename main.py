@@ -53,6 +53,7 @@ def home():
         paglijst = json.load(file)
     return render_template("ckvhome.html", pagdata=paglijst)
 
+
 @app.route("/gijsckv/over-mij")
 def over_mij():
     return render_template("ckvovermij.html")
@@ -84,6 +85,54 @@ def blok4():
 @app.route("/gijsckv/colofon")
 def colofon():
     return render_template("ckvcolofon.html")
+
+
+
+
+# Short routs (redirects)
+# Prefixed by the main redirecter
+
+@app.route("/gijsckv/om")
+@app.route("/gijsckv/overmij")
+def over_mij_redi():
+    return redirect("/gijsckv/over-mij")
+
+@app.route("/gijsckv/il")
+@app.route("/gijsckv/intro")
+@app.route("/gijsckv/introles")
+def introductie_redi():
+    return redirect("/gijsckv/introductielessen")
+
+@app.route("/gijsckv/ei")
+@app.route("/gijsckv/eigini")
+@app.route("/gijsckv/eigeninitiatieven")
+def eigen_initiatieven_redi():
+    return redirect("/gijsckv/eigen-initiatieven")
+
+@app.route("/gijsckv/b1")
+@app.route("/gijsckv/blok1")
+def blok1_redi():
+    return redirect("/gijsckv/blok-1")
+
+@app.route("/gijsckv/b2")
+@app.route("/gijsckv/blok2")
+def blok2_redi():
+    return redirect("/gijsckv/blok-2")
+
+@app.route("/gijsckv/b3")
+@app.route("/gijsckv/blok3")
+def blok3_redi():
+    return redirect("/gijsckv/blok-3")
+
+@app.route("/gijsckv/b4")
+@app.route("/gijsckv/blok4")
+def blok4_redi():
+    return redirect("/gijsckv/blok-4")
+
+@app.route("/gijsckv/cf")
+@app.route("/gijsckv/col")
+def colofon_redi():
+    return redirect("/gijsckv/colofon")
 
 
 
