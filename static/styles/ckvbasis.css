@@ -140,7 +140,9 @@ h1, h2, p, ul {
 /* General stuff */
 
 #scrollablecontainer {
-    /* margin-left: 18vw; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -171,11 +173,13 @@ h1, h2, p, ul {
     background: var(--groen);
     color: var(--wit);
     justify-content: space-between;
-    /* margin-left: 18vw; */
     border-top: 2px var(--wit) solid;
     z-index: 10000;
 }
 
+#footerrechts a {
+    color: var(--wit);
+}
 
 /* Top/sidebar stuff */
 
@@ -353,10 +357,6 @@ h1, h2, p, ul {
     padding: 0;
 }
 
-#footerrechts a {
-    color: var(--wit);
-}
-
 .kunstwerkmetcredits img {
     object-fit: cover;
     margin-bottom: 10px;
@@ -373,8 +373,6 @@ h1, h2, p, ul {
     font-weight: 700;
     text-align: center;
 }
-
-
 
 .scheiding.geel {
     background: var(--geel);

@@ -209,5 +209,124 @@
 .collectie-collages-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+}
+
+
+
+
+
+
+.bloknietbegonnen {
+    flex-grow: 1;
+    background: var(--geel);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.bloknietbegonnenblok {
+    font-size: 6em;
+}
+
+.bloknietbegonnennumsdiv span {
+    transition: all 250ms ease;
+}
+
+.bloknietbegonnentekst {
+    font-size: 1.5em;
+}
+
+.bloknietbegonnennumsdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.numrij-8 {
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+.numrij-7 {
+    font-size: 1.9em;
+    font-weight: 200;
+}
+
+.numrij-6 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.numrij-5 {
+    font-size: 3.3em;
+    font-weight: 400;
+}
+
+.numrij-4 {
+    font-size: 4.4em;
+    font-weight: 500;
+}
+
+.numrij-3 {
+    font-size: 5.9em;
+    font-weight: 600;
+}
+
+.numrij-2 {
+    font-size: 7.9em;
+    font-weight: 700;
+}
+
+.numrij-1 {
+    font-size: 10.5em;
+    font-weight: 800;
+}
+
+.numrij-0 {
+    font-size: 16em;
+    font-weight: 900;
+}
+
+
+
+
+
+.numrij-8:hover {
+    font-size: 3.8em;
+}
+
+.numrij-7:hover {
+    font-size: 4.0em;
+}
+
+.numrij-6:hover {
+    font-size: 4.4em;
+}
+
+.numrij-5:hover {
+    font-size: 5.2em;
+}
+
+.numrij-4:hover {
+    font-size: 6.4em;
+}
+
+.numrij-3:hover {
+    font-size: 8.1em;
+}
+
+.numrij-2:hover {
+    font-size: 10.5em;
+}
+
+.numrij-1:hover {
+    font-size: 13.8em;
+}
+
+.numrij-0:hover {
+    font-size: 18.2em;
 }

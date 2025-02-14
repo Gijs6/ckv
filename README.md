@@ -13,3 +13,8 @@ So yeah, while everyone else is dragging and dropping elements in Wix, I'm over 
 *Nu alleen nog 5 punten halen overal op die rubrics...😉*
 
 *Waarschijnlijk spreek je gewoon Nederlands en vraag je je af waarom dit in hemelsnaam in het Engels staat. Simpel: dat is hier de norm. En jij begrijpt dit waarschijnlijk prima - terwijl je het eigenlijk niet eens **hoeft** te begrijpen.*
+
+***
+## To do
+
+- [ ] Add alt txt to images
