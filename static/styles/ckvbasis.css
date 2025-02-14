@@ -12,9 +12,7 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-wrap: nowrap;
+    flex-direction: row;
     margin: 0;
     overflow-x: hidden;
     height: 100vh;
@@ -29,7 +27,7 @@ h1, h2, p, ul {
 
 /* Header */
 
-#header {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +36,6 @@ h1, h2, p, ul {
     background: var(--blauw);
     color: var(--wit);
     align-content: center;
-    position: fixed;
     top: 0;
     z-index: 1000;
     border-right: 2px var(--wit) solid;
@@ -46,11 +43,18 @@ h1, h2, p, ul {
     padding: 1%;
     height: 100%;
     gap: 3%;
-    width: 18vw;
     transition: all 100ms ease-in-out;
 }
 
-#headerboven {
+.header.voor {
+    position: fixed;
+}
+
+.header.achter {
+    visibility: hidden;
+}
+
+.headerboven {
     font-size: 1.5em;
     font-weight: 900;
     display: flex;
@@ -62,7 +66,7 @@ h1, h2, p, ul {
     align-items: center;
 }
 
-#menu {
+.menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -133,6 +137,11 @@ h1, h2, p, ul {
 
 }
 
+/* General stuff */
+
+#scrollablecontainer {
+    /* margin-left: 18vw; */
+}
 
 
 /* Content */
@@ -142,7 +151,7 @@ h1, h2, p, ul {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-left: 18vw;
+    /* margin-left: 18vw; */
     transition: margin 100ms ease-in-out;
     background: var(--wit);
     position: relative;
@@ -162,7 +171,7 @@ h1, h2, p, ul {
     background: var(--groen);
     color: var(--wit);
     justify-content: space-between;
-    margin-left: 18vw;
+    /* margin-left: 18vw; */
     border-top: 2px var(--wit) solid;
     z-index: 10000;
 }
@@ -171,11 +180,9 @@ h1, h2, p, ul {
 /* Top/sidebar stuff */
 
 @media screen and (max-width: 1500px), (max-height: 550px) {
-
-    #header {
+    .header {
         flex-direction: row;
         align-content: center;
-        position: relative;
         top: 0;
         height: unset;
         width: 100%;
@@ -184,14 +191,18 @@ h1, h2, p, ul {
         padding: 1%;
     }
 
-    #headerboven {
+    .header.achter {
+        display: none;
+    }
+
+    .headerboven {
         flex-direction: column;
         gap: 0px;
         justify-content: center;
         align-items: flex-start;
     }
 
-    #menu {
+    .menu {
         flex-direction: row;
     }
 
