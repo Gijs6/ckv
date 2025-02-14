@@ -26,6 +26,9 @@ h1, h2, p {
     margin: 0;
 }
 
+ul {
+    margin: 0;
+}
 
 
 /* Header */
@@ -283,6 +286,10 @@ h1, h2, p {
     display: inline-block;
 }
 
+.knop:hover {
+    transform: scale(1.1);
+}
+
 .knop.wit {
     background: var(--wit);
     color: var(--zwart);
@@ -292,7 +299,6 @@ h1, h2, p {
 .knop.wit:hover {
     background: var(--zwart);
     color: var(--wit);
-    transform: scale(1.1);
 }
 
 .knop.blauw {
@@ -379,6 +385,7 @@ h1, h2, p {
     align-items: center;
     gap: 25px;
     text-align: center;
+    width: 75%;
 }
 
 .megatitel-activiteit {

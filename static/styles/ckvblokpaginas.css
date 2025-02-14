@@ -47,7 +47,6 @@
     flex-direction: row;
     align-items: center;
     gap: 5%;
-    margin-top: 20px;
 }
 
 .kunstwerkmetcredits.eigenwerk img {
@@ -67,7 +66,6 @@
     flex-direction: column;
     align-items: stretch;
     gap: 30px;
-    margin-top: 20px;
 }
 
 .museumtabelkunstwerkfotos img {
@@ -121,23 +119,30 @@
     align-items: center;
     gap: 10px;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .verslagtekst-afbeeldingenalg img {
     height: 25em;
-    aspect-ratio: 4/5;
     object-fit: cover;
 }
 
-.vtxtafb-vierkant {
-    aspect-ratio: 1/1 !important;
-}
-
-.vtxtafb-lang {
-    aspect-ratio: 3 / 2 !important;
+.verslagtekst-afbeeldingenalg.collage img {
+    flex-grow: 1;
 }
 
 
 .kunstwerkmetcredits.eindwerk {
     width: unset !important;
+}
+
+.verslagtekst {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.vrslgtxtafb-rechthoek {
+    aspect-ratio: 2/3;
 }
