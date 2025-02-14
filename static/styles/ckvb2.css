@@ -4,6 +4,10 @@
     background-size: cover;
 }
 
+#alginfo-imgbackground-blok2 {
+    background-image: url("/static/afbs/b2/dune.jpg");
+}
+
 .megatitel-activiteit {
     color: var(--zwart);
 }
@@ -11,4 +15,189 @@
 .megatitel-titeltekst {
     top: 65%;
     gap: 70px;
+}
+
+
+
+
+
+#infographic {
+    width: 100%;
+    height: 100vh;
+}
+
+
+#gallery {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+#tile1 {
+    background-color: var(--groen);
+    left: 5%;
+    top: 7%;
+}
+
+#tile2 {
+    background-color: var(--rood);
+    left: 2%;
+    top: 26%;
+}
+
+#tile3 {
+    background-color: var(--rood);
+    left: 12%;
+    top: 47%;
+}
+
+#tile4 {
+    background-color: var(--rood);
+    left: 25%;
+    top: 28%;
+}
+
+#tile5 {
+    background-color: var(--rood);
+    left: 28%;
+    top: 51%;
+}
+
+#tile6 {
+    background-color: var(--blauw);
+    max-width: 35%;
+    left: 6%;
+    top: 70%;
+}
+
+#tile7 {
+    background-color: var(--geel);
+    max-width: 45%;
+    left: 52%;
+    top: 20%;
+}
+
+#tile8 {
+    background-color: var(--blauw);
+    max-width: 30%;
+    left: 62%;
+    top: 63%;
+}
+
+.popup {
+    display: none;
+}
+
+.popup-content {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+    transition: opacity 800ms ease, visibility 800ms ease;
+    position: absolute;
+}
+
+.popup-content.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 200ms;
+}
+
+.popup-content .close-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: var(--wit);
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.popup-text {
+    /* text-align: justify; */
+    padding: 3vw;
+    font-size: 1.5em;
+    color: var(--wit);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tile {
+    border-radius: 20px;
+    position: absolute;
+    transition: all 350ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 0;
+    padding: 25px;
+}
+
+.tile.fullscreen {
+    z-index: 15;
+}
+
+.tile span {
+    color: var(--wit);
+    font-size: 2em;
+    font-weight: 400;
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms ease;
+}
+
+.tile:hover span {
+    font-weight: 900;
+}
+
+.tile.fullscreen span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.knop {
+    display: block;
+    padding: 1vw;
+    background-color: var(--blauw);
+    color: var(--zwart);
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1vw;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.knop i {
+    font-size: 2vw;
+}
+
+.knop:hover {
+    background-color: var(--wit);
+}
+
+
+#knopfilm {
+    margin-top: 5vh;
 }
