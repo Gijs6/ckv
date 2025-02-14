@@ -1,9 +1,14 @@
 #megapaginatitelbalken {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
 }
 
 #alginfo-imgbackground-blok1 {
     background-image: url("/static/afbs/b1/obliteration.jpg");
+}
+
+.megatitel-titeltekst {
+    top: 55%;
+    gap: 40px;
 }

@@ -4,6 +4,20 @@
 
 {% block title %}Blok 2{% endblock %}
 
+{% block extra_headers %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvb2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvblokpaginas.css') }}">
+{% endblock %}
+
 {% block content %}
-Aan deze pagina wordt nog hard gewerkt!
+    <div class="paginablok megapaginatitel afb" id="megapaginatitelBlok2">
+        <div class="megatitel-titeltekst">
+            <span class="megatitel-activiteit">Visuele effecten</span>
+            <span class="megatitel-blokendisci">Blok 2 - Film</span>
+        </div>
+        <div class="megatitel-credits">
+            <span class="megatitelkunstwerk"><i>Opnames van </i>The Mandalorian (2019 - heden)</span>
+            <span class="megatitelkunstenaar">O.a. Jon Favreau</span>
+        </div>
+    </div>
 {% endblock %}

@@ -10,7 +10,6 @@ Right now, I'm in the process of moving all my content from Wix to my new site, 
 
 So yeah, while everyone else is dragging and dropping elements in Wix, I'm over here figuring out Flask routes and Jinja templates and how I can fix one item not stretching with flex-grow when it's the only item on the row because of flex-wrap, but the other items do need to stretch <small>(if someone knows, please [email](mailto:gijs6@dupunkto.org) me!)</small>. It will definitely take longer, and I will definitely be annoyed by some very stupid bugs, but it will feel at least  like my own website.
 
-
 *Nu alleen nog 5 punten halen overal op die rubrics...😉*
 
 *Waarschijnlijk spreek je gewoon Nederlands en vraag je je af waarom dit in hemelsnaam in het Engels staat. Simpel: dat is hier de norm. En jij begrijpt dit waarschijnlijk prima - terwijl je het eigenlijk niet eens **hoeft** te begrijpen.*
