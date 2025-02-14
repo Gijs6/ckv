@@ -61,20 +61,20 @@
     width: 50%;
 }
 
-.museumtabel {
+.kunstwerktabel {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 30px;
 }
 
-.museumtabelkunstwerkfotos img {
+.kunstwerktabelkunstwerkfotos img {
     width: 20vh;
     object-fit: cover;
     aspect-ratio: 3/5;
 }
 
-.museumtabelkunstwerk {
+.kunstwerktabelkunstwerk {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,7 +82,7 @@
     flex-wrap: wrap;
 }
 
-.museumtabelkunstwerkfotos {
+.kunstwerktabelkunstwerkfotos {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
@@ -92,22 +92,22 @@
     max-width: 60%;
 }
 
-.mstkwt-kunstwerk {
+.kunstwtab-kunstwerk, .collageviminfo-kunstwerk {
     font-size: 1.25em;
 }
 
-.mstkwt-kunstenaar {
+.kunstwtab-kunstenaar, .collageviminfo-kunstenaar {
     font-size: 1.25em;
     font-weight: 800;
 }
 
-.museumtabelkunstwerktekst p {
-    margin-top: 10px;
+.kunstwerktabelkunstwerktekst p {
+    margin-top: 15px;
 }
 
 
-.museumtabelkunstwerktekst {
-    width: 60%;
+.kunstwerktabelkunstwerktekst {
+    width: 55%;
     display: flex;
     flex-direction: column;
 }
@@ -145,4 +145,21 @@
 
 .vrslgtxtafb-rechthoek {
     aspect-ratio: 2/3;
+}
+
+
+.collageviminfo p {
+    margin-top: 5px;
+}
+
+
+.collageviminfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.collectie-collages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }

@@ -22,11 +22,7 @@ body {
     color: var(--zwart);
 }
 
-h1, h2, p {
-    margin: 0;
-}
-
-ul {
+h1, h2, p, ul {
     margin: 0;
 }
 
@@ -174,7 +170,6 @@ ul {
 /* Top/sidebar stuff */
 
 @media screen and (max-width: 1500px), (max-height: 550px) {
-    /* Other margin stuff in JS! */
 
     #header {
         flex-direction: row;
