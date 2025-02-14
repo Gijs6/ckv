@@ -164,6 +164,7 @@ h1, h2, p, ul {
     justify-content: space-between;
     margin-left: 18vw;
     border-top: 2px var(--wit) solid;
+    z-index: 10000;
 }
 
 

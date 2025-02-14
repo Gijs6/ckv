@@ -67,6 +67,11 @@
     display: none;
 }
 
+
+.eivoorbeeld img {
+    border-radius: 20px;
+}
+
 @media (max-width: 750px) {
     #eititel {
         display: unset;
@@ -74,8 +79,4 @@
     #paginatitelblokei {
         background-image: url("/static/afbs/strand.jpg");
     }
-}
-
-.eivoorbeeld img {
-    border-radius: 20px;
 }

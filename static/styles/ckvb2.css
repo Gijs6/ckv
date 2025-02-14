@@ -1,5 +1,5 @@
 #megapaginatitelBlok2 {
-    background-image: url("/static/afbs/b2/mandolorian.jpg");
+    background-image: url("/static/afbs/b2/mandolorianmettekst.jpg");
     height: 100vh;
     background-size: cover;
 }
@@ -15,15 +15,26 @@
 .megatitel-titeltekst {
     top: 65%;
     gap: 70px;
+    display: none !important;
 }
 
 
-
+@media (max-width: 750px) {
+    .megatitel-titeltekst {
+        display: flex !important;
+    }
+    #megapaginatitelBlok2 {
+        background-image: url("/static/afbs/b2/mandolorian.jpg");
+    }
+}
 
 
 #infographic {
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: var(--zwart);
 }
 
 
@@ -80,6 +91,7 @@
     max-width: 45%;
     left: 52%;
     top: 20%;
+    color: var(--zwart);
 }
 
 #tile8 {
@@ -128,9 +140,8 @@
 }
 
 .popup-text {
-    /* text-align: justify; */
-    padding: 3vw;
-    font-size: 1.5em;
+    padding: 2%;
+    font-size: 1.1em;
     color: var(--wit);
     margin-top: 50px;
     margin-bottom: 50px;
@@ -139,7 +150,7 @@
 .tile {
     border-radius: 20px;
     position: absolute;
-    transition: all 350ms ease-in-out;
+    transition: all 450ms ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,6 +158,7 @@
     overflow: hidden;
     z-index: 0;
     padding: 25px;
+    color: var(--wit);
 }
 
 .tile.fullscreen {
@@ -154,16 +166,11 @@
 }
 
 .tile span {
-    color: var(--wit);
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 2.5em;
+    font-weight: 700;
     opacity: 1;
     visibility: visible;
     transition: all 300ms ease;
-}
-
-.tile:hover span {
-    font-weight: 900;
 }
 
 .tile.fullscreen span {
@@ -171,33 +178,80 @@
     visibility: hidden;
 }
 
-.knop {
-    display: block;
-    padding: 1vw;
-    background-color: var(--blauw);
-    color: var(--zwart);
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 1vw;
-    transition: background-color 0.3s ease;
-    margin: 0 auto;
+
+
+#ver-uit-2b {
+    z-index: 1000;
+}
+
+.popupinhoudcontainer {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
+}
+
+.popupinhoud.afbeeldingen {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1vw;
 }
 
-.knop i {
-    font-size: 2vw;
+.popupinhoud.afbeeldingen img {
+    max-height: 50vh;
+    max-width: 50%;
+    flex-grow: 1;
+    object-fit: cover;
 }
 
-.knop:hover {
-    background-color: var(--wit);
+#popup-inhoud-tile2 .afbeeldingen img {
+    object-fit: contain;
+    max-height: 150vh;
+}
+
+#popup-inhoud-tile2 .afbeeldingen {
+    width: 50%;
 }
 
 
-#knopfilm {
-    margin-top: 5vh;
+#popup-inhoud-tile5 .afbeeldingen img {
+    max-width: 30%;
+}
+
+#popup-inhoud-tile7 {
+    flex-wrap: nowrap;
+}
+
+#linklijsthandig {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.linklijstitemhandig {
+    background: var(--blauw);
+    padding: 2% 7%;
+    border-radius: 20px;
+    color: var(--wit);
+    font-size: 1.4em;
+    font-weight: 600;
+    flex-grow: 1;
+    text-align: center;
+    transition: all 300ms ease;
+    border: 3px solid var(--blauw);
+}
+
+.linklijstitemhandig:hover {
+    transform: scale(1.01);
+    background: var(--wit);
+    color: var(--blauw);
 }
