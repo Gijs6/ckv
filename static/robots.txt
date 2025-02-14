@@ -29,4 +29,5 @@ User-agent: Meta-ExternalFetcher
 User-agent: Meta-ExternalAgent
 User-agent: Claude-Web
 User-agent: ClaudeBot
+User-agent: AhrefsBot
 Disallow: /

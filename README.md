@@ -17,4 +17,8 @@ So yeah, while everyone else is dragging and dropping elements in Wix, I'm over 
 ***
 ## To do
 
-- [x] Add alt txt to images (-> "_artwork_ - _artist_" for artworks and for other tings just a description)
+- [x] Add alt txt to images (-> "*artwork* - *artist*" for artworks and for other tings just a description)
+- [ ] Start on page blok 3
+- [ ] Rewrite all sort informative texts
+- [ ] Rewrite *over mij*
+- [ ] Better 404 and 500 pages (with art from Mondriaan?)

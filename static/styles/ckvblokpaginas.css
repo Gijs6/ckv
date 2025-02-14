@@ -71,7 +71,7 @@
     padding: 20vh 5% 5% 5%;
     align-items: flex-end;
     gap: 5%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .alginfo-alginfobox {
@@ -83,7 +83,9 @@
 
 .alginfo-imgcredits {
     font-size: 1.1em;
-    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -217,6 +219,9 @@
 
 
 
+/* Nog niet begonnen blokpags */
+
+
 .bloknietbegonnen {
     flex-grow: 1;
     background: var(--geel);
@@ -244,8 +249,30 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    gap: 2px;
 }
 
+
+
+.numrij-12 {
+    font-size: 0.4em;
+    font-weight: 100;
+}
+
+.numrij-11 {
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+.numrij-10 {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.numrij-9 {
+    font-size: 1.1em;
+    font-weight: 100;
+}
 .numrij-8 {
     font-size: 1.4em;
     font-weight: 100;
@@ -292,41 +319,54 @@
 }
 
 
+.numrij-12:hover {
+    font-size: 0.6em;
+}
 
+.numrij-11:hover {
+    font-size: 0.8em;
+}
 
+.numrij-10:hover {
+    font-size: 1em;
+}
+
+.numrij-9:hover {
+    font-size: 1.4em;
+}
 
 .numrij-8:hover {
-    font-size: 3.8em;
+    font-size: 1.8em;
 }
 
 .numrij-7:hover {
-    font-size: 4.0em;
+    font-size: 2.4em;
 }
 
 .numrij-6:hover {
-    font-size: 4.4em;
+    font-size: 3.2em;
 }
 
 .numrij-5:hover {
-    font-size: 5.2em;
+    font-size: 4.3em;
 }
 
 .numrij-4:hover {
-    font-size: 6.4em;
+    font-size: 5.7em;
 }
 
 .numrij-3:hover {
-    font-size: 8.1em;
+    font-size: 7.6em;
 }
 
 .numrij-2:hover {
-    font-size: 10.5em;
+    font-size: 10.1em;
 }
 
 .numrij-1:hover {
-    font-size: 13.8em;
+    font-size: 13.5em;
 }
 
 .numrij-0:hover {
-    font-size: 18.2em;
+    font-size: 18em;
 }
