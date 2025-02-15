@@ -41,11 +41,12 @@
 
 .megatitelkunstwerk {
     font-size: 1.3em;
+    font-weight: 500;
 }
 
 .megatitelkunstenaar {
     font-size: 1.3em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 
@@ -88,6 +89,9 @@
     align-items: center;
 }
 
+.alginfo-kunstwerk {
+    font-weight: 500;
+}
 
 .alginfo-kunstenaar {
     font-weight: 800;
@@ -146,6 +150,7 @@
 
 .kunstwtab-kunstwerk, .collageviminfo-kunstwerk {
     font-size: 1.25em;
+    font-weight: 500;
 }
 
 .kunstwtab-kunstenaar, .collageviminfo-kunstenaar {

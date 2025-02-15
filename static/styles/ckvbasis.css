@@ -37,7 +37,7 @@ h1, h2, p, ul {
     color: var(--wit);
     align-content: center;
     top: 0;
-    z-index: 1000;
+    z-index: 100000;
     border-right: 2px var(--wit) solid;
     box-sizing: border-box;
     padding: 1%;
@@ -184,6 +184,10 @@ h1, h2, p, ul {
 /* Top/sidebar stuff */
 
 @media screen and (max-width: 1500px), (max-height: 550px) {
+    body {
+        flex-direction: column;
+    }
+
     .header {
         flex-direction: row;
         align-content: center;
@@ -193,10 +197,6 @@ h1, h2, p, ul {
         border-right: none;
         border-bottom: 2px var(--wit) solid;
         padding: 1%;
-    }
-
-    .header.achter {
-        display: none;
     }
 
     .headerboven {
@@ -367,11 +367,15 @@ h1, h2, p, ul {
     flex-direction: column;
     align-items: center;
     font-size: 1.1em;
+    text-align: center;
+}
+
+.kunstwerknaam {
+    font-weight: 500;
 }
 
 .kunstenaarnaam {
-    font-weight: 700;
-    text-align: center;
+    font-weight: 800;
 }
 
 .scheiding.geel {

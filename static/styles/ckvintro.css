@@ -110,7 +110,7 @@
 
 .voorbeelditemkunstenaar {
     font-size: 1.6em;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .voorbeeldbeschrijving {
@@ -138,6 +138,7 @@ audio::-webkit-media-controls-current-time-display {
 audio::-webkit-media-controls-time-remaining-display {
     font-family: monospace !important;
 }
+
 
 
 .lesvbverg {

@@ -94,8 +94,12 @@ canvas {
     font-size: 1.35em;
 }
 
+.pagitemtextimgb1 {
+    font-weight: 500;
+}
+
 .pagitemtextimgb2 {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .pagitemtextlink {
