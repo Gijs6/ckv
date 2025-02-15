@@ -121,9 +121,24 @@
     margin: 15px 0;
 }
 
-.voorbeelditem audio::-webkit-media-controls-panel {
-  background-color: #c1dae3;
+
+audio::-webkit-media-controls-enclosure {
+    border: 2px var(--blauw) solid;
+    background: var(--wit);
+    border-radius: 20px;
+
 }
+
+audio::-webkit-media-controls-current-time-display {
+    font-family: monospace !important;
+}
+
+
+
+audio::-webkit-media-controls-time-remaining-display {
+    font-family: monospace !important;
+}
+
 
 .lesvbverg {
     background: var(--geel);

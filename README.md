@@ -22,3 +22,4 @@ So yeah, while everyone else is dragging and dropping elements in Wix, I'm over 
 - [ ] Rewrite all sort informative texts
 - [ ] Rewrite *over mij*
 - [ ] Better 404 and 500 pages (with art from Mondriaan?)
+- [ ] Fix images and layout on popups in infograpic (blok 2)

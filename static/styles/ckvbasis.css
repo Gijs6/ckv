@@ -308,7 +308,7 @@ h1, h2, p, ul {
 }
 
 .knop.wit:hover {
-    background: var(--zwart);
+    background: var(--blauw);
     color: var(--wit);
 }
 

@@ -123,6 +123,7 @@
     width: 20vh;
     object-fit: cover;
     aspect-ratio: 3/5;
+    flex-grow: 1;
 }
 
 .kunstwerktabelkunstwerk {
