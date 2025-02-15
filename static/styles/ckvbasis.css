@@ -55,16 +55,23 @@ h1, h2, p, ul {
 }
 
 .headerboven {
-    font-size: 1.5em;
-    font-weight: 900;
     display: flex;
     justify-content: space-between;
-    /* gap: 10px; */
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-content: center;
     align-items: center;
 }
+
+.headerboven-naam {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.headerboven-klas {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
 
 .menu {
     display: flex;

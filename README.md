@@ -26,3 +26,4 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 - [x] Rewrite *over mij*
 - [ ] Better 404 and 500 pages (with art from Mondriaan?)
 - [ ] Fix images and layout on popups in infograpic (blok 2)
+- [ ] Quicker loading times for the vid on blok 1
