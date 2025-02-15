@@ -1,10 +1,10 @@
-# My *CKV*-website
+# *CKV*-website
 
-At my school, everyone has to make a website for the subject CKV (*culturele en kunstzinnige vorming*, so basically "culture and art") for all reports, reflections, and those kinds of things. The idea is to have a personal space everyone can update easily. Practically everyone just uses Wix because it's easy and requires no coding.
+At my school, everyone has to make a website for the subject CKV (*culturele en kunstzinnige vorming*, so basically "culture and art") for all reports, reflections, and those kinds of things. The idea is to have a personal space everyone can update easily. Practically everyone just uses Wix because it's easy to use and requires no coding.
 
 But I decided to build mine from scratch, because I like having full control over every detail. With Wix, you're stuck with whatever features they offer *(for free, I'm not paying! (...yeah I am paying for the hosting and the domain (well I already had a subscription to PythonAnywhere and I already had the domain, so I'm not really paying anything extra), but I'm not paying for features!!!))*, but by coding it myself, I can do literally everything to my liking (well, not *everything*, browsers still have their limits, but **definitely** more than what Wix allows).
 
-While everyone else is dragging and dropping images and in Wix and working with stupidly large margins, I'm over here figuring out Flask routes and how to style an audio player and how I can fix one item not stretching with flex-grow when it's the only item on the row because of flex-wrap, but the other items do need to stretch <small>(if someone knows, please [mail](mailto:gijs6@dupunkto.org) me!)</small>. It will definitely take longer, and I will definitely be annoyed by some very stupid bugs, but it will feel at least like my own website.
+So while everyone else is dragging and dropping in Wix and working with stupidly large margins, I'm over here figuring out Flask routes and how to style an audio player and how I can fix one item not stretching with flex-grow when it's the only item on the row because of flex-wrap, but the other items do need to stretch <small>(if someone knows, please [mail](mailto:gijs6@dupunkto.org) me!)</small>. It will definitely take longer, and I will definitely be annoyed by some very stupid bugs and some very annoying style stuff, but it will feel at least like my own website.
 
 ***
 
@@ -20,10 +20,12 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 
 ## To do
 
-- [x] Add alt txt to images (-> "*artwork* - *artist*" for artworks and for other tings just a description)
+- [x] Add alt txt to images (-> "*artwork* - *artist*" for artworks and for other things just a description)
 - [ ] Start on page blok 3
+    - [ ] Pick image or video for background page title
 - [ ] Rewrite all sort informative texts
 - [x] Rewrite *over mij*
 - [ ] Better 404 and 500 pages (with art from Mondriaan?)
 - [ ] Fix images and layout on popups in infograpic (blok 2)
 - [ ] Quicker loading times for the vid on blok 1
+- [ ] Add new artworks to the randombackgrounds-list for the errorpages

@@ -1,0 +1,26 @@
+[
+    {
+        "afburl": "/static/afbs/error/cirkels2.jpg",
+        "kunstwerk": "Primordial Chaos - No 16 (1906-1907)",
+        "kunstenaar": "Hilma af Klint",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/c8.jpg",
+        "kunstwerk": "Compositie VIII (1923)",
+        "kunstenaar": "Wassily Kandinsky",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/brava.jpg",
+        "kunstwerk": "Brava! (2022)",
+        "kunstenaar": "EJ Hill",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/Simultaneous_Contrasts.jpg",
+        "kunstwerk": "Simultaneous Contrasts (1913)",
+        "kunstenaar": "Sonia Delaunay",
+        "txtcolor": "white"
+    }
+]

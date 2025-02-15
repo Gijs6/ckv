@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body {
+    padding: 5vh 5vw;
+    margin: 0;
+    font-family: Sora, sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#txtbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    gap: 10px;
+}
+
+#errornum {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+#extra-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#errorbericht1 {
+    font-size: 2em;
+}
+
+#errorbericht2 {
+    font-size: 1.5em;
+}
+
+#errorbericht2 {
+    font-size: 1.5em;
+}
+
+
+#credits {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.2em;
+}
+
+#kunstwerknaam {
+    font-weight: 500;
+}
+
+#kunstenaarnaam {
+    font-weight: 800;
+}
+
+#txtbox a {
+    color: inherit;
+    font-size: 2em;
+    transition: 250ms all ease;
+}
+
+#txtbox a:hover {
+    opacity: 75%;
+}

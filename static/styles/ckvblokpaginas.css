@@ -243,6 +243,7 @@
 
 .bloknietbegonnennumsdiv span {
     transition: all 250ms ease;
+    opacity: 0;
 }
 
 .bloknietbegonnentekst {
@@ -263,65 +264,90 @@
 .numrij-12 {
     font-size: 0.4em;
     font-weight: 100;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 1200ms;
 }
 
 .numrij-11 {
     font-size: 0.6em;
     font-weight: 100;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 1100ms;
 }
 
 .numrij-10 {
     font-size: 0.8em;
     font-weight: 100;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 1000ms;
 }
 
 .numrij-9 {
     font-size: 1.1em;
     font-weight: 100;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 900ms;
 }
 .numrij-8 {
     font-size: 1.4em;
     font-weight: 100;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 800ms;
 }
 
 .numrij-7 {
     font-size: 1.9em;
     font-weight: 200;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 700ms;
 }
 
 .numrij-6 {
     font-size: 2.5em;
     font-weight: 300;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 600ms;
 }
 
 .numrij-5 {
     font-size: 3.3em;
     font-weight: 400;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 500ms;
 }
 
 .numrij-4 {
     font-size: 4.4em;
     font-weight: 500;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 400ms;
 }
 
 .numrij-3 {
     font-size: 5.9em;
     font-weight: 600;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 300ms;
 }
 
 .numrij-2 {
     font-size: 7.9em;
     font-weight: 700;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 200ms;
 }
 
 .numrij-1 {
     font-size: 10.5em;
     font-weight: 800;
+    animation: fadein 350ms ease-in-out forwards;
+    animation-delay: 100ms;
 }
 
 .numrij-0 {
     font-size: 16em;
     font-weight: 900;
+    animation: fadein 350ms ease-in-out forwards;
 }
 
 
@@ -375,4 +401,17 @@
 
 .numrij-0:hover {
     font-size: 18em;
+}
+
+
+
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }

@@ -1,72 +1,72 @@
 [
-  {
-    "Menuitemnaam": "Blok 1",
-    "Onder1": "Beeldend",
-    "Onder2": "Het onzichtbare zichtbaar maken",
-    "Afb": "/static/afbs/Achtbaan.jpg",
-    "afbbij1": "Brava! (2022)",
-    "afbbij2": "EJ Hill",
-    "Paglink": "/blok-1",
-    "Afbstat": "Volledig"
-  },
-  {
-    "Menuitemnaam": "Blok 2",
-    "Onder1": "Film",
-    "Onder2": "Speciale effecten",
-    "Afb": "/static/afbs/Interstellar.png",
-    "afbbij1": "Interstellar (2014)",
-    "afbbij2": "O.a. Christopher Nolan",
-    "Paglink": "/blok-2",
-    "Afbstat": "Volledig"
-  },
-  {
-    "Menuitemnaam": "Blok 3",
-    "Onder1": "Film",
-    "Onder2": "Jouw interpretatie",
-    "Afb": "/static/afbs/Filmposter.png",
-    "afbbij1": "",
-    "afbbij2": "",
-    "Paglink": "/blok-3",
-    "Afbstat": "Volledig"
-  },
-  {
-    "Menuitemnaam": "Blok 4",
-    "Onder1": "",
-    "Onder2": "Vanaf 6 maart 2025",
-    "Afb": "/static/afbs/Golven.jpg",
-    "afbbij1": "",
-    "afbbij2": "Martin Martz",
-    "Paglink": "/blok-4",
-    "Afbstat": "Deels"
-  },
-  {
-    "Menuitemnaam": "Over mij",
-    "Onder1": "",
-    "Onder2": "",
-    "Afb": "/static/afbs/ooooooo.jpg",
-    "afbbij1": "",
-    "afbbij2": "Martin Martz",
-    "Paglink": "/over-mij",
-    "Afbstat": "Deels"
-  },
-  {
-    "Menuitemnaam": "Introductielessen",
-    "Onder1": "",
-    "Onder2": "Liefde",
-    "Afb": "/static/afbs/LoversIIMargritte.jpg",
-    "afbbij1": "The Lovers II (1928)",
-    "afbbij2": "René Magritte",
-    "Paglink": "/introductielessen",
-    "Afbstat": "Volledig"
-  },
-  {
-    "Menuitemnaam": "Eigen initiatieven",
-    "Onder1": "",
-    "Onder2": "",
-    "Afb": "/static/afbs/Ovalen.jpg",
-    "afbbij1": "",
-    "afbbij2": "Martin Martz",
-    "Paglink": "/eigen-initiatieven",
-    "Afbstat": "Deels"
-  }
+    {
+        "Menuitemnaam": "Blok 1",
+        "Onder1": "Beeldend",
+        "Onder2": "Het onzichtbare zichtbaar maken",
+        "Afb": "/static/afbs/Achtbaan.jpg",
+        "afbbij1": "Brava! (2022)",
+        "afbbij2": "EJ Hill",
+        "Paglink": "/blok-1",
+        "Afbstat": "Volledig"
+    },
+    {
+        "Menuitemnaam": "Blok 2",
+        "Onder1": "Film",
+        "Onder2": "Speciale effecten",
+        "Afb": "/static/afbs/Interstellar.png",
+        "afbbij1": "Interstellar (2014)",
+        "afbbij2": "O.a. Christopher Nolan",
+        "Paglink": "/blok-2",
+        "Afbstat": "Volledig"
+    },
+    {
+        "Menuitemnaam": "Blok 3",
+        "Onder1": "Film",
+        "Onder2": "Jouw interpretatie",
+        "Afb": "/static/afbs/Filmposter.png",
+        "afbbij1": "",
+        "afbbij2": "",
+        "Paglink": "/blok-3",
+        "Afbstat": "Volledig"
+    },
+    {
+        "Menuitemnaam": "Blok 4",
+        "Onder1": "",
+        "Onder2": "Vanaf 6 maart 2025",
+        "Afb": "/static/afbs/Golven.jpg",
+        "afbbij1": "",
+        "afbbij2": "Martin Martz",
+        "Paglink": "/blok-4",
+        "Afbstat": "Deels"
+    },
+    {
+        "Menuitemnaam": "Over mij",
+        "Onder1": "",
+        "Onder2": "",
+        "Afb": "/static/afbs/ooooooo.jpg",
+        "afbbij1": "",
+        "afbbij2": "Martin Martz",
+        "Paglink": "/over-mij",
+        "Afbstat": "Deels"
+    },
+    {
+        "Menuitemnaam": "Introductielessen",
+        "Onder1": "",
+        "Onder2": "Liefde",
+        "Afb": "/static/afbs/LoversIIMargritte.jpg",
+        "afbbij1": "The Lovers II (1928)",
+        "afbbij2": "René Magritte",
+        "Paglink": "/introductielessen",
+        "Afbstat": "Volledig"
+    },
+    {
+        "Menuitemnaam": "Eigen initiatieven",
+        "Onder1": "",
+        "Onder2": "",
+        "Afb": "/static/afbs/Ovalen.jpg",
+        "afbbij1": "",
+        "afbbij2": "Martin Martz",
+        "Paglink": "/eigen-initiatieven",
+        "Afbstat": "Deels"
+    }
 ]
