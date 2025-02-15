@@ -15,13 +15,17 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
+    align-items: flex-start;
 }
 
 #txtbox {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
     gap: 10px;
+    max-width: max(300px, 40%);
+    background: #0000003d;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #errornum {
@@ -55,6 +59,8 @@ body {
     flex-direction: column;
     align-items: flex-end;
     font-size: 1.2em;
+    padding: 5vh 0 0 5vw;
+    text-align: right;
 }
 
 #kunstwerknaam {

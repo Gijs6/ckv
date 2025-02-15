@@ -346,18 +346,19 @@ h1, h2, p, ul {
 }
 
 .tweekolommenlinks {
-    max-width: 40%;
     background: var(--geel);
     display: flex;
     padding: 2%;
     align-items: center;
     font-weight: 600;
+    flex-grow: 1;
 }
 
 .tweekolommenrechts {
     padding: 2%;
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .paginablok.tweekolommen {
@@ -375,6 +376,7 @@ h1, h2, p, ul {
     align-items: center;
     font-size: 1.1em;
     text-align: center;
+    flex-grow: 5;
 }
 
 .kunstwerknaam {
@@ -391,4 +393,10 @@ h1, h2, p, ul {
 
 .scheiding.blauw {
     background: var(--blauw);
+}
+
+@media screen and (max-width: 1000px), (max-height: 500px) {
+    .tweekolommen {
+        flex-wrap: wrap;
+    }
 }

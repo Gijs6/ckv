@@ -22,5 +22,35 @@
         "kunstwerk": "Simultaneous Contrasts (1913)",
         "kunstenaar": "Sonia Delaunay",
         "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/Mondriaan11.jpg",
+        "kunstwerk": "Composition No. 11. (1913)",
+        "kunstenaar": "Piet Mondriaan",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/Burgundsonne.jpg",
+        "kunstwerk": "Burg und Sonne (1928)",
+        "kunstenaar": "Paul Klee",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/mondriaanvlakken.jpg",
+        "kunstwerk": "Composition II in Red, Blue, and Yellow (1930)",
+        "kunstenaar": "Piet Mondriaan",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/dissonances.jpg",
+        "kunstwerk": "Compositie in dissonanten (1918)",
+        "kunstenaar": "Theo van Doesburg",
+        "txtcolor": "white"
+    },
+    {
+        "afburl": "/static/afbs/error/vormen.jpg",
+        "kunstwerk": "Colored Composition of Forms (1914)",
+        "kunstenaar": "August Macke",
+        "txtcolor": "white"
     }
 ]

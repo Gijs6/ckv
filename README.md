@@ -25,7 +25,8 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
     - [ ] Pick image or video for background page title
 - [ ] Rewrite all sort informative texts
 - [x] Rewrite *over mij*
-- [ ] Better 404 and 500 pages (with art from Mondriaan?)
-- [ ] Fix images and layout on popups in infograpic (blok 2)
+- [x] Better 404 and 500 pages (with art from Mondriaan?)
+- [ ] **Fix layout*** (and images) on popups in infograpic (blok 2)!
 - [ ] Quicker loading times for the vid on blok 1
-- [ ] Add new artworks to the randombackgrounds-list for the errorpages
+- [x] Add new artworks to the randombackgrounds-list for the errorpages
+- [ ] Make a bit mobile friendly (not media querys for everyting but adjusting the font-seize and those kinds of things)
