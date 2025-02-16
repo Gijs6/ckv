@@ -21,10 +21,10 @@ body {
 #txtbox {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     max-width: max(300px, 40%);
     background: #0000003d;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
 }
 

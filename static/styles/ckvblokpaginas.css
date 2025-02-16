@@ -345,7 +345,7 @@
 }
 
 .numrij-0 {
-    font-size: 16em;
+    font-size: 14em;
     font-weight: 900;
     animation: fadein 350ms ease-in-out forwards;
 }
@@ -360,7 +360,7 @@
 }
 
 .numrij-10:hover {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .numrij-9:hover {
@@ -368,39 +368,39 @@
 }
 
 .numrij-8:hover {
-    font-size: 1.8em;
+    font-size: 1.9em;
 }
 
 .numrij-7:hover {
-    font-size: 2.4em;
+    font-size: 2.5em;
 }
 
 .numrij-6:hover {
-    font-size: 3.2em;
+    font-size: 3.3em;
 }
 
 .numrij-5:hover {
-    font-size: 4.3em;
+    font-size: 4.4em;
 }
 
 .numrij-4:hover {
-    font-size: 5.7em;
+    font-size: 5.9em;
 }
 
 .numrij-3:hover {
-    font-size: 7.6em;
+    font-size: 7.9em;
 }
 
 .numrij-2:hover {
-    font-size: 10.1em;
+    font-size: 10.5em;
 }
 
 .numrij-1:hover {
-    font-size: 13.5em;
+    font-size: 14em;
 }
 
 .numrij-0:hover {
-    font-size: 18em;
+    font-size: 18.7em;
 }
 
 

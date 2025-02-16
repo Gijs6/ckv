@@ -24,6 +24,7 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 - [ ] Start on page blok 3
     - [ ] Pick image or video for background page title
 - [ ] Rewrite all sort informative texts
+- [x] Rewrite Blok 1
 - [x] Rewrite *over mij*
 - [x] Better 404 and 500 pages (with art from Mondriaan?)
 - [ ] **Fix layout*** (and images) on popups in infograpic (blok 2)!

@@ -376,7 +376,6 @@ h1, h2, p, ul {
     align-items: center;
     font-size: 1.1em;
     text-align: center;
-    flex-grow: 5;
 }
 
 .kunstwerknaam {

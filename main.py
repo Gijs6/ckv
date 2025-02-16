@@ -58,7 +58,7 @@ def robots():
 
 @app.route("/gijsckv")
 def home():
-    with open("/static/data/paglijst.json", "r") as file:
+    with open("static/data/paglijst.json", "r") as file:
         paglijst = json.load(file)
     return render_template("ckvhome.html", pagdata=paglijst)
 
@@ -146,7 +146,7 @@ def colofon_redi():
 
 
 def randomBackground():
-    with open("/static/data/backgroundlist.json", "r") as file:
+    with open("static/data/backgroundlist.json", "r") as file:
         data = json.load(file)
     randomBackgroundChoice = random.choice(data)
 
@@ -178,3 +178,7 @@ def internal_error(e):
         kunstenaar = "Hilma af Klint"
         txtcolor = "white"
     return render_template("ckverror.html", e=e, errornum="500", errorbericht1="Oeps! Er is iets misgegaan", errorbericht2="Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later nog eens.", afburl=afburl, kunstwerk=kunstwerk, kunstenaar=kunstenaar, txtcolor=txtcolor), 500
+
+
+if __name__ == '__main__':
+    app.run()
