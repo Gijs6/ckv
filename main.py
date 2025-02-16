@@ -171,7 +171,7 @@ def not_found(e):
 @app.errorhandler(500)
 def internal_error(e):
     try:
-        afburl, kunstwerk, kunstenaar = randomBackground()
+        afburl, kunstwerk, kunstenaar, txtcolor = randomBackground()
     except:
         afburl = "/static/afbs/error/cirkels2.jpg"
         kunstwerk = "Primordial Chaos - No 16 (1906-1907)"

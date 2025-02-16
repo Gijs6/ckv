@@ -1,6 +1,6 @@
 # Style conventions  
 
-*Just to make the website look a little less chaotic.*  
+*Just to make the website look a **little** less chaotic.*  
 
 - Text describing the content of a page is in a **green** *kleurvak binnen-buiten*.  
 - Border-radius is **20px**.  

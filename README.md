@@ -21,13 +21,17 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 ## To do
 
 - [x] Add alt txt to images (-> "*artwork* - *artist*" for artworks and for other things just a description)
-- [ ] Start on page blok 3
-    - [ ] Pick image or video for background page title
-- [ ] Rewrite all sort informative texts
-- [x] Rewrite Blok 1
-- [x] Rewrite *over mij*
+- [x] Start on page *Blok 3*
+    - [x] Pick image or video for background page title
+    - [ ] Write *algemene informatie*
+- [ ] Rewrite
+	- [x] Rewrite *Blok 1*
+	- [x] Rewrite *over mij*
+	- [ ] Rewrite short informative txt's
+	- [ ] Rewrite *Blok 2* (mostly the infograpic)
 - [x] Better 404 and 500 pages (with art from Mondriaan?)
 - [ ] **Fix layout*** (and images) on popups in infograpic (blok 2)!
 - [ ] Quicker loading times for the vid on blok 1
+- [ ] Fix difference 2 header with stuff I have no idea how to write this down
 - [x] Add new artworks to the randombackgrounds-list for the errorpages
-- [ ] Make a bit mobile friendly (not media querys for everyting but adjusting the font-seize and those kinds of things)
+- [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-seize and those kinds of things)
