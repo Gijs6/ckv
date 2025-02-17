@@ -35,6 +35,7 @@
     position: relative;
     z-index: 1;
     background: var(--zwart);
+    overflow: hidden;
 }
 
 
@@ -209,9 +210,11 @@
     object-fit: cover;
 }
 
-#popup-inhoud-tile2 .afbeeldingen img {
+#popup-inhoud-tile2 .afbeeldingen img, #popup-inhoud-tile7 .afbeeldingen img {
     object-fit: contain;
-    max-height: 150vh;
+    height: 100vh;
+    max-height: unset;
+    max-width: unset;
 }
 
 #popup-inhoud-tile2 .afbeeldingen {
@@ -258,4 +261,9 @@
 
 .linkoverzicht {
     z-index: 1000;
+}
+
+
+#popup-inhoud-tile2 {
+    flex-wrap: nowrap;
 }

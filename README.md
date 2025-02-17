@@ -30,7 +30,7 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 	- [ ] Rewrite short informative txt's
 	- [ ] Rewrite *Blok 2* (mostly the infograpic)
 - [x] Better 404 and 500 pages (with art from Mondriaan?)
-- [ ] **Fix layout*** (and images) on popups in infograpic (blok 2)!
+- [x] **Fix layout*** (and images) on popups in infograpic (blok 2)!
 - [ ] Quicker loading times for the vid on blok 1
 - [ ] Fix difference 2 header with stuff I have no idea how to write this down
 - [x] Add new artworks to the randombackgrounds-list for the errorpages
