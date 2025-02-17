@@ -6,7 +6,6 @@ import random
 app = Flask(__name__)
 
 
-
 # Redirecters
 
 @app.route("/")

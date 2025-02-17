@@ -15,6 +15,18 @@
 	text-align: center;
 }
 
+#naamtextboxonder {
+    height: 30vh;
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#naamtextboxnaam {
+    margin-top: 30vh;
+}
+
 canvas {
 	position: absolute;
 	top: 0;
@@ -28,11 +40,11 @@ canvas {
 #naamtextbox h1 {
     z-index: 10;
     position: relative;
-    font-size: clamp(50px, 6vw, 100px);
+    font-size: 5em;
 }
 
 #naamtextbox h2 {
-    font-size: clamp(50px, 4vw, 70px);
+    font-size: 3em;
 }
 
 .pagitemrechts img {
