@@ -59,27 +59,26 @@
 .alginfo-imgbackground {
     width: 60%;
     height: 60%;
-    background-size: cover;
-    position: absolute;
-    top: 10vh;
-    left: 0;
     border-radius: 0 20px 20px 0;
+    object-fit: cover;
 }
 
 .alginfo-textcontainer {
     display: flex;
     position: relative;
-    padding: 20vh 5% 5% 5%;
+    padding: 20vh 0 10vh 0;
     align-items: flex-end;
     gap: 5%;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .alginfo-alginfobox {
     padding: 5%;
     background: var(--wit);
     border-radius: 20px;
-    max-width: 55%;
+    width: 50%;
+    box-sizing: border-box;
+    margin-right: 10%;
 }
 
 .alginfo-imgcredits {
@@ -88,6 +87,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 2vh;
+    width: 40%;
+    box-sizing: border-box;
 }
 
 .alginfo-kunstwerk {
@@ -219,4 +221,16 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+
+.alginfo-imgentext-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10vh;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
