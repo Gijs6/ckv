@@ -4,10 +4,6 @@
     background-size: cover;
 }
 
-#alginfo-imgbackground-blok2 {
-    background-image: url("/static/afbs/b2/dune.jpg");
-}
-
 .megatitel-activiteit {
     color: var(--zwart);
 }

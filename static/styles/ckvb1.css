@@ -4,10 +4,6 @@
     object-fit: cover;
 }
 
-#alginfo-imgbackground-blok1 {
-    background-image: url("/static/afbs/b1/obliteration.jpg");
-}
-
 .megatitel-titeltekst {
     top: 55%;
     gap: 40px;

@@ -5,22 +5,12 @@
     background-position: center;
 }
 
-#alginfo-imgbackground-blok3 {
-    background-image: url("/static/afbs/b3/no_other_land.jpg");
-}
-
 .megatitel-activiteit {
     color: var(--zwart);
 }
 
 .megatitel-titeltekst {
-    top: 65%;
+    top: 60%;
     gap: 70px;
     display: flex;
-}
-
-.megatitel-credits {
-    background: #01162754;
-    padding: 10px;
-    border-radius: 10px;
 }
