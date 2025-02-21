@@ -23,7 +23,9 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 - [x] Add alt txt to images (-> "*artwork* - *artist*" for artworks and for other things just a description)
 - [x] Start on page *Blok 3*
     - [x] Pick image or video for background page title
-    - [ ] Write *algemene informatie*
+    - [x] Write *algemene informatie*
+	- [ ] Choose form 
+	- [ ] Write tussenverslag
 - [ ] Rewrite
 	- [x] Rewrite *Blok 1*
 	- [x] Rewrite *over mij*
