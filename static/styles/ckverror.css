@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     padding: 5vh 5vw;
     margin: 0;
@@ -13,7 +19,6 @@ body {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    box-sizing: border-box;
     position: relative;
     align-items: flex-start;
 }

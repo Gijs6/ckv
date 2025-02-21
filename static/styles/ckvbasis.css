@@ -10,6 +10,12 @@
     --dblauw: #28589A;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -18,10 +24,6 @@ body {
     height: 100vh;
     font-family: Sora, sans-serif;
     color: var(--zwart);
-}
-
-h1, h2, h3, p, ul {
-    margin: 0;
 }
 
 
@@ -39,7 +41,6 @@ h1, h2, h3, p, ul {
     top: 0;
     z-index: 100000;
     border-right: 2px var(--wit) solid;
-    box-sizing: border-box;
     padding: 1%;
     height: 100%;
     gap: 3%;

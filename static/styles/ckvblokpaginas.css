@@ -77,7 +77,6 @@
     background: var(--wit);
     border-radius: 20px;
     width: 50%;
-    box-sizing: border-box;
     margin-right: 10%;
 }
 
@@ -89,7 +88,6 @@
     text-align: center;
     padding-top: 2vh;
     width: 40%;
-    box-sizing: border-box;
 }
 
 .alginfo-kunstwerk {
@@ -127,10 +125,10 @@
 }
 
 .kunstwerktabelkunstwerkfotos img {
-    width: 20vh;
+    width: 10vw;
     object-fit: cover;
-    aspect-ratio: 3/5;
     flex-grow: 1;
+    aspect-ratio: 3 / 5;
 }
 
 .kunstwerktabelkunstwerk {
@@ -148,7 +146,8 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 10px;
-    max-width: 60%;
+    max-width: 50%;
+    flex-wrap: wrap;
 }
 
 .kunstwtab-kunstwerk, .collageviminfo-kunstwerk {
@@ -232,5 +231,4 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
 }
