@@ -24,7 +24,7 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 - [x] Start on page *Blok 3*
     - [x] Pick image or video for background page title
     - [x] Write *algemene informatie*
-    - [ ] Choose form for _tussenverslag_ and for the general page content (maybe again an infograpic or at least something visual; maybe like a *stroomschema* with popups or something)
+    - [x] Choose form for *tussenverslag* and for the general page content (-> just text (like blok 1) but more in the *flow* of the tussenverslag and in a nicer order)
     - [ ] Write (or create, depending on the form) the tussenverslag
     - [ ] Add links to original pictures (for the assignments completed in the lesson)
 - [ ] Rewrite
