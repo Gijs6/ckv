@@ -26,6 +26,7 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
     - [x] Write *algemene informatie*
     - [ ] Choose form for _tussenverslag_ and for the general page content (maybe again an infograpic or at least something visual; maybe like a *stroomschema* with popups or something)
     - [ ] Write (or create, depending on the form) the tussenverslag
+    - [ ] Add links to original pictures (for the assignments completed in the lesson)
 - [ ] Rewrite
     - [x] Rewrite *Blok 1*
     - [x] Rewrite *over mij*

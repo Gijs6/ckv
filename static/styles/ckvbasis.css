@@ -26,6 +26,12 @@ body {
     color: var(--zwart);
 }
 
+/* Stuff to all tags */
+
+ul, ol {
+    padding-inline-start: 1.5em;
+}
+
 
 /* Header */
 
