@@ -17,8 +17,8 @@ def redirecthome():
 def redirecter(path):
     if path in ["favicon", "security", "robots"]:
         return redirect(f"/{path}")
-    elif not path.startswith("gijsckv"):
-        return redirect(f"/gijsckv/{path}")
+    elif not path.startswith("gijstenberg4a2"):
+        return redirect(f"/gijstenberg4a2/{path}")
     try:
         afburl, kunstwerk, kunstenaar, txtcolor = randomBackground()
     except:
@@ -55,42 +55,42 @@ def robots():
 
 # Pages
 
-@app.route("/gijsckv")
+@app.route("/gijstenberg4a2")
 def home():
-    with open("static/data/paglijst.json", "r") as file:
+    with open("/home/gijs3/ckv/static/data/paglijst.json", "r") as file:
         paglijst = json.load(file)
     return render_template("ckvhome.html", pagdata=paglijst)
 
 
-@app.route("/gijsckv/over-mij")
+@app.route("/gijstenberg4a2/over-mij")
 def over_mij():
     return render_template("ckvovermij.html")
 
-@app.route("/gijsckv/introductielessen")
+@app.route("/gijstenberg4a2/introductielessen")
 def introductie():
     return render_template("ckvintro.html")
 
-@app.route("/gijsckv/eigen-initiatieven")
+@app.route("/gijstenberg4a2/eigen-initiatieven")
 def eigen_initiatieven():
     return render_template("ckvei.html")
 
-@app.route("/gijsckv/blok-1")
+@app.route("/gijstenberg4a2/blok-1")
 def blok1():
     return render_template("ckvb1.html")
 
-@app.route("/gijsckv/blok-2")
+@app.route("/gijstenberg4a2/blok-2")
 def blok2():
     return render_template("ckvb2.html")
 
-@app.route("/gijsckv/blok-3")
+@app.route("/gijstenberg4a2/blok-3")
 def blok3():
     return render_template("ckvb3.html")
 
-@app.route("/gijsckv/blok-4")
+@app.route("/gijstenberg4a2/blok-4")
 def blok4():
     return render_template("ckvb4.html")
 
-@app.route("/gijsckv/colofon")
+@app.route("/gijstenberg4a2/colofon")
 def colofon():
     return render_template("ckvcolofon.html")
 
@@ -100,52 +100,52 @@ def colofon():
 # Short routs (redirects)
 # Prefixed by the main redirecter
 
-@app.route("/gijsckv/om")
-@app.route("/gijsckv/overmij")
+@app.route("/gijstenberg4a2/om")
+@app.route("/gijstenberg4a2/overmij")
 def over_mij_redi():
-    return redirect("/gijsckv/over-mij")
+    return redirect("/gijstenberg4a2/over-mij")
 
-@app.route("/gijsckv/il")
-@app.route("/gijsckv/intro")
-@app.route("/gijsckv/introles")
+@app.route("/gijstenberg4a2/il")
+@app.route("/gijstenberg4a2/intro")
+@app.route("/gijstenberg4a2/introles")
 def introductie_redi():
-    return redirect("/gijsckv/introductielessen")
+    return redirect("/gijstenberg4a2/introductielessen")
 
-@app.route("/gijsckv/ei")
-@app.route("/gijsckv/eigini")
-@app.route("/gijsckv/eigeninitiatieven")
+@app.route("/gijstenberg4a2/ei")
+@app.route("/gijstenberg4a2/eigini")
+@app.route("/gijstenberg4a2/eigeninitiatieven")
 def eigen_initiatieven_redi():
-    return redirect("/gijsckv/eigen-initiatieven")
+    return redirect("/gijstenberg4a2/eigen-initiatieven")
 
-@app.route("/gijsckv/b1")
-@app.route("/gijsckv/blok1")
+@app.route("/gijstenberg4a2/b1")
+@app.route("/gijstenberg4a2/blok1")
 def blok1_redi():
-    return redirect("/gijsckv/blok-1")
+    return redirect("/gijstenberg4a2/blok-1")
 
-@app.route("/gijsckv/b2")
-@app.route("/gijsckv/blok2")
+@app.route("/gijstenberg4a2/b2")
+@app.route("/gijstenberg4a2/blok2")
 def blok2_redi():
-    return redirect("/gijsckv/blok-2")
+    return redirect("/gijstenberg4a2/blok-2")
 
-@app.route("/gijsckv/b3")
-@app.route("/gijsckv/blok3")
+@app.route("/gijstenberg4a2/b3")
+@app.route("/gijstenberg4a2/blok3")
 def blok3_redi():
-    return redirect("/gijsckv/blok-3")
+    return redirect("/gijstenberg4a2/blok-3")
 
-@app.route("/gijsckv/b4")
-@app.route("/gijsckv/blok4")
+@app.route("/gijstenberg4a2/b4")
+@app.route("/gijstenberg4a2/blok4")
 def blok4_redi():
-    return redirect("/gijsckv/blok-4")
+    return redirect("/gijstenberg4a2/blok-4")
 
-@app.route("/gijsckv/cf")
-@app.route("/gijsckv/col")
+@app.route("/gijstenberg4a2/cf")
+@app.route("/gijstenberg4a2/col")
 def colofon_redi():
-    return redirect("/gijsckv/colofon")
+    return redirect("/gijstenberg4a2/colofon")
 
 
 
 def randomBackground():
-    with open("static/data/backgroundlist.json", "r") as file:
+    with open("/home/gijs3/ckv/static/data/backgroundlist.json", "r") as file:
         data = json.load(file)
     randomBackgroundChoice = random.choice(data)
 

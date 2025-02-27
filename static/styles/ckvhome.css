@@ -40,11 +40,12 @@ canvas {
 #naamtextbox h1 {
     z-index: 10;
     position: relative;
-    font-size: 5em;
+    font-size: 7.5em;
 }
 
 #naamtextbox h2 {
-    font-size: 3em;
+    font-size: 5em;
+    font-weight: 400;
 }
 
 .pagitemrechts img {
