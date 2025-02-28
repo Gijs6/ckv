@@ -239,7 +239,7 @@
                     popupText.innerHTML = popupContent.innerHTML;
 
                     const tileBackgroundColor = getComputedStyle(tile).backgroundColor;
-                    const darkenedColor = darkenColor(tileBackgroundColor, 0.5);
+                    const darkenedColor = darkenColor(tileBackgroundColor);
 
                     popupContainer.style.backgroundColor = darkenedColor;
 
@@ -261,9 +261,9 @@
             });
         });
 
-        function darkenColor(color, amount) {
+        function darkenColor(color) {
             let col = color.slice(4, -1).split(",").map(Number);
-            col = col.map((c) => Math.max(0, Math.min(255, c * (1 - amount))));
+            col = col.map((c) => Math.max(0, Math.min(255, c * 0.5)));
             return `rgb(${col[0]}, ${col[1]}, ${col[2]})`;
         }
 
