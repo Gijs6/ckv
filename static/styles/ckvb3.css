@@ -14,3 +14,7 @@
     gap: 70px;
     display: flex;
 }
+
+.kunstwerkmetcredits.eigenwerk.eindwerk {
+    width: 50% !important;
+}
