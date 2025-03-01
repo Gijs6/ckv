@@ -7,3 +7,6 @@ muziek/
 # Just large files
 *.mp3
 *.mp4
+
+dekstop.ini
+**/desktop.ini
