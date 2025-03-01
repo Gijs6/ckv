@@ -22,12 +22,12 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 
 - [x] Add alt txt to images (-> see conventions)
 - [x] Start on page *Blok 3*
-    - [x] Pick image or video for background page title
-    - [x] Write *algemene informatie*
-    - [x] Choose form for *tussenverslag* and for the general page content (-> just text (like blok 1) but more in the *flow* of the tussenverslag and in a nicer order)
-    - [ ] Write (or create, depending on the form) the tussenverslag
+  - [x] Pick image or video for background page title
+  - [x] Write *algemene informatie*
+  - [x] Choose form for *tussenverslag* and for the general page content (-> just text (like blok 1) but more in the *flow* of the tussenverslag and in a nicer order)
+  - [ ] Write (or create, depending on the form) the tussenverslag
 - [ ] Rewrite
-    - [x] Rewrite *Blok 1*
+  - [x] Rewrite *Blok 1*
     - [x] Rewrite *over mij*
     - [ ] Rewrite short informative txt's
     - [ ] Rewrite *Blok 2* (mostly the infograpic)
