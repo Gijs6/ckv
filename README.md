@@ -8,7 +8,7 @@ So while everyone else is dragging and dropping in Wix and working with stupidly
 
 ***
 
-Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.com/pallets/jinja) (yeah I like Flask, it is just simple but amazing).
+Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.com/pallets/jinja) (yeah I like Flask, it is just simple but amazing). I could easily use a static site generator, but I like styling everything, so just writing the HTML myself works the best.
 
 ***
 
@@ -26,7 +26,6 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
     - [x] Write *algemene informatie*
     - [x] Choose form for *tussenverslag* and for the general page content (-> just text (like blok 1) but more in the *flow* of the tussenverslag and in a nicer order)
     - [ ] Write (or create, depending on the form) the tussenverslag
-    - [ ] Add links to original pictures (for the assignments completed in the lesson)
 - [ ] Rewrite
     - [x] Rewrite *Blok 1*
     - [x] Rewrite *over mij*
@@ -35,6 +34,5 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 - [x] Better 404 and 500 pages (with art from Mondriaan?)
 - [x] **Fix layout*** (and images) on popups in infograpic (blok 2)!
 - [ ] Quicker loading times for the vid on blok 1
-- [ ] Fix difference 2 header with stuff I have no idea how to write this down
 - [x] Add new artworks to the randombackgrounds-list for the errorpages
-- [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-seize and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
+- [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-size and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
