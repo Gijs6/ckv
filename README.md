@@ -10,6 +10,8 @@ So while everyone else is dragging and dropping in Wix and working with stupidly
 
 Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.com/pallets/jinja) (yeah I like Flask, it is just simple but amazing). I could easily use a static site generator, but I like styling everything, so just writing the HTML myself works the best.
 
+If you want to run the site yourself, just clone this repo, install Flask via `pip install flask`, and run `py main.py` (or `python3 main.py` or just whatever works). You can then visit the site at `localhost:5000` (or another link, the correct link will be printed in the terminal). If you just open the HTML files, the menu and base of the pages won't load correctly.
+
 ***
 
 *Nu alleen nog 5 punten halen overal op die rubrics...😉*
@@ -36,3 +38,4 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 - [ ] Quicker loading times for the vid on blok 1
 - [x] Add new artworks to the randombackgrounds-list for the errorpages
 - [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-size and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
+
