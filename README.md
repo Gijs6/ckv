@@ -20,22 +20,16 @@ If you want to run the site yourself, just clone this repo, install Flask via `p
 
 ***
 
-## To do list
+## To-do list
 
 - [x] Add alt txt to images (-> see conventions)
-- [x] Start on page *Blok 3*
-  - [x] Pick image or video for background page title
-  - [x] Write *algemene informatie*
-  - [x] Choose form for *tussenverslag* and for the general page content (-> just text (like blok 1) but more in the *flow* of the tussenverslag and in a nicer order)
-  - [ ] Write (or create, depending on the form) the tussenverslag
-- [ ] Rewrite
-  - [x] Rewrite *Blok 1*
-    - [x] Rewrite *over mij*
-    - [ ] Rewrite short informative txt's
-    - [ ] Rewrite *Blok 2* (mostly the infograpic)
-- [x] Better 404 and 500 pages (with art from Mondriaan?)
+- [x] Write page blok 3 and design kinda nice layout
+- [ ] Rewrite texts
+  - [ ] Rewrite *over mij*
+  - [ ] Rewrite *introductielessen*
+  - [ ] Rewrite *Blok 1*
+  - [ ] Rewrite *Blok 2* (mostly the infograpic)
+- [x] Better error pages
 - [x] **Fix layout*** (and images) on popups in infograpic (blok 2)!
 - [ ] Quicker loading times for the vid on blok 1
-- [x] Add new artworks to the randombackgrounds-list for the errorpages
-- [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-size and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
-
+- [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-size, and image sizes and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
