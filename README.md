@@ -31,5 +31,4 @@ If you want to run the site yourself, just clone this repo, install Flask via `p
   - [ ] Rewrite *Blok 2* (mostly the infograpic)
 - [x] Better error pages
 - [x] **Fix layout*** (and images) on popups in infograpic (blok 2)!
-- [ ] Quicker loading times for the vid on blok 1
 - [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-size, and image sizes and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
