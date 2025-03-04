@@ -1,4 +1,3 @@
-Contact: https://www.gijs6.nl/contact
 Contact: mailto:gijs6@dupunkto.org
 Expires: 2028-01-01T00:00:00.000Z
 Preferred-Languages: en, nl
