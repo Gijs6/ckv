@@ -88,12 +88,12 @@ paglijst = [
     {
         "Menuitemnaam": "Blok 4",
         "Onder1": "",
-        "Onder2": "Vanaf 6 maart 2025",
-        "Afb": "/static/afbs/Golven.jpg",
-        "afbbij1": "",
-        "afbbij2": "Martin Martz",
+        "Onder2": "Vechtkunst",
+        "Afb": "/static/afbs/sutra.jpg",
+        "afbbij1": "Sutra (2008)",
+        "afbbij2": "O.a. Sidi Larbi Cherkaoui",
         "Paglink": "/blok-4",
-        "Afbstat": "Deels"
+        "Afbstat": "Volledig"
     },
     {
         "Menuitemnaam": "Over mij",
