@@ -87,7 +87,7 @@ paglijst = [
     },
     {
         "Menuitemnaam": "Blok 4",
-        "Onder1": "",
+        "Onder1": "Dans",
         "Onder2": "Vechtkunst",
         "Afb": "/static/afbs/sutra.jpg",
         "afbbij1": "Sutra (2008)",
