@@ -108,7 +108,7 @@ ul, ol {
     position: relative;
     z-index: 100;
     font-weight: 900;
-    font-size: 1.1em;
+    font-size: clamp(0.9em, 1.3vw, 1.3em);
     transition: 300ms all ease-in-out;
     display: flex;
     gap: 0.5em;
