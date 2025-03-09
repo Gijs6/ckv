@@ -62,8 +62,7 @@ paglijst = [
         "Afb": "/static/afbs/Achtbaan.jpg",
         "afbbij1": "Brava! (2022)",
         "afbbij2": "EJ Hill",
-        "Paglink": "/blok-1",
-        "Afbstat": "Volledig"
+        "Paglink": "/blok-1"
     },
     {
         "Menuitemnaam": "Blok 2",
@@ -72,18 +71,16 @@ paglijst = [
         "Afb": "/static/afbs/Interstellar.png",
         "afbbij1": "Interstellar (2014)",
         "afbbij2": "O.a. Christopher Nolan",
-        "Paglink": "/blok-2",
-        "Afbstat": "Volledig"
+        "Paglink": "/blok-2"
     },
     {
         "Menuitemnaam": "Blok 3",
         "Onder1": "Film",
         "Onder2": "Jouw interpretatie",
-        "Afb": "/static/afbs/Filmposter.png",
-        "afbbij1": "",
-        "afbbij2": "",
-        "Paglink": "/blok-3",
-        "Afbstat": "Volledig"
+        "Afb": "/static/afbs/nootherland.jpg",
+        "afbbij1": "No Other Land (2024)",
+        "afbbij2": "O.a. Basel Adra",
+        "Paglink": "/blok-3"
     },
     {
         "Menuitemnaam": "Blok 4",
@@ -92,18 +89,7 @@ paglijst = [
         "Afb": "/static/afbs/sutra.jpg",
         "afbbij1": "Sutra (2008)",
         "afbbij2": "O.a. Sidi Larbi Cherkaoui",
-        "Paglink": "/blok-4",
-        "Afbstat": "Volledig"
-    },
-    {
-        "Menuitemnaam": "Over mij",
-        "Onder1": "",
-        "Onder2": "",
-        "Afb": "/static/afbs/ooooooo.jpg",
-        "afbbij1": "",
-        "afbbij2": "Martin Martz",
-        "Paglink": "/over-mij",
-        "Afbstat": "Deels"
+        "Paglink": "/blok-4"
     },
     {
         "Menuitemnaam": "Introductielessen",
@@ -112,18 +98,21 @@ paglijst = [
         "Afb": "/static/afbs/LoversIIMargritte.jpg",
         "afbbij1": "The Lovers II (1928)",
         "afbbij2": "René Magritte",
-        "Paglink": "/introductielessen",
-        "Afbstat": "Volledig"
+        "Paglink": "/introductielessen"
+    },
+    {
+        "Menuitemnaam": "Over mij",
+        "Onder1": "",
+        "Onder2": "",
+        "Afb": "",
+        "Paglink": "/over-mij"
     },
     {
         "Menuitemnaam": "Eigen initiatieven",
         "Onder1": "",
         "Onder2": "",
-        "Afb": "/static/afbs/Ovalen.jpg",
-        "afbbij1": "",
-        "afbbij2": "Martin Martz",
-        "Paglink": "/eigen-initiatieven",
-        "Afbstat": "Deels"
+        "Afb": "",
+        "Paglink": "/eigen-initiatieven"
     }
 ]
 
