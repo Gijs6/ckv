@@ -44,6 +44,8 @@ HTML
 CSS
 
 ```
+
+
 /* Nog niet begonnen blokpags */
 
 
@@ -164,7 +166,7 @@ CSS
 }
 
 .numrij-0 {
-    font-size: 14em;
+    font-size: 17em;
     font-weight: 900;
     animation: fadein 150ms ease-in-out forwards;
 }
@@ -234,4 +236,5 @@ CSS
         opacity: 100%;
     }
 }
+
 ```
