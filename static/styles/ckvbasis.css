@@ -197,7 +197,7 @@ ul, ol {
 
 /* Top/sidebar stuff */
 
-@media screen and (max-width: 1500px), (max-height: 550px) {
+@media screen and (max-width: 1250px), (max-height: 550px) {
     body {
         flex-direction: column;
     }
