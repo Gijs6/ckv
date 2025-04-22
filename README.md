@@ -8,27 +8,8 @@ So while everyone else is dragging and dropping in Wix and working with stupidly
 
 ***
 
-Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.com/pallets/jinja) (yeah I like Flask, it is just simple but amazing). I could easily use a static site generator, but I like styling everything, so just writing the HTML myself works the best.
+Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.com/pallets/jinja) (yeah I like Flask, it is just simple but amazing). I could easily use a static site generator, but I like styling everything and just being able simply write some code for each requests, so just writing the HTML myself works the best.
 
-If you want to run the site yourself, just clone this repo, install Flask via `pip install flask`, and run `py main.py` (or `python3 main.py` or just whatever works). You can then visit the site at `localhost:5000` (or another link, the correct link will be printed in the terminal). If you just open the HTML files, the menu and base of the pages won't load correctly.
+## Run yourself
 
-***
-
-*Nu alleen nog 5 punten halen overal op die rubrics...😉*
-
-*Waarschijnlijk spreek je gewoon Nederlands en vraag je je af waarom dit in hemelsnaam in het Engels staat. Simpel: dat is hier de norm. En jij begrijpt dit waarschijnlijk prima - terwijl je het eigenlijk niet eens **hoeft** te begrijpen.*
-
-***
-
-## To-do list
-
-- [x] Add alt txt to images (-> see conventions)
-- [x] Write page blok 3 and design kinda nice layout
-- [ ] Rewrite texts
-  - [ ] Rewrite *over mij*
-  - [ ] Rewrite *introductielessen*
-  - [ ] Rewrite *Blok 1*
-  - [ ] Rewrite *Blok 2* (mostly the infograpic)
-- [x] Better error pages
-- [x] **Fix layout*** (and images) on popups in infograpic (blok 2)!
-- [ ] Make a bit mobile friendly (not media querys for **everyting** but adjusting the font-size, and image sizes and those kinds of things); just improve the *uSeR eXpErIeNcE* for mobile
+If you want to run the site yourself, just clone this repo, install all the required packages via `pip install -r requirements.txt` and run `py main.py` (`flask --app main run` also works, but that could be with some diffrent settings). You can then visit the site at `localhost:5000` (or another link, the correct link will be printed in the terminal).
