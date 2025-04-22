@@ -1,16 +1,13 @@
-{% extends "ckvbasis.html" %}
-
-{% set active_page = "b1" %}
+{% extends "base.html" %}
 
 {% block title %}Blok 1{% endblock %}
 
 {% block extra_headers %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvb1.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvblokpaginas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/period_1.css') }}">
 {% endblock %}
 
 {% block content %}
-    <div class="paginablok megapaginatitel vid" id="megapaginatitelBlok1">
+    <div class="pageblock megapaginatitel vid" id="megapaginatitelBlok1">
         <video autoplay muted loop id="megapaginatitelbalken">
           <source src="/static/vids/balken4.mp4" type="video/mp4">
         </video>
@@ -24,9 +21,9 @@
         </div>
     </div>
 
-    <div class="paginablok alginfoblok">
+    <div class="pageblock alginfoblok">
         <div class="alginfo-imgentext-container">
-            <img class="alginfo-imgbackground" id="alginfo-imgbackground-blok1" src="/static/afbs/b1/obliteration.jpg">
+            <img class="alginfo-imgbackground" id="alginfo-imgbackground-blok1" src="/static/imgs/b1/obliteration.jpg">
             <div class="alginfo-imgcredits">
                 <span class="alginfo-kunstwerk">Obliteration Room (2002 - heden)</span>
                 <span class="alginfo-kunstenaar">Yayoi Kusama</span>
@@ -37,33 +34,33 @@
             <div class="alginfo-alginfobox">
                 <h1>Algemene informatie</h1>
                 <p>
-                    Dit blok was ik ingedeeld bij de discipline <b>beeldend</b>, met als thema <b>het onzichtbare zichtbaar maken</b>. Ik heb dit blok onderzocht hoe je een boodschap in een kunstwerk kunnen verwerken en, ik maakte de onzichtbare boodschap dus zichtbaar.<br>
-                    Dit blok kreeg ik les van <b>mw. Borst</b>. In dit blok werkte ik samen met <b>Raphael Estevao (4A1)</b>, <b>Aleksander Sosnowski (4A1)</b> en <b>Max Veenstra (4H3)</b>.<br>
-                    De tweede les van dit blok gingen we op excursie naar de tentoonstelling <b><i>NEW WAVE. Future Voices in Art.</i></b> in het <b>Stedelijk Museum Schiedam</b>.
+                    Dit blok was ik ingedeeld bij de discipline <strong>beeldend</strong>, met als thema <strong>het onzichtbare zichtbaar maken</strong>. Ik heb dit blok onderzocht hoe je een boodschap in een kunstwerk kunnen verwerken en, ik maakte de onzichtbare boodschap dus zichtbaar.<br>
+                    Dit blok kreeg ik les van <strong>mw. Borst</strong>. In dit blok werkte ik samen met <strong>Raphael Estevao (4A1)</strong>, <strong>Aleksander Sosnowski (4A1)</strong> en <strong>Max Veenstra (4H3)</strong>.<br>
+                    De tweede les van dit blok gingen we op excursie naar de tentoonstelling <strong><em>NEW WAVE. Future Voices in Art.</em></strong> in het <strong>Stedelijk Museum Schiedam</strong>.
                 </p>
             </div>
         </div>
     </div>
 
 
-    <div class="paginablok kleurvak-buiten rood">
+    <div class="pageblock kleurvak-buiten rood">
         <div class="textblok kleurvak-binnen textleft">
             <h1>Kleine verklaring & uitleg</h1>
             <p>
                 De informatie op deze pagina is erg verspreid, omdat ik deze pagina op verschillende momenten tijdens het blok en na het blok heb gebouwd. Alle informatie is echter aanwezig!<br>
                 Hieronder ziet u eerst een overzicht van alle lessen, met uitleg wat ik die les heb gedaan, foto's van het maakproces en mijn eigen werken (per les). Daarna volgt het tussenverslag.<br>
-                De inhoud van het tussenverslag is echter niet gelimiteerd tot dat specifieke onderdeel. Aangezien zowel de rest van de inhoud van deze pagina als het groepsverslag ook door mij zijn geschreven, lijkt het passend om deze elementen te <b><i>betrekken</i></b> bij de inhoud van het tussenverslag.<br>
+                De inhoud van het tussenverslag is echter niet gelimiteerd tot dat specifieke onderdeel. Aangezien zowel de rest van de inhoud van deze pagina als het groepsverslag ook door mij zijn geschreven, lijkt het passend om deze elementen te <strong><em>betrekken</em></strong> bij de inhoud van het tussenverslag.<br>
                 <br>
                 Veel leesplezier!
             </p>
         </div>
     </div>
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-voorwoordje">
             <h1>Les 1</h1>
             <p>
-                De eerste les van dit blok kregen we uitleg over <b>hedendaagse kunst</b> en <b>installatiekunst</b>.<br>
+                De eerste les van dit blok kregen we uitleg over <strong>hedendaagse kunst</strong> en <strong>installatiekunst</strong>.<br>
                 Hedendaagse kunst gaat vaak over maatschappelijke probleem; de boodschap van zo'n kunstwerk is vaak belangrijker dan het uiterlijk.<br>
                 Installatiekunst is een kunstvorm binnen de hedendaagse kunst. Installatiekunst wordt gekenmerkt door grote en interactieve kunstwerken, waardoor er veel inhoud kan worden overgebracht; toeschouwers worden onderdeel van het kunstwerk.<br>
                 <br>
@@ -79,7 +76,7 @@
                 </p>
             </div>
             <div class="kunstwerkmetcredits eigenwerk">
-                <img src="/static/afbs/b1/schildpadgetekend.jpg" alt="Schildpad (2024) - Gijs ten Berg">
+                <img src="/static/imgs/b1/turtledrawing.jpg" alt="Schildpad (2024) - Gijs ten Berg">
                 <span class="kunstwerknaam">Schildpad (2024)</span>
                 <span class="kunstenaarnaam">Gijs ten Berg</span>
             </div>
@@ -87,14 +84,14 @@
     </div>
 
 
-    <div class="paginablok scheiding blauw"></div>
+    <div class="pageblock scheiding blauw"></div>
 
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-voorwoordje">
             <h1>Les 2</h1>
             <p>
-                De tweede les van dit blok gingen we op excursie naar de tentoonstelling <b><i>NEW WAVE. Future Voices in Art.</i></b> in het Stedelijk Museum Schiedam. Hier hebben we veel inspiratie opgedaan voor ons werk. We hebben in de praktijk gezien hoe je emoties en boodschappen in kunst kunt verwerken, vooral doordat we de inhoud goed konden begrijpen door de rondleiding die we kregen. Hierdoor konden we de uiterlijke verschijning van het kunstwerk goed koppelen aan de inhoud.<br>
+                De tweede les van dit blok gingen we op excursie naar de tentoonstelling <strong><em>NEW WAVE. Future Voices in Art.</em></strong> in het Stedelijk Museum Schiedam. Hier hebben we veel inspiratie opgedaan voor ons werk. We hebben in de praktijk gezien hoe je emoties en boodschappen in kunst kunt verwerken, vooral doordat we de inhoud goed konden begrijpen door de rondleiding die we kregen. Hierdoor konden we de uiterlijke verschijning van het kunstwerk goed koppelen aan de inhoud.<br>
                 Hieronder staat een overzicht van de kunstwerken in de tentoonstelling met een korte beschrijving van de inhoud.
             </p>
         </div>
@@ -102,25 +99,25 @@
         <div class="kunstwerktabel">
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/afbs/b1/design1.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
-                    <img src="/static/afbs/b1/design2.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
-                    <img src="/static/afbs/b1/design3.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
+                    <img src="/static/imgs/b1/design1.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
+                    <img src="/static/imgs/b1/design2.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
+                    <img src="/static/imgs/b1/design3.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">Context in Design, Design in Context: Pródogêrsi (2024)</span>
                     <span class="kunstwtab-kunstenaar">Nifemi Marcus-Bello</span>
                     <p>
-                        In dit kunstwerk staat <b>design</b> centraal, vooral het design en het praktisch ontwerp van de tassen waarmee mensen snoep en eten verkopen op de straten van Lagos. In het midden van de ruimte staat een paviljoen.<br>
+                        In dit kunstwerk staat <strong>design</strong> centraal, vooral het design en het praktisch ontwerp van de tassen waarmee mensen snoep en eten verkopen op de straten van Lagos. In het midden van de ruimte staat een paviljoen.<br>
                         <br>
-                        Volgens de kunstenaar is Afrika een <i>"designers utopia"</i>: alles wordt ontworpen met dagelijks gebruik in het achterhoofd, waardoor spullen heel praktisch zijn.
+                        Volgens de kunstenaar is Afrika een <em>"designers utopia"</em>: alles wordt ontworpen met dagelijks gebruik in het achterhoofd, waardoor spullen heel praktisch zijn.
                     </p>
                 </div>
             </div>
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/afbs/b1/rts1.jpg" alt="Return to Sender (2024) - The Nest Collective">
-                    <img src="/static/afbs/b1/rts2.jpg" alt="Return to Sender (2024) - The Nest Collective">
-                    <img src="/static/afbs/b1/rts3.jpg" alt="Return to Sender (2024) - The Nest Collective">
+                    <img src="/static/imgs/b1/rts1.jpg" alt="Return to Sender (2024) - The Nest Collective">
+                    <img src="/static/imgs/b1/rts2.jpg" alt="Return to Sender (2024) - The Nest Collective">
+                    <img src="/static/imgs/b1/rts3.jpg" alt="Return to Sender (2024) - The Nest Collective">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">Return to Sender (2024)</span>
@@ -134,9 +131,9 @@
             </div>
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/afbs/b1/vierc1.jpg" alt="The 4c Body (2024) - Marga Weimans">
-                    <img src="/static/afbs/b1/vierc2.jpg" alt="The 4c Body (2024) - Marga Weimans">
-                    <img src="/static/afbs/b1/vierc2.jpg" alt="The 4c Body (2024) - Marga Weimans">
+                    <img src="/static/imgs/b1/4c1.jpg" alt="The 4c Body (2024) - Marga Weimans">
+                    <img src="/static/imgs/b1/4c2.jpg" alt="The 4c Body (2024) - Marga Weimans">
+                    <img src="/static/imgs/b1/4c2.jpg" alt="The 4c Body (2024) - Marga Weimans">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">The 4c Body (2024)</span>
@@ -148,9 +145,9 @@
             </div>
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/afbs/b1/vh1.jpg" alt="Void Home (2024) - Elejandro Martinez">
-                    <img src="/static/afbs/b1/vh2.jpg" alt="Void Home (2024) - Elejandro Martinez">
-                    <img src="/static/afbs/b1/vh3.jpg" alt="Void Home (2024) - Elejandro Martinez">
+                    <img src="/static/imgs/b1/vh1.jpg" alt="Void Home (2024) - Elejandro Martinez">
+                    <img src="/static/imgs/b1/vh2.jpg" alt="Void Home (2024) - Elejandro Martinez">
+                    <img src="/static/imgs/b1/vh3.jpg" alt="Void Home (2024) - Elejandro Martinez">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">Void Home (2024)</span>
@@ -167,11 +164,11 @@
                 <h2>Eigen werk</h2>
                 <p>
                     In het museumatelier hebben we een eigen installatiekunstwerk gemaakt met een sociaal probleem als thema. Ons werk is een installatiekunstwerk, omdat bezoekers er zelf doorheen mogen lopen, waardoor het kunstwerk interactief is. Vanuit elk perspectief zie je iets nieuws, waardoor je steeds geïnspireerd blijft.<br>
-                    Het thema dat wij hebben gekozen is <b>plastic soep</b>. Wij hebben een schildpad gemaakt die in een plastic soep zwemt. De schildpad stikt als het ware in het plastic.
+                    Het thema dat wij hebben gekozen is <strong>plastic soep</strong>. Wij hebben een schildpad gemaakt die in een plastic soep zwemt. De schildpad stikt als het ware in het plastic.
                 </p>
             </div>
             <div class="kunstwerkmetcredits eigenwerk">
-                <img src="/static/afbs/b1/zeeschildpad.png" alt="Onze wereld (2024) - Raphael Estevao, Max Veenstra, Aleksander Sosnowski en Gijs ten Berg">
+                <img src="/static/imgs/b1/zeeschildpad.png" alt="Onze wereld (2024) - Raphael Estevao, Max Veenstra, Aleksander Sosnowski en Gijs ten Berg">
                 <span class="kunstwerknaam">Onze wereld (2024)</span>
                 <span class="kunstenaarnaam">Raphael Estevao, Max Veenstra,<br>Aleksander Sosnowski en Gijs ten Berg</span>
             </div>
@@ -179,14 +176,14 @@
     </div>
 
 
-    <div class="paginablok scheiding blauw"></div>
+    <div class="pageblock scheiding blauw"></div>
 
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-tekststukje">
             <h1>Les 3</h1>
             <p>
-                De derde les van dit blok gingen we voor het eerst echt zelf aan de slag. In de eerder gevormde groepjes gingen we de basis leggen voor ons onderzoek. De resultaten van dit onderzoek worden verwerkt in ons eigen kunstwerk. Hoe je zo'n boodschap in een kunstwerk kan verwerken hebben we in de eerste 2 lessen besproken. We gaan dus <b><i>het onzichtbare zichtbaar maken</i></b>.<br>
+                De derde les van dit blok gingen we voor het eerst echt zelf aan de slag. In de eerder gevormde groepjes gingen we de basis leggen voor ons onderzoek. De resultaten van dit onderzoek worden verwerkt in ons eigen kunstwerk. Hoe je zo'n boodschap in een kunstwerk kan verwerken hebben we in de eerste 2 lessen besproken. We gaan dus <strong><em>het onzichtbare zichtbaar maken</em></strong>.<br>
                 <br>
                 Wij hebben gekozen voor het thema nepnieuws, omdat het een actueel en belangrijk thema is. Vervolgens hebben we het idee gekregen om een neppe voorpagina van een krant te maken. Ons eerste idee was het maken van een simpele poster met nepnieuws erop, maar na feedback van de docent hebben we gekozen voor een realistische voorpagina van een krant. Onze krant laat dus zien hoe makkelijk het is om mensen te beïnvloeden, omdat de krant er zo realistisch mogelijk uit ziet.<br>
                 We gaan dus onderzoek doen naar de beïnvloeding van mensen en welke rol design en ontwerp daarin speelt.<br>
@@ -205,19 +202,19 @@
             </p>
         </div>
         <p>
-            <b>Zie het groepsverslag onderaan deze pagina voor meer informatie over wat we deze les hebben gedaan.</b>
+            <strong>Zie het groepsverslag onderaan deze pagina voor meer informatie over wat we deze les hebben gedaan.</strong>
         </p>
     </div>
 
-    <div class="paginablok scheiding blauw"></div>
+    <div class="pageblock scheiding blauw"></div>
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-tekststukje">
             <h1>Les 4</h1>
             <p>
                 De vierde les van dit blok begonnen we met het ontwerpen van onze krant. Deze les hebben we veel besteed aan het maken van de artikelen. Elke krant bestaat natuurlijk uit artikelen, dus we beschouwen dit als de kern van ons kunstproject. De artikelen hebben we in een document geschreven. Deze les hebben we ook veel nagedacht over de lay-out van onze krant. We wilden de lay-out zo realistisch mogelijk maken.<br>
                 <br>
-                <b>De taakverdeling van deze les was als volgt</b>
+                <strong>De taakverdeling van deze les was als volgt</strong>
             </p>
             <ul>
                 <li>Raphael: onderzoek doen & 1 artikel schrijven samen met Max</li>
@@ -228,24 +225,24 @@
         </div>
 
         <div class="verslagtekst-afbeeldingenalg">
-            <img src="/static/afbs/b1/werken1.jpg" class="vrslgtxtafb-rechthoek" alt="Het tekenen van een poster">
-            <img src="/static/afbs/b1/werken2.jpg" class="vrslgtxtafb-rechthoek" alt="Onderzoek in groepsverband">
+            <img src="/static/imgs/b1/lesson-working1.jpg" class="vrslgtxtimg-rechthoek" alt="Het tekenen van een poster">
+            <img src="/static/imgs/b1/lesson-working2.jpg" class="vrslgtxtimg-rechthoek" alt="Onderzoek in groepsverband">
         </div>
 
     </div>
 
 
-    <div class="paginablok scheiding blauw"></div>
+    <div class="pageblock scheiding blauw"></div>
 
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-tekststukje">
             <h1>Les 5</h1>
             <p>
                 Deze les hebben we de krant volledig voltooid. We hebben de laatste details toegevoegd, zoals de datum van de krant, het weerbericht, 2 advertenties en het logo van het AD (deze hebben we uit de echte meegenomen AD-krant geknipt, want het getekende logo was te klein).<br>
-                In deze les kwam ons product tot leven. We hebben dus <b>het onzichtbare zichtbaar gemaakt ;)</b>.<br>
+                In deze les kwam ons product tot leven. We hebben dus <strong>het onzichtbare zichtbaar gemaakt ;)</strong>.<br>
                 <br>
-                <b>De taakverdeling van deze les was als volgt</b>
+                <strong>De taakverdeling van deze les was als volgt</strong>
             </p>
             <ul>
                 <li>Raphael: knippen en plakken & advertenties tekenen</li>
@@ -256,11 +253,11 @@
         </div>
 
         <div class="verslagtekst-afbeeldingenalg collage">
-            <img src="/static/afbs/b1/werken51.jpg" alt="Samenstellen van een poster">
-            <img src="/static/afbs/b1/werken52.jpg" alt="Tekenen voor een poster">
-            <img src="/static/afbs/b1/werken53.jpg" alt="Kunstproject in groepsverband">
-            <img src="/static/afbs/b1/werken54.jpg" alt="Kunstproject in groepsverband">
-            <img src="/static/afbs/b1/werken55.jpg" alt="Samenvoegen onderdelen poster">
+            <img src="/static/imgs/b1/lesson-working51.jpg" alt="Samenstellen van een poster">
+            <img src="/static/imgs/b1/lesson-working52.jpg" alt="Tekenen voor een poster">
+            <img src="/static/imgs/b1/lesson-working53.jpg" alt="Kunstproject in groepsverband">
+            <img src="/static/imgs/b1/lesson-working54.jpg" alt="Kunstproject in groepsverband">
+            <img src="/static/imgs/b1/lesson-working55.jpg" alt="Samenvoegen onderdelen poster">
         </div>
 
         <a href="https://drive.google.com/file/d/1_1vxHdPLLH0mS5mTJXsVwu1gf1TWpjjd/view?usp=sharing" class="knop blauw timelapse" target="_blank">
@@ -273,46 +270,46 @@
         </div>
 
         <div class="kunstwerkmetcredits eigenwerk eindwerk">
-            <img src="/static/afbs/b1/eindwerk.jpg" id="eindwerkimg" alt="Eindwerk: nepnieuwskrant">
+            <img src="/static/imgs/b1/eindwerk.jpg" id="eindwerkimg" alt="Eindwerk: nepnieuwskrant">
             <span class="kunstwerknaam">Voorpagina Algemeen Dagblad (Rotterdam) van 29 februari 2024 (nepnieuws) (2024)</span>
             <span class="kunstenaarnaam">Raphael Estevao, Max Veenstra, Aleksander Sosnowski en Gijs ten Berg</span>
         </div>
     </div>
 
 
-    <div class="paginablok scheiding blauw"></div>
+    <div class="pageblock scheiding blauw"></div>
 
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-tekststukje">
             <h1>Groepsverslag</h1>
             <p>
                 I.o.v. onze docent hebben we voor dit blok een groepsverslag gemaakt.<br>
-                In dit verslag staat onze <b>taakverdeling</b>, de <b>uitgevoerde taken per les</b>, <b>veel foto's over ons maakproces</b>, ons <b>eindproduct</b>, ons <b>kunstonderzoek</b>, onze <b>inspiratie</b> en <b>nog meer</b>.
+                In dit verslag staat onze <strong>taakverdeling</strong>, de <strong>uitgevoerde taken per les</strong>, <strong>veel foto's over ons maakproces</strong>, ons <strong>eindproduct</strong>, ons <strong>kunstonderzoek</strong>, onze <strong>inspiratie</strong> en <strong>nog meer</strong>.
             </p>
         </div>
         <a href="https://docs.google.com/document/d/1GJ72ZUgoFs1OL18US5fjk6j1fz2NLUdcekGwy85FF5I" class="knop blauw groepsverslag" target="_blank">Bekijk het groepsverslag&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
 
 
-    <div class="paginablok scheiding blauw"></div>
+    <div class="pageblock scheiding blauw"></div>
 
 
-    <div class="paginablok verslagtekst">
+    <div class="pageblock verslagtekst">
         <div class="verslagtekst-tekststukje">
             <h1>Tussenverslag</h1>
             <p>
-                Voor dit blok heb ik gekozen voor de discipline <b>beeldend</b>. De belangrijkste reden hiervoor was het thema: <b>installatiekunst</b>. Mij leek dit interessant, omdat grote interactieve kunst mij aanspreekt. De andere thema's en activiteiten die werden aangeboden, spraken me minder aan, dus de keuze voor dit blok was voor mij eigenlijk snel gemaakt.<br>
+                Voor dit blok heb ik gekozen voor de discipline <strong>beeldend</strong>. De belangrijkste reden hiervoor was het thema: <strong>installatiekunst</strong>. Mij leek dit interessant, omdat grote interactieve kunst mij aanspreekt. De andere thema's en activiteiten die werden aangeboden, spraken me minder aan, dus de keuze voor dit blok was voor mij eigenlijk snel gemaakt.<br>
                 <br>
                 Aan het begin van het blok was ik enthousiast over mijn keuze. Ik was enthousiast om aan de slag te gaan. Ik hoopte dat ik meer te weten kon komen over hoe kunst in elkaar zit en hoe bepaalde betekenissen in een kunstwerk verwerkt worden. Ik hoopte ook veel zelf aan de slag te gaan met het maken van kunst, omdat ik het leuk vind om iets wat ik heb geleerd direct in de praktijk te kunnen toepassen.<br>
                 <br>
-                Dit blok draaide om <i>het onzichtbare zichtbaar maken</i>. Dit is een breed begrip, maar het vormt wel de kern van wat ik heb gedaan. We hebben onze kennis en vaardigheden ingezet om een probleem aan te kaarten en onszelf daarin verder ontwikkeld. Wij hebben onze eerdere kennis en vaardigheden gebruikt om een probleem aan te kaarten. Hierdoor heb ik me nog verder ontwikkeld.<br>
+                Dit blok draaide om <em>het onzichtbare zichtbaar maken</em>. Dit is een breed begrip, maar het vormt wel de kern van wat ik heb gedaan. We hebben onze kennis en vaardigheden ingezet om een probleem aan te kaarten en onszelf daarin verder ontwikkeld. Wij hebben onze eerdere kennis en vaardigheden gebruikt om een probleem aan te kaarten. Hierdoor heb ik me nog verder ontwikkeld.<br>
                 <br>
                 Tijdens dit blok zijn we veel in aanraking gekomen met interactieve kunstwerken. Een goed voorbeeld hiervan is onze schildpad uit het museum. Dit kunstwerk leerde ons hoe we een boodschap konden verwerken in onze creatie. Als je het verhaal niet kent, lijkt het misschien gewoon een verzameling blauwe zijlen, afval en een gekleurde eierdoos. Maar als je weet dat het over een schildpad gaat die ziek wordt door een zee vol afval, krijgt het kunstwerk direct een diepere betekenis.<br>
                 De meeste tijd hebben we aan onze nepnieuwskrant besteed. De belangrijkste boodschap die we hierin wilde verwerken was het kritisch nadenken over informatie. Mensen geloven nieuwsbronnen al snel door een geloofwaardig uiterlijk, waarna ze niet kritisch naar de inhoud kijken. Door een krant zo realistisch mogelijk na te maken hebben we dit effect nagebootst. We hebben dit blok dus ook veel onderzoek gedaan, in dit geval dus naar beïnvloeding van mensen via nepnieuws en welke rol ontwerp daarin speelt.<br>
                 "Het onzichtbare zichtbaar maken" gaat dus niet alleen over het maken van een kunstwerk, maar ook over het vertellen van een verhaal en betekenis geven aan iets abstracts.<br>
                 <br>
-                <b>Voor meer informatie wat ik dit blok heb gedaan, gemaakt, ontdekt en geleerd kunt u het groepsverslag bekijken.</b><br>
+                <strong>Voor meer informatie wat ik dit blok heb gedaan, gemaakt, ontdekt en geleerd kunt u het groepsverslag bekijken.</strong><br>
                 <br>
                 De aspecten inhoud, vorm en materiaal kun je op verschillende niveaus toepassen: op één kunstwerk, op een kleine groep werken, op werken met hetzelfde thema, of op een grotere groep binnen dezelfde discipline. Wat me opviel deze periode, is hoe verschillend deze aspecten kunnen zijn, zelfs bij kunstwerken met een vergelijkbare soort boodschap. Hieronder 2 voorbeelden.
             </p>
@@ -324,38 +321,38 @@
                     <span class="collageviminfo-kunstwerk">Brava! (2022)</span>
                     <span class="collageviminfo-kunstenaar">EJ Hill</span>
                     <p>
-                        <b>Vorm</b>: Een eenvoudige roze achtbaan in de vorm van een 8.<br>
-                        <b>Inhoud</b>: Hill is al sinds zijn jeugd gefascineerd door achtbanen. Voor hem brengen achtbanen en pretparken mensen samen. Dit werk gaat over het persoonlijk maken van een gedeelde ervaring. De locatie (de eerste werkende achtbaan in een museum) versterkt deze boodschap.<br>
-                        <b>Materiaal</b>: Staal en hout. De achtbaan bestaat uit 15 delen met een totale lengte van 79,2 meter. Opvallend is dat de achtbaan geen rem heeft: het karretje stopt door zwaartekracht en kan wel 45 seconden heen en weer blijven schommelen (<a href="https://youtu.be/bG9jLUwE7vY">Zie video</a>).
+                        <strong>Vorm</strong>: Een eenvoudige roze achtbaan in de vorm van een 8.<br>
+                        <strong>Inhoud</strong>: Hill is al sinds zijn jeugd gefascineerd door achtbanen. Voor hem brengen achtbanen en pretparken mensen samen. Dit werk gaat over het persoonlijk maken van een gedeelde ervaring. De locatie (de eerste werkende achtbaan in een museum) versterkt deze boodschap.<br>
+                        <strong>Materiaal</strong>: Staal en hout. De achtbaan bestaat uit 15 delen met een totale lengte van 79,2 meter. Opvallend is dat de achtbaan geen rem heeft: het karretje stopt door zwaartekracht en kan wel 45 seconden heen en weer blijven schommelen (<a href="https://youtu.be/bG9jLUwE7vY">Zie video</a>).
                     </p>
                 </div>
-                <img src="/static/afbs/b1/brava1.jpg" alt="Brava! (2022) - EJ Hill">
-                <img src="/static/afbs/b1/brava2.jpg" alt="Brava! (2022) - EJ Hill">
-                <img src="/static/afbs/b1/brava3.jpg" alt="Brava! (2022) - EJ Hill">
+                <img src="/static/imgs/b1/brava1.jpg" alt="Brava! (2022) - EJ Hill">
+                <img src="/static/imgs/b1/brava2.jpg" alt="Brava! (2022) - EJ Hill">
+                <img src="/static/imgs/b1/brava3.jpg" alt="Brava! (2022) - EJ Hill">
             </div>
             <div class="verslagtekst-afbeeldingenalg collage">
                 <div class="collageviminfo">
-                    <span class="collageviminfo-kunstwerk">The Shapes Project (2005-2006) <i>(Expositie Friedrich Petzel Gallery)</i></span>
+                    <span class="collageviminfo-kunstwerk">The Shapes Project (2005-2006) <em>(Expositie Friedrich Petzel Gallery)</em></span>
                     <span class="collageviminfo-kunstenaar">Allan McCollum</span>
                     <p>
-                        <b>Vorm</b>: Een verzameling unieke vormen.<br>
-                        <b>Inhoud</b>: Elke vorm is uniek. McCollum ontwikkelde een systeem dat een unieke vorm kan creëren voor elke persoon op aarde. Het systeem bestaat uit 300 onderdelen die samen meer dan 30 miljard combinaties mogelijk maken. De vormen worden verwerkt in sculpturen, boeken en afdrukken. Het doel is om elke persoon een unieke vorm te geven.<br>
-                        <b>Materiaal</b>: Varieert. Binnen de afgebeelde expositie zijn het afdrukken van 15 x 11 cm in fotolijsten.
+                        <strong>Vorm</strong>: Een verzameling unieke vormen.<br>
+                        <strong>Inhoud</strong>: Elke vorm is uniek. McCollum ontwikkelde een systeem dat een unieke vorm kan creëren voor elke persoon op aarde. Het systeem bestaat uit 300 onderdelen die samen meer dan 30 miljard combinaties mogelijk maken. De vormen worden verwerkt in sculpturen, boeken en afdrukken. Het doel is om elke persoon een unieke vorm te geven.<br>
+                        <strong>Materiaal</strong>: Varieert. Binnen de afgebeelde expositie zijn het afdrukken van 15 x 11 cm in fotolijsten.
                     </p>
                 </div>
-                <img src="/static/afbs/b1/shapes1.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
-                <img src="/static/afbs/b1/shapes2.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
-                <img src="/static/afbs/b1/shapes3.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
+                <img src="/static/imgs/b1/shapes1.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
+                <img src="/static/imgs/b1/shapes2.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
+                <img src="/static/imgs/b1/shapes3.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
             </div>
         </div>
 
         <div class="verslagtekst-tekststukje">
-            In beide kunstwerken is de boodschap niet meteen zichtbaar. Op het eerste gezicht lijkt <i>Brava!</i> gewoon een achtbaan, en lijken de fotolijstjes van <i>The Shapes Project</i> willekeurige vormen. Maar zodra je het verhaal kent, ontdek je een diepere laag en opent er een nieuwe wereld. Dit is ook zichtbaar op de andere niveaus: vaak hebben interactieve kunstwerken een veel grotere boodschap dan datgene wat zichtbaar is. Dat is ook goed te herkennen aan de aspecten vorm, inhoud en materiaal: vorm en materiaal zijn vaak direct duidelijk, maar inhoud is niet direct duidelijk, terwijl dat hetgeen is dat het kunstwerk een boodschap geeft. Dit is ook te herkennen aan ons kunstwerk: op het eerste gezicht lijkt het gewoon een krant met artikelen, maar als je weet dat het nepnieuwsartikelen zijn met als doel om mensen alert te maken, kijk je direct op een andere manier naar het kunstwerk. Door kunst actief te ervaren kun je goed ontdekken wat dit onzichtbare is. En dat is precies wat ik deze periode heb geleerd!<br>
+            In beide kunstwerken is de boodschap niet meteen zichtbaar. Op het eerste gezicht lijkt <em>Brava!</em> gewoon een achtbaan, en lijken de fotolijstjes van <em>The Shapes Project</em> willekeurige vormen. Maar zodra je het verhaal kent, ontdek je een diepere laag en opent er een nieuwe wereld. Dit is ook zichtbaar op de andere niveaus: vaak hebben interactieve kunstwerken een veel grotere boodschap dan datgene wat zichtbaar is. Dat is ook goed te herkennen aan de aspecten vorm, inhoud en materiaal: vorm en materiaal zijn vaak direct duidelijk, maar inhoud is niet direct duidelijk, terwijl dat hetgeen is dat het kunstwerk een boodschap geeft. Dit is ook te herkennen aan ons kunstwerk: op het eerste gezicht lijkt het gewoon een krant met artikelen, maar als je weet dat het nepnieuwsartikelen zijn met als doel om mensen alert te maken, kijk je direct op een andere manier naar het kunstwerk. Door kunst actief te ervaren kun je goed ontdekken wat dit onzichtbare is. En dat is precies wat ik deze periode heb geleerd!<br>
             <br>
             Deze periode voldeed zeker aan mijn verwachtingen. Ik vond vooral de structuur van de lessen erg prettig. We kregen veel vrijheid binnen ons maakproces, waardoor we gemotiveerd waren om een mooi werk te maken. Ik had van tevoren verwacht dat iedereen een erg vergelijkbaar werk ging maken, maar het tegenovergestelde bleek dus waar. Ik heb geleerd hoe je betekenis geeft aan een kunstwerk, vooral door ons bezoek aan het museum, maar ook door ons eigen creatieve maakproces.<br>
             <br>
             Ik kijk positief terug op deze periode. Mijn groepje werkte fijn samen en we hebben veel originele ideeën uitgewerkt tot een mooi kunstwerk. Het proces was vaak uitdagend, bijvoorbeeld bij het verdelen van taken. De combinatie van creativiteit, onderzoek en samenwerking zorgde ervoor dat ik mezelf heb ontwikkeld.<br>
-            Ik ben bovendien erg blij met ons eindproduct. We hebben echt <b>het onzichtbare zichtbaar gemaakt</b>!
+            Ik ben bovendien erg blij met ons eindproduct. We hebben echt <strong>het onzichtbare zichtbaar gemaakt</strong>!
         </div>
     </div>
 

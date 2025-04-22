@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>{{ errornum }} - {{ e }}</title>
         <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favs/error.ico') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckverror.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/error.css') }}">
         <style>
             body {
-                background-image: url("{{ afburl }}");
+                background-image: url("{{ imgurl }}");
                 color: {{ txtcolor }};
             }
         </style>
@@ -17,15 +17,15 @@
         <div id="txtbox">
             <span id="errornum">{{ errornum }}</span>
             <div id="extra-info">
-                <span id="errorbericht1">{{ errorbericht1 }}</span>
-                <span id="errorbericht2">{{ errorbericht2 }}</span>
+                <span id="message1">{{ message1 }}</span>
+                <span id="message2">{{ message2 }}</span>
                 <small>{{ e }}</small>
             </div>
             <a href="/">Naar homepagina</a>
         </div>
         <div id="credits">
-            <span id="kunstwerknaam">{{ kunstwerk }}</span>
-            <span id="kunstenaarnaam">{{ kunstenaar }}</span>
+            <span id="artwork">{{ artwork }}</span>
+            <span id="artist">{{ artist }}</span>
         </div>
     </body>
 </html>

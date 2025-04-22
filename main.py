@@ -1,10 +1,13 @@
 from flask import Flask, render_template, url_for, redirect, send_from_directory
 import json
 import random
+import os
 
 
 app = Flask(__name__)
 
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 # Redirecters
 
@@ -20,13 +23,13 @@ def redirecter(path):
     elif not path.startswith("gijstenberg4a2"):
         return redirect(f"/gijstenberg4a2/{path}")
     try:
-        afburl, kunstwerk, kunstenaar, txtcolor = randomBackground()
-    except:
-        afburl = "/static/afbs/error/cirkels2.jpg"
-        kunstwerk = "Primordial Chaos - No 16 (1906-1907)"
-        kunstenaar = "Hilma af Klint"
+        imgurl, artwork, artist, txtcolor = randomBackground()
+    except Exception:
+        imgurl = "/static/imgs/error/cirkels2.jpg"
+        artwork = "Primordial Chaos - No 16 (1906-1907)"
+        artist = "Hilma af Klint"
         txtcolor = "white"
-    return render_template("ckverror.html", e="Error redirecting", errornum="404", errorbericht1="Die pagina bestaat niet!", errorbericht2="De URL die je hebt verzocht bestaat niet.", afburl=afburl, kunstwerk=kunstwerk, kunstenaar=kunstenaar, txtcolor=txtcolor), 404
+    return render_template("error.html", e="Error redirecting", errornum="404", message1="Die pagina bestaat niet!", message2="De URL die je hebt verzocht bestaat niet.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 404
 
 
 
@@ -35,7 +38,7 @@ def redirecter(path):
 @app.route('/favicon.ico')
 @app.route('/favicon')
 def favicon():
-    return send_from_directory('static', "favs/cirkels.ico", mimetype='image/vnd.microsoft.icon')
+    return send_from_directory('static', "favs/main.ico", mimetype='image/vnd.microsoft.icon')
 
 
 @app.route("/.well-known/security.txt")
@@ -54,188 +57,161 @@ def robots():
 
 
 # Pages
-paglijst = [
+
+pages = [
     {
-        "Menuitemnaam": "Blok 1",
-        "Onder1": "Beeldend",
-        "Onder2": "Het onzichtbare zichtbaar maken",
-        "Afb": "/static/afbs/Achtbaan.jpg",
-        "afbbij1": "Brava! (2022)",
-        "afbbij2": "EJ Hill",
-        "Paglink": "/blok-1"
+        "title": "Blok 1",
+        "undertitle_1": "Beeldend",
+        "undertitle_2": "Het onzichtbare zichtbaar maken",
+        "img": "/static/imgs/brava.jpg",
+        "img_undertitle_1": "Brava! (2022)",
+        "img_undertitle_2": "EJ Hill",
+        "url": "/blok-1"
     },
     {
-        "Menuitemnaam": "Blok 2",
-        "Onder1": "Film",
-        "Onder2": "Speciale effecten",
-        "Afb": "/static/afbs/Interstellar.png",
-        "afbbij1": "Interstellar (2014)",
-        "afbbij2": "O.a. Christopher Nolan",
-        "Paglink": "/blok-2"
+        "title": "Blok 2",
+        "undertitle_1": "Film",
+        "undertitle_2": "Speciale effecten",
+        "img": "/static/imgs/Interstellar.png",
+        "img_undertitle_1": "Interstellar (2014)",
+        "img_undertitle_2": "O.a. Christopher Nolan",
+        "url": "/blok-2"
     },
     {
-        "Menuitemnaam": "Blok 3",
-        "Onder1": "Film",
-        "Onder2": "Jouw interpretatie",
-        "Afb": "/static/afbs/nootherland.jpg",
-        "afbbij1": "No Other Land (2024)",
-        "afbbij2": "O.a. Basel Adra",
-        "Paglink": "/blok-3"
+        "title": "Blok 3",
+        "undertitle_1": "Film",
+        "undertitle_2": "Jouw interpretatie",
+        "img": "/static/imgs/nootherland.jpg",
+        "img_undertitle_1": "No Other Land (2024)",
+        "img_undertitle_2": "O.a. Basel Adra",
+        "url": "/blok-3"
     },
     {
-        "Menuitemnaam": "Blok 4",
-        "Onder1": "Dans",
-        "Onder2": "Vechtkunst",
-        "Afb": "/static/afbs/sutra.jpg",
-        "afbbij1": "Sutra (2008)",
-        "afbbij2": "O.a. Sidi Larbi Cherkaoui",
-        "Paglink": "/blok-4"
+        "title": "Blok 4",
+        "undertitle_1": "Dans",
+        "undertitle_2": "Vechtkunst",
+        "img": "/static/imgs/sutra.jpg",
+        "img_undertitle_1": "Sutra (2008)",
+        "img_undertitle_2": "O.a. Sidi Larbi Cherkaoui",
+        "url": "/blok-4"
     },
     {
-        "Menuitemnaam": "Introductielessen",
-        "Onder1": "",
-        "Onder2": "Liefde",
-        "Afb": "/static/afbs/LoversIIMargritte.jpg",
-        "afbbij1": "The Lovers II (1928)",
-        "afbbij2": "René Magritte",
-        "Paglink": "/introductielessen"
+        "title": "Introductielessen",
+        "undertitle_1": "",
+        "undertitle_2": "Liefde",
+        "img": "/static/imgs/LoversIIMargritte.jpg",
+        "img_undertitle_1": "The Lovers II (1928)",
+        "img_undertitle_2": "René Magritte",
+        "url": "/introductielessen"
     },
     {
-        "Menuitemnaam": "Over mij",
-        "Onder1": "",
-        "Onder2": "",
-        "Afb": "",
-        "Paglink": "/over-mij"
+        "title": "Over mij",
+        "undertitle_1": "",
+        "undertitle_2": "",
+        "img": "",
+        "url": "/over-mij"
     },
     {
-        "Menuitemnaam": "Eigen initiatieven",
-        "Onder1": "",
-        "Onder2": "",
-        "Afb": "",
-        "Paglink": "/eigen-initiatieven"
+        "title": "Eigen initiatieven",
+        "undertitle_1": "",
+        "undertitle_2": "",
+        "img": "",
+        "url": "/eigen-initiatieven"
     }
 ]
 
 @app.route("/gijstenberg4a2")
 def home():
-    return render_template("ckvhome.html", pagdata=paglijst)
+    return render_template("home.html", pagelist=pages)
 
 
 @app.route("/gijstenberg4a2/over-mij")
-def over_mij():
-    return render_template("ckvovermij.html")
+def about_me():
+    return render_template("about_me.html")
 
 @app.route("/gijstenberg4a2/introductielessen")
-def introductie():
-    return render_template("ckvintro.html")
+def intro():
+    return render_template("intro.html")
+
+
+own_ini_list = [
+    {
+        "act_type": "Beeldend",
+        "act_name": "Zoeken naar Zingeving",
+        "act_loc": "Kröller-Müller Museum (Otterlo)",
+        "act_date": "30 oktober 2024",
+        "pdf_url": "/static/pdfs/EI1-Beeldend-ZoekenNaarZingeving.pdf",
+        "img_url": "/static/imgs/own_ini/olijfgaard.jpg",
+        "artwork": "Olijfgaard (1889)",
+        "artist": "Vincent van Gogh"
+    },
+    {   
+        "act_type": "Architectuur",
+        "act_name": "Depot Boijmans Van Beuningen",
+        "act_loc": "Museumpark (Rotterdam)",
+        "act_date": "28 februari 2025",
+        "pdf_url": "/static/pdfs/EI2-Architectuur-Depot.pdf",
+        "img_url": "/static/imgs/own_ini/depot.jpg",
+        "artwork": "Depot Boijmans van Beuningen",
+        "artist": "MVRDV"
+    }
+]
+
 
 @app.route("/gijstenberg4a2/eigen-initiatieven")
-def eigen_initiatieven():
-    return render_template("ckvei.html")
+def own_initiatives():
+    return render_template("own_ini.html", own_ini_list=own_ini_list)
 
 @app.route("/gijstenberg4a2/blok-1")
-def blok1():
-    return render_template("ckvb1.html")
+def period_1():
+    return render_template("period_1.html")
 
 @app.route("/gijstenberg4a2/blok-2")
-def blok2():
-    return render_template("ckvb2.html")
+def period_2():
+    return render_template("period_2.html")
 
 @app.route("/gijstenberg4a2/blok-3")
-def blok3():
-    return render_template("ckvb3.html")
+def period_3():
+    return render_template("period_3.html")
 
 @app.route("/gijstenberg4a2/blok-4")
-def blok4():
-    return render_template("ckvb4.html")
-
-@app.route("/gijstenberg4a2/colofon")
-def colofon():
-    return render_template("ckvcolofon.html")
-
-
-
-
-# Short routs (redirects)
-# Prefixed by the main redirecter
-
-@app.route("/gijstenberg4a2/om")
-@app.route("/gijstenberg4a2/overmij")
-def over_mij_redi():
-    return redirect("/gijstenberg4a2/over-mij")
-
-@app.route("/gijstenberg4a2/il")
-@app.route("/gijstenberg4a2/intro")
-@app.route("/gijstenberg4a2/introles")
-def introductie_redi():
-    return redirect("/gijstenberg4a2/introductielessen")
-
-@app.route("/gijstenberg4a2/ei")
-@app.route("/gijstenberg4a2/eigini")
-@app.route("/gijstenberg4a2/eigeninitiatieven")
-def eigen_initiatieven_redi():
-    return redirect("/gijstenberg4a2/eigen-initiatieven")
-
-@app.route("/gijstenberg4a2/b1")
-@app.route("/gijstenberg4a2/blok1")
-def blok1_redi():
-    return redirect("/gijstenberg4a2/blok-1")
-
-@app.route("/gijstenberg4a2/b2")
-@app.route("/gijstenberg4a2/blok2")
-def blok2_redi():
-    return redirect("/gijstenberg4a2/blok-2")
-
-@app.route("/gijstenberg4a2/b3")
-@app.route("/gijstenberg4a2/blok3")
-def blok3_redi():
-    return redirect("/gijstenberg4a2/blok-3")
-
-@app.route("/gijstenberg4a2/b4")
-@app.route("/gijstenberg4a2/blok4")
-def blok4_redi():
-    return redirect("/gijstenberg4a2/blok-4")
-
-@app.route("/gijstenberg4a2/cf")
-@app.route("/gijstenberg4a2/col")
-def colofon_redi():
-    return redirect("/gijstenberg4a2/colofon")
-
-
-
-def randomBackground():
-    with open("/home/gijs3/ckv/static/data/backgroundlist.json", "r") as file:
-        data = json.load(file)
-    randomBackgroundChoice = random.choice(data)
-
-    return randomBackgroundChoice.get("afburl"), randomBackgroundChoice.get("kunstwerk"), randomBackgroundChoice.get("kunstenaar"), randomBackgroundChoice.get("txtcolor")
+def period_4():
+    return render_template("period_4.html")
 
 
 
 
 # Error pages
 
+def randomBackground():
+    with open(os.path.join(BASE_DIR, "data", "backgroundlist.json"), "r") as file:
+        data = json.load(file)
+    randomBackgroundChoice = random.choice(data)
+
+    return randomBackgroundChoice.get("imgurl"), randomBackgroundChoice.get("artwork"), randomBackgroundChoice.get("artist"), randomBackgroundChoice.get("txtcolor")
+
+
 @app.errorhandler(404)
 def not_found(e):
     try:
-        afburl, kunstwerk, kunstenaar, txtcolor = randomBackground()
-    except:
-        afburl = "/static/afbs/error/cirkels2.jpg"
-        kunstwerk = "Primordial Chaos - No 16 (1906-1907)"
-        kunstenaar = "Hilma af Klint"
+        imgurl, artwork, artist, txtcolor = randomBackground()
+    except Exception:
+        imgurl = "/static/imgs/error/cirkels2.jpg"
+        artwork = "Primordial Chaos - No 16 (1906-1907)"
+        artist = "Hilma af Klint"
         txtcolor = "white"
-    return render_template("ckverror.html", e=e, errornum="404", errorbericht1="Die pagina bestaat niet!", errorbericht2="De URL die je hebt verzocht bestaat niet.", afburl=afburl, kunstwerk=kunstwerk, kunstenaar=kunstenaar, txtcolor=txtcolor), 404
+    return render_template("error.html", e=e, errornum="404", message1="Die pagina bestaat niet!", message2="De URL die je hebt verzocht bestaat niet.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 404
 
 @app.errorhandler(500)
 def internal_error(e):
     try:
-        afburl, kunstwerk, kunstenaar, txtcolor = randomBackground()
-    except:
-        afburl = "/static/afbs/error/cirkels2.jpg"
-        kunstwerk = "Primordial Chaos - No 16 (1906-1907)"
-        kunstenaar = "Hilma af Klint"
+        imgurl, artwork, artist, txtcolor = randomBackground()
+    except Exception:
+        imgurl = "/static/imgs/error/cirkels2.jpg"
+        artwork = "Primordial Chaos - No 16 (1906-1907)"
+        artist = "Hilma af Klint"
         txtcolor = "white"
-    return render_template("ckverror.html", e=e, errornum="500", errorbericht1="Oeps! Er is iets misgegaan", errorbericht2="Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later nog eens.", afburl=afburl, kunstwerk=kunstwerk, kunstenaar=kunstenaar, txtcolor=txtcolor), 500
+    return render_template("error.html", e=e, errornum="404", message1="Oeps! Er is iets misgegaan", message2="Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later nog eens.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 505
 
 
 if __name__ == '__main__':

@@ -1,0 +1,105 @@
+#balls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh !important;
+}
+
+#namebox {
+    text-align: center;
+}
+
+#namebox h1 {
+    z-index: 10;
+    position: relative;
+    font-size: 6em;
+}
+
+#namebox h2 {
+    font-size: 3em;
+}
+
+#balls-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+#list-of-pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.lop-item {
+    background: var(--blue);
+    padding: 25px;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-grow: 1;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+
+.lop-item-left {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.lop-item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lop-item-title {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.lop-item-under1 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.lop-item-under2 {
+    font-size: 1.35em;
+    font-weight: 300;
+}
+
+.lop-item .button {
+    margin-top: 20px;
+    font-size: 1.15em;
+    color: var(--black);
+}
+
+.lop-item-img-under1 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.lop-item-img-under2 {
+    font-weight: 800;
+}
+
+.lop-item-right img {
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}

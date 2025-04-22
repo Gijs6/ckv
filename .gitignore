@@ -1,8 +1,9 @@
 .venv/
 .idea/
 vids/
-muziek/
+music/
 
+__pycache__/
 
 # Just large files
 *.mp3

@@ -6,7 +6,7 @@ HTML
 
 ```
 {% block content %}
-    <div class="paginablok bloknietbegonnen">
+    <div class="pageblock bloknietbegonnen">
         <span class="bloknietbegonnenblok">Blok</span>
         <div class="bloknietbegonnennumsdiv">
             <span class="numrij-12">4</span>

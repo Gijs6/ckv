@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block extra_headers %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="pageblock" id="balls">
+        <div id="namebox">
+            <h1>Gijs ten Berg</h1>
+            <h2>CKV-website</h2>
+        </div>
+        <canvas id="balls-canvas"></canvas>
+    </div>
+    <div class="pageblock bcbg-out bg-yellow" id="introduction">
+        <div class="bcbg-in bg-white">
+            <h1>Welkom!</h1>
+            <p>Deze website is mijn digitale CKV-dossier voor het schooljaar 2024-2025.<br>
+            Hieronder vindt u een kort overzicht van de inhoud van elke pagina.<br>
+            U kunt uiteraard ook het menu gebruiken om tussen de pagina's te navigeren.<br>
+            Veel leesplezier!</p>
+        </div>
+    </div>
+    <div class="pageblock" id="list-of-pages">
+        {% for page in pagelist %}
+            <div class="lop-item">
+                <div class="lop-item-left">
+                    <span class="lop-item-title">{{ page.title }}</span>
+                    {% if page.undertitle_1 %}<span class="lop-item-under1">{{ page.undertitle_1 }}</span>{% endif %}
+                    {% if page.undertitle_2 %}<span class="lop-item-under2">{{ page.undertitle_2 }}</span>{% endif %}
+                    <a href="{{ page.url }}" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                {% if page.img %}
+                    <div class="lop-item-right artwork-basic">
+                        <img src="{{ page.img }}" alt="{{ page.img_undertitle_1 if page.img_undertitle_1 }} - {{ page.img_undertitle_2 if page.img_undertitle_2 }}">
+                        {% if page.img_undertitle_1 %}<span class="lop-item-img-under1 artbasic-artwork">{{ page.img_undertitle_1 }}</span>{% endif %}
+                        {% if page.img_undertitle_2 %}<span class="lop-item-img-under2 artbasic-artist">{{ page.img_undertitle_2 }}</span>{% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <script type="module">
+        import Spheres2Background from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.8/build/backgrounds/spheres2.cdn.min.js';
+
+        try {
+            const bg = Spheres2Background(document.getElementById("balls-canvas"), {
+                count: 275,
+                colors: [0xeaf2ef, 0x197bbd, 0x04a777],
+                minSize: 0.7,
+                maxSize: 1.2
+            });
+
+        } catch (error) {
+            console.error('Fout bij het laden van de achtergrond:', error);
+            const balls = document.getElementById("balls")
+            balls.style.background = "url('https://picsum.photos/id/347/5000/4000') no-repeat center center fixed";
+            balls.style.backgroundSize = "cover";
+        }
+    </script>
+{% endblock %}

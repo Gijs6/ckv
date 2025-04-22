@@ -1,0 +1,56 @@
+[
+    {
+        "imgurl": "/static/imgs/error/Primordial_Chaos.jpg",
+        "artwork": "Primordial Chaos - No 16 (1906-1907)",
+        "artist": "Hilma af Klint",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Compositie_VIII.jpg",
+        "artwork": "Compositie VIII (1923)",
+        "artist": "Wassily Kandinsky",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Brava!.jpg",
+        "artwork": "Brava! (2022)",
+        "artist": "EJ Hill",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Simultaneous_Contrasts.jpg",
+        "artwork": "Simultaneous Contrasts (1913)",
+        "artist": "Sonia Delaunay",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Composition_No_11.jpg",
+        "artwork": "Composition No. 11. (1913)",
+        "artist": "Piet Mondriaan",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Burg_und_Sonne.jpg",
+        "artwork": "Burg und Sonne (1928)",
+        "artist": "Paul Klee",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Composition_II.jpg",
+        "artwork": "Composition II in Red, Blue, and Yellow (1930)",
+        "artist": "Piet Mondriaan",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Compositie_in_dissonanten.jpg",
+        "artwork": "Compositie in dissonanten (1918)",
+        "artist": "Theo van Doesburg",
+        "txtcolor": "white"
+    },
+    {
+        "imgurl": "/static/imgs/error/Colored_Composition_of_Forms.jpg",
+        "artwork": "Colored Composition of Forms (1914)",
+        "artist": "August Macke",
+        "txtcolor": "white"
+    }
+]

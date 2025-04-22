@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %} - CKV - Gijs ten Berg</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <script src="https://kit.fontawesome.com/4a94c21782.js" crossorigin="anonymous"></script>
+        {% block extra_headers %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="menu-item{% if request.path == '/' %} active{% endif %}" href="/">
+                    <i class="fa-solid fa-house"></i> <span>Home</span>
+                </a>
+                <a class="menu-item{% if request.path == '/over-mij' %} active{% endif %}" href="/over-mij">
+                    <i class="fa-solid fa-user"></i> <span>Over mij</span>
+                </a>
+                <a class="menu-item{% if request.path == '/introductielessen' %} active{% endif %}" href="/introductielessen">
+                    <i class="fa-solid fa-person-chalkboard"></i> <span>Introductielessen</span>
+                </a>
+                <a class="menu-item{% if request.path == '/eigen-initiatieven' %} active{% endif %}" href="/eigen-initiatieven">
+                    <i class="fa-solid fa-building-columns"></i> <span>Eigen initiatieven</span>
+                </a>
+                <a class="menu-item{% if request.path == '/blok-1' %} active{% endif %}" href="/blok-1">
+                    <i class="fa-solid fa-1"></i> <span>Blok 1</span>
+                </a>
+                <a class="menu-item{% if request.path == '/blok-2' %} active{% endif %}" href="/blok-2">
+                    <i class="fa-solid fa-2"></i> <span>Blok 2</span>
+                </a>
+                <a class="menu-item{% if request.path == '/blok-3' %} active{% endif %}" href="/blok-3">
+                    <i class="fa-solid fa-3"></i> <span>Blok 3</span>
+                </a>
+                <a class="menu-item{% if request.path == '/blok-4' %} active{% endif %}" href="/blok-4">
+                    <i class="fa-solid fa-4"></i> <span>Blok 4</span>
+                </a>
+            </nav>
+            <div>
+                <h1>Gijs ten Berg</h1>
+                <h2>4A2</h2>
+            </div>
+        </header>
+
+        <div id="scrollable">
+            <main>{% block content %}{% endblock %}</main>
+
+            <footer>
+                <div id="footer-left">
+                    <h1>Gijs ten Berg</h1>
+                    <h2>4A2</h2>
+                </div>
+                <div id="footer-right">
+                    <h1>CKV-website</h1>
+                    <h2><a href="/colofon">Colofon</a></h2>
+                    <h3><a href="https://github.com/Gijs6/CKVsite" target="_blank"><i class="fa-brands fa-github"></i> Broncode</a></h3>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

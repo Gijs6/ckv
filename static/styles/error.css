@@ -43,11 +43,11 @@ body {
     flex-direction: column;
 }
 
-#errorbericht1 {
+#message1 {
     font-size: 2em;
 }
 
-#errorbericht2 {
+#message2 {
     font-size: 1.5em;
 }
 
@@ -63,20 +63,20 @@ body {
     text-align: right;
 }
 
-#kunstwerknaam {
+#artwork {
     font-weight: 500;
 }
 
-#kunstenaarnaam {
+#artist {
     font-weight: 800;
 }
 
 #txtbox a {
     color: inherit;
     font-size: 2em;
-    transition: 250ms all ease;
+    transition: 500ms opacity ease;
 }
 
 #txtbox a:hover {
-    opacity: 75%;
+    opacity: .75;
 }
