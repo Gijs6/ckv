@@ -58,7 +58,7 @@
 .lop-item-left {
     display: flex;
     flex-direction: column;
-    margin: 15px auto;
+    margin: 20px auto;
     align-items: center;
     flex-grow: 1;
     text-align: center;
