@@ -1,0 +1,34 @@
+.pagetitle-big.columns div {
+  width: fit-content;
+  text-align: center;
+}
+
+.pagetitle-big.columns div.artwork-basic {
+  flex-grow: 0;
+  font-size: 1.4em;
+  margin: auto;
+}
+
+.lessonartexamples audio, .lessonartexamples img {
+  margin: 15px 0;
+}
+
+.comp-thingy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: max-content;
+}
+
+.comp-thingy i {
+  text-align: center;
+  font-size: 2em;
+  width: 3em;
+}
+
+.comp-thingy img {
+  width: 250px;
+}

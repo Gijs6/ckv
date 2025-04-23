@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh !important;
+    height: 75vh !important;
 }
 
 #namebox {
@@ -42,7 +42,7 @@
 
 .lop-item {
     background: var(--blue);
-    padding: 25px;
+    padding: 15px;
     color: var(--white);
     display: flex;
     flex-direction: row;
@@ -51,20 +51,25 @@
     gap: 15px;
     flex-grow: 1;
     border-radius: 30px;
-    flex-wrap: wrap;
+    width: min-content;
+    min-width: 500px;
 }
 
 .lop-item-left {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 15px auto;
     align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    width: min-content;
 }
 
 .lop-item-right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .lop-item-title {
@@ -98,8 +103,14 @@
 }
 
 .lop-item-right img {
-    max-width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+    .lop-item {
+        flex-wrap: wrap;
+    }
 }
