@@ -1,0 +1,46 @@
+.bg-page {
+    background-image: url("/static/imgs/own_ini/beach.jpg");
+}
+
+.pagebg-credits {
+    color: var(--white);
+}
+
+.artwork-basic img {
+    aspect-ratio: 1/1;
+    width: min(400px, 100%);
+    height: min(400px, 100%);
+    border-radius: 15px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.own-ini-item .artwork-basic {
+    flex-grow: 0;
+    width: min-content;
+    margin: auto;
+}
+
+.own-ini-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.own-ini-info > * {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.own-ini-info > h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.activity-name {
+    font-style: italic;
+}
+
+.own-ini-info .button {
+    margin-top: 15px;
+}

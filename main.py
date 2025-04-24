@@ -143,7 +143,8 @@ own_ini_list = [
         "pdf_url": "/static/pdfs/EI1-Beeldend-ZoekenNaarZingeving.pdf",
         "img_url": "/static/imgs/own_ini/olijfgaard.jpg",
         "artwork": "Olijfgaard (1889)",
-        "artist": "Vincent van Gogh"
+        "artist": "Vincent van Gogh",
+        "bg": "yellow"
     },
     {   
         "act_type": "Architectuur",
@@ -153,7 +154,8 @@ own_ini_list = [
         "pdf_url": "/static/pdfs/EI2-Architectuur-Depot.pdf",
         "img_url": "/static/imgs/own_ini/depot.jpg",
         "artwork": "Depot Boijmans van Beuningen",
-        "artist": "MVRDV"
+        "artist": "MVRDV",
+        "bg": "red"
     }
 ]
 

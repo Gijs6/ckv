@@ -52,7 +52,7 @@
     flex-grow: 1;
     border-radius: 30px;
     width: min-content;
-    min-width: 500px;
+    min-width: min(100%, 500px);
 }
 
 .lop-item-left {
@@ -62,7 +62,7 @@
     align-items: center;
     flex-grow: 1;
     text-align: center;
-    width: min-content;
+    min-width: min-content;
 }
 
 .lop-item-right {
