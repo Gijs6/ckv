@@ -42,6 +42,8 @@ header {
     background: var(--blue);
     color: var(--white);
     z-index: 10;
+    top: 0;
+    left: 0;
 }
 
 nav {
@@ -64,11 +66,10 @@ nav {
     justify-content: center;
     text-decoration: none;
     position: relative;
-    z-index: 10;
-    border-radius: 15px 0 0 15px;
+    z-index: 100;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item-active {
     background: #15679E;
 }
 
@@ -376,7 +377,7 @@ ul, ol {
 }
 
 .pageblock.pagetitle-big {
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -455,4 +456,62 @@ ul, ol {
 }
 
 
-
+@media (max-width: 650px) {
+    header {
+        height: 75px;
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    nav {
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .menu-item {
+        font-size: 1.25em;
+        aspect-ratio: unset;
+        flex-grow: 1;
+        width: unset;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+        z-index: unset;
+        border-radius: 0;
+    }
+    
+    .menu-item i {
+        z-index: 0;
+        position: relative;
+    }
+    
+    .menu-item:hover i {
+        z-index: 100000000;
+    }
+    
+    .menu-item-title {
+        left: 50%;
+        top: 0;
+        border-radius: 0 0 15px 15px;
+        height: fit-content;
+        padding: 15px 7.5px;
+        transform: translate(-50%, 0);
+        padding-top: 90px; /* 75px + 15px padding */
+        z-index: 10000000;
+        max-width: 225%;
+        text-align: center;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        min-width: 100%;
+    }
+    
+    #scrollable {
+        margin-left: 0;
+        margin-top: 75px;
+    }
+    
+    header div {
+        display: none;
+    }
+}

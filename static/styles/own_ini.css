@@ -1,8 +1,5 @@
 .bg-page {
-    background-image: url("/static/imgs/own_ini/museum.jpg");
-}
-
-.pagetitle-credits {
+    background-image: url("/static/imgs/own_ini/station.jpg");
     color: var(--white);
 }
 

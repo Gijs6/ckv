@@ -94,7 +94,7 @@ pages = [
         "title": "Introductielessen",
         "undertitle_1": "",
         "undertitle_2": "Liefde",
-        "img": "/static/imgs/LoversIIMargritte.jpg",
+        "img": "/static/imgs/White_Painting.jpg",
         "img_undertitle_1": "The Lovers II (1928)",
         "img_undertitle_2": "René Magritte",
         "url": "/introductielessen"
@@ -136,7 +136,7 @@ own_ini_list = [
         "act_loc": "Kröller-Müller Museum (Otterlo)",
         "act_date": "30 oktober 2024",
         "pdf_url": "/static/pdfs/EI1-Beeldend-ZoekenNaarZingeving.pdf",
-        "img_url": "/static/imgs/own_ini/olijfgaard.jpg",
+        "img_url": "/static/imgs/own_ini/Olijfgaard.jpg",
         "artwork": "Olijfgaard (1889)",
         "artist": "Vincent van Gogh",
         "bg": "yellow"
@@ -147,7 +147,7 @@ own_ini_list = [
         "act_loc": "Museumpark (Rotterdam)",
         "act_date": "28 februari 2025",
         "pdf_url": "/static/pdfs/EI2-Architectuur-Depot.pdf",
-        "img_url": "/static/imgs/own_ini/depot.jpg",
+        "img_url": "/static/imgs/own_ini/Depot_Boijmans_Van_Beuningen.jpg",
         "artwork": "Depot Boijmans van Beuningen",
         "artist": "MVRDV",
         "bg": "red"
