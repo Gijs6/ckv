@@ -1,57 +1,33 @@
 {% extends "base.html" %}
 
-{% block title %}Blok 1{% endblock %}
-
 {% block extra_headers %}
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/period_1.css') }}">
 {% endblock %}
 
 {% block content %}
-    <div class="pageblock megapaginatitel vid" id="megapaginatitelBlok1">
-        <video autoplay muted loop id="megapaginatitelbalken">
-          <source src="/static/vids/balken4.mp4" type="video/mp4">
+    <div class="pageblock pagetitle-big pagetitle-video">
+        <video autoplay muted loop>
+          <source src="/static/vids/period1.mp4" type="video/mp4">
         </video>
-        <div class="megatitel-titeltekst">
-            <span class="megatitel-activiteit">Het onzichtbare zichtbaar maken</span>
-            <span class="megatitel-blokendisci">Blok 1 - Beeldend</span>
-        </div>
-        <div class="megatitel-credits">
-            <span class="megatitelkunstwerk">Windows of the Soul II (2010)</span>
-            <span class="megatitelkunstenaar">Sonia Falcone</span>
+        <h1>Het onzichtbare zichtbaar maken</h2>
+        <h2>Blok 1 - Beeldend</h2>
+        <div class="pagetitle-credits">
+            <span class="pagetitle-credits-artwork">Windows of the Soul II (2010)</span>
+            <span class="pagetitle-credits-artist">Sonia Falcone</span>
         </div>
     </div>
 
-    <div class="pageblock alginfoblok">
-        <div class="alginfo-imgentext-container">
-            <img class="alginfo-imgbackground" id="alginfo-imgbackground-blok1" src="/static/imgs/b1/obliteration.jpg">
-            <div class="alginfo-imgcredits">
-                <span class="alginfo-kunstwerk">Obliteration Room (2002 - heden)</span>
-                <span class="alginfo-kunstenaar">Yayoi Kusama</span>
-            </div>
+    <div class="pageblock general-information">
+        <div class="geninfo-imgcredits">
+            <span class="geninfo-artwork">Cold Dark Matter: An Exploded View (1991)</span>
+            <span class="geninfo-artist">Cornelia Parker</span>
         </div>
-        <div class="alginfo-textcontainer">
-
-            <div class="alginfo-alginfobox">
-                <h1>Algemene informatie</h1>
-                <p>
-                    Dit blok was ik ingedeeld bij de discipline <strong>beeldend</strong>, met als thema <strong>het onzichtbare zichtbaar maken</strong>. Ik heb dit blok onderzocht hoe je een boodschap in een kunstwerk kunnen verwerken en, ik maakte de onzichtbare boodschap dus zichtbaar.<br>
-                    Dit blok kreeg ik les van <strong>mw. Borst</strong>. In dit blok werkte ik samen met <strong>Raphael Estevao (4A1)</strong>, <strong>Aleksander Sosnowski (4A1)</strong> en <strong>Max Veenstra (4H3)</strong>.<br>
-                    De tweede les van dit blok gingen we op excursie naar de tentoonstelling <strong><em>NEW WAVE. Future Voices in Art.</em></strong> in het <strong>Stedelijk Museum Schiedam</strong>.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="pageblock kleurvak-buiten rood">
-        <div class="textblok kleurvak-binnen textleft">
-            <h1>Kleine verklaring & uitleg</h1>
+        <div class="general-information-text">
+            <h1>Algemene informatie</h1>
             <p>
-                De informatie op deze pagina is erg verspreid, omdat ik deze pagina op verschillende momenten tijdens het blok en na het blok heb gebouwd. Alle informatie is echter aanwezig!<br>
-                Hieronder ziet u eerst een overzicht van alle lessen, met uitleg wat ik die les heb gedaan, foto's van het maakproces en mijn eigen werken (per les). Daarna volgt het tussenverslag.<br>
-                De inhoud van het tussenverslag is echter niet gelimiteerd tot dat specifieke onderdeel. Aangezien zowel de rest van de inhoud van deze pagina als het groepsverslag ook door mij zijn geschreven, lijkt het passend om deze elementen te <strong><em>betrekken</em></strong> bij de inhoud van het tussenverslag.<br>
-                <br>
-                Veel leesplezier!
+                Dit blok was ik ingedeeld bij de discipline <strong>beeldend</strong>, met als thema <strong>het onzichtbare zichtbaar maken</strong>. Ik heb dit blok onderzocht hoe je een boodschap in een kunstwerk kunnen verwerken en, ik maakte de onzichtbare boodschap dus zichtbaar.<br>
+                Dit blok kreeg ik les van <strong>mw. Borst</strong>. In dit blok werkte ik samen met <strong>Raphael Estevao (4A1)</strong>, <strong>Aleksander Sosnowski (4A1)</strong> en <strong>Max Veenstra (4H3)</strong>.<br>
+                De tweede les van dit blok gingen we op excursie naar de tentoonstelling <strong><em>NEW WAVE. Future Voices in Art.</em></strong> in het <strong>Stedelijk Museum Schiedam</strong>.
             </p>
         </div>
     </div>
@@ -76,7 +52,7 @@
                 </p>
             </div>
             <div class="kunstwerkmetcredits eigenwerk">
-                <img src="/static/imgs/b1/turtledrawing.jpg" alt="Schildpad (2024) - Gijs ten Berg">
+                <img src="/static/imgs/p1/turtledrawing.jpg" alt="Schildpad (2024) - Gijs ten Berg">
                 <span class="kunstwerknaam">Schildpad (2024)</span>
                 <span class="kunstenaarnaam">Gijs ten Berg</span>
             </div>
@@ -99,9 +75,9 @@
         <div class="kunstwerktabel">
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/imgs/b1/design1.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
-                    <img src="/static/imgs/b1/design2.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
-                    <img src="/static/imgs/b1/design3.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
+                    <img src="/static/imgs/p1/design1.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
+                    <img src="/static/imgs/p1/design2.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
+                    <img src="/static/imgs/p1/design3.jpg" alt="Context in Design, Design in Context: Pródogêrsi (2024) - Nifemi Marcus-Bello">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">Context in Design, Design in Context: Pródogêrsi (2024)</span>
@@ -115,9 +91,9 @@
             </div>
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/imgs/b1/rts1.jpg" alt="Return to Sender (2024) - The Nest Collective">
-                    <img src="/static/imgs/b1/rts2.jpg" alt="Return to Sender (2024) - The Nest Collective">
-                    <img src="/static/imgs/b1/rts3.jpg" alt="Return to Sender (2024) - The Nest Collective">
+                    <img src="/static/imgs/p1/rts1.jpg" alt="Return to Sender (2024) - The Nest Collective">
+                    <img src="/static/imgs/p1/rts2.jpg" alt="Return to Sender (2024) - The Nest Collective">
+                    <img src="/static/imgs/p1/rts3.jpg" alt="Return to Sender (2024) - The Nest Collective">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">Return to Sender (2024)</span>
@@ -131,9 +107,9 @@
             </div>
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/imgs/b1/4c1.jpg" alt="The 4c Body (2024) - Marga Weimans">
-                    <img src="/static/imgs/b1/4c2.jpg" alt="The 4c Body (2024) - Marga Weimans">
-                    <img src="/static/imgs/b1/4c2.jpg" alt="The 4c Body (2024) - Marga Weimans">
+                    <img src="/static/imgs/p1/4c1.jpg" alt="The 4c Body (2024) - Marga Weimans">
+                    <img src="/static/imgs/p1/4c2.jpg" alt="The 4c Body (2024) - Marga Weimans">
+                    <img src="/static/imgs/p1/4c2.jpg" alt="The 4c Body (2024) - Marga Weimans">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">The 4c Body (2024)</span>
@@ -145,9 +121,9 @@
             </div>
             <div class="kunstwerktabelkunstwerk">
                 <div class="kunstwerktabelkunstwerkfotos">
-                    <img src="/static/imgs/b1/vh1.jpg" alt="Void Home (2024) - Elejandro Martinez">
-                    <img src="/static/imgs/b1/vh2.jpg" alt="Void Home (2024) - Elejandro Martinez">
-                    <img src="/static/imgs/b1/vh3.jpg" alt="Void Home (2024) - Elejandro Martinez">
+                    <img src="/static/imgs/p1/vh1.jpg" alt="Void Home (2024) - Elejandro Martinez">
+                    <img src="/static/imgs/p1/vh2.jpg" alt="Void Home (2024) - Elejandro Martinez">
+                    <img src="/static/imgs/p1/vh3.jpg" alt="Void Home (2024) - Elejandro Martinez">
                 </div>
                 <div class="kunstwerktabelkunstwerktekst">
                     <span class="kunstwtab-kunstwerk">Void Home (2024)</span>
@@ -168,7 +144,7 @@
                 </p>
             </div>
             <div class="kunstwerkmetcredits eigenwerk">
-                <img src="/static/imgs/b1/zeeschildpad.png" alt="Onze wereld (2024) - Raphael Estevao, Max Veenstra, Aleksander Sosnowski en Gijs ten Berg">
+                <img src="/static/imgs/p1/zeeschildpad.png" alt="Onze wereld (2024) - Raphael Estevao, Max Veenstra, Aleksander Sosnowski en Gijs ten Berg">
                 <span class="kunstwerknaam">Onze wereld (2024)</span>
                 <span class="kunstenaarnaam">Raphael Estevao, Max Veenstra,<br>Aleksander Sosnowski en Gijs ten Berg</span>
             </div>
@@ -225,8 +201,8 @@
         </div>
 
         <div class="verslagtekst-afbeeldingenalg">
-            <img src="/static/imgs/b1/lesson-working1.jpg" class="vrslgtxtimg-rechthoek" alt="Het tekenen van een poster">
-            <img src="/static/imgs/b1/lesson-working2.jpg" class="vrslgtxtimg-rechthoek" alt="Onderzoek in groepsverband">
+            <img src="/static/imgs/p1/lesson-working1.jpg" class="vrslgtxtimg-rechthoek" alt="Het tekenen van een poster">
+            <img src="/static/imgs/p1/lesson-working2.jpg" class="vrslgtxtimg-rechthoek" alt="Onderzoek in groepsverband">
         </div>
 
     </div>
@@ -253,11 +229,11 @@
         </div>
 
         <div class="verslagtekst-afbeeldingenalg collage">
-            <img src="/static/imgs/b1/lesson-working51.jpg" alt="Samenstellen van een poster">
-            <img src="/static/imgs/b1/lesson-working52.jpg" alt="Tekenen voor een poster">
-            <img src="/static/imgs/b1/lesson-working53.jpg" alt="Kunstproject in groepsverband">
-            <img src="/static/imgs/b1/lesson-working54.jpg" alt="Kunstproject in groepsverband">
-            <img src="/static/imgs/b1/lesson-working55.jpg" alt="Samenvoegen onderdelen poster">
+            <img src="/static/imgs/p1/lesson-working51.jpg" alt="Samenstellen van een poster">
+            <img src="/static/imgs/p1/lesson-working52.jpg" alt="Tekenen voor een poster">
+            <img src="/static/imgs/p1/lesson-working53.jpg" alt="Kunstproject in groepsverband">
+            <img src="/static/imgs/p1/lesson-working54.jpg" alt="Kunstproject in groepsverband">
+            <img src="/static/imgs/p1/lesson-working55.jpg" alt="Samenvoegen onderdelen poster">
         </div>
 
         <a href="https://drive.google.com/file/d/1_1vxHdPLLH0mS5mTJXsVwu1gf1TWpjjd/view?usp=sharing" class="knop blauw timelapse" target="_blank">
@@ -270,7 +246,7 @@
         </div>
 
         <div class="kunstwerkmetcredits eigenwerk eindwerk">
-            <img src="/static/imgs/b1/eindwerk.jpg" id="eindwerkimg" alt="Eindwerk: nepnieuwskrant">
+            <img src="/static/imgs/p1/eindwerk.jpg" id="eindwerkimg" alt="Eindwerk: nepnieuwskrant">
             <span class="kunstwerknaam">Voorpagina Algemeen Dagblad (Rotterdam) van 29 februari 2024 (nepnieuws) (2024)</span>
             <span class="kunstenaarnaam">Raphael Estevao, Max Veenstra, Aleksander Sosnowski en Gijs ten Berg</span>
         </div>
@@ -326,9 +302,9 @@
                         <strong>Materiaal</strong>: Staal en hout. De achtbaan bestaat uit 15 delen met een totale lengte van 79,2 meter. Opvallend is dat de achtbaan geen rem heeft: het karretje stopt door zwaartekracht en kan wel 45 seconden heen en weer blijven schommelen (<a href="https://youtu.be/bG9jLUwE7vY">Zie video</a>).
                     </p>
                 </div>
-                <img src="/static/imgs/b1/brava1.jpg" alt="Brava! (2022) - EJ Hill">
-                <img src="/static/imgs/b1/brava2.jpg" alt="Brava! (2022) - EJ Hill">
-                <img src="/static/imgs/b1/brava3.jpg" alt="Brava! (2022) - EJ Hill">
+                <img src="/static/imgs/p1/brava1.jpg" alt="Brava! (2022) - EJ Hill">
+                <img src="/static/imgs/p1/brava2.jpg" alt="Brava! (2022) - EJ Hill">
+                <img src="/static/imgs/p1/brava3.jpg" alt="Brava! (2022) - EJ Hill">
             </div>
             <div class="verslagtekst-afbeeldingenalg collage">
                 <div class="collageviminfo">
@@ -340,9 +316,9 @@
                         <strong>Materiaal</strong>: Varieert. Binnen de afgebeelde expositie zijn het afdrukken van 15 x 11 cm in fotolijsten.
                     </p>
                 </div>
-                <img src="/static/imgs/b1/shapes1.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
-                <img src="/static/imgs/b1/shapes2.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
-                <img src="/static/imgs/b1/shapes3.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
+                <img src="/static/imgs/p1/shapes1.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
+                <img src="/static/imgs/p1/shapes2.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
+                <img src="/static/imgs/p1/shapes3.jpg" alt="The Shapes Project (2005-2006) - Allan McCollum">
             </div>
         </div>
 

@@ -10,6 +10,8 @@
     
     --dark-red: #b52500;
     --dark-green: #024330;
+    
+    --white-transparent: #e9f0f380;
 }
 
 *, ::before, ::after {
@@ -63,6 +65,7 @@ nav {
     text-decoration: none;
     position: relative;
     z-index: 10;
+    border-radius: 15px 0 0 15px;
 }
 
 .menu-item:hover {
@@ -107,8 +110,14 @@ header div h2 {
 
 #scrollable {
     margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+main {
+    flex-grow: 1;
+}
 
 footer {
     background: var(--green);
@@ -135,10 +144,11 @@ footer a {
 .pagetitle-small {
     font-size: 2.5em;
     font-weight: 900;
+    text-align: center;
 }
 
 .pageblock {
-    padding: 20px;
+    padding: 50px 100px;
 }
 
 
@@ -148,7 +158,15 @@ footer a {
 }
 
 .pageblock.columns div {
-    padding: 20px;
+    padding: 50px 25px;
+}
+
+.pageblock.columns div:first-child {
+    padding-left: 100px;
+}
+
+.pageblock.columns div:last-child {
+    padding-right: 100px;
 }
 
 .columns {
@@ -320,7 +338,7 @@ p.center {
 }
 
 .titleblock.bg-fancy {
-    padding: 40px;
+    padding: 100px;
 }
 
 .titleblock.bg-fancy > h1 > i {
@@ -348,7 +366,7 @@ h2 {
 }
 
 audio {
-    background-color: var(--black);
+    background-color: black;
     border-radius: 10px;
     height: fit-content;
 }
@@ -365,20 +383,76 @@ ul, ol {
     justify-content: center;
     position: relative;
     width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
-.pagebg-credits {
+.pageblock.pagetitle-big > div {
+    padding: 0 !important;
+}
+
+.pagetitle-credits, .geninfo-imgcredits {
     position: absolute;
     right: 20px;
     bottom: 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
 }
 
-.pbg-credits-artwork {
+.pagetitle-credits-artwork, .geninfo-artwork {
     font-weight: 400;
 }
 
-.pbg-credits-artist {
+.pagetitle-credits-artist, .geninfo-artist {
     font-weight: 900
 }
+
+.pageblock > h1, .pageblock > h2, .pageblock > h3, .blockheader {
+    text-align: center;
+    margin-bottom: .75em;
+}
+
+.pagetitle-big.pagetitle-video {
+    height: 90vh;
+}
+
+.pagetitle-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.pagetitle-video video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.pageblock.general-information {
+    padding: 100px 75px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.general-information-text {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 750px;
+}
+
+
+

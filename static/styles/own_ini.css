@@ -1,8 +1,8 @@
 .bg-page {
-    background-image: url("/static/imgs/own_ini/beach.jpg");
+    background-image: url("/static/imgs/own_ini/museum.jpg");
 }
 
-.pagebg-credits {
+.pagetitle-credits {
     color: var(--white);
 }
 

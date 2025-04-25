@@ -1,0 +1,11 @@
+.pagetitle-big {
+    color: var(--white);
+}
+
+.pageblock.general-information {
+    background-image: url("/static/imgs/p1/colddarkmatter.jpg");
+}
+
+.geninfo-imgcredits {
+    color: var(--white)
+}

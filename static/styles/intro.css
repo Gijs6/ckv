@@ -11,42 +11,18 @@
   margin: auto;
 }
 
-.pagetitle-big.columns div:first-child {
-  margin-right: 0;
-}
 
 .pagetitle-big.columns div.artwork-basic {
   flex-grow: 0;
   font-size: 1.4em;
-  margin: auto;
-  margin-left: 0;
 }
 
 .lessonartexamples img {
-  height: 450px;
-  width: auto;
+  height: fit-content;
+  max-width: 400px;
+  object-fit: contain;
 }
 
 .lessonartexamples audio, .lessonartexamples img {
   margin: 15px auto;
-}
-
-.comp-thingy {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 10px auto;
-  width: max-content;
-}
-
-.comp-thingy i {
-  text-align: center;
-  font-size: 2em;
-  width: 3em;
-}
-
-.comp-thingy img {
-  width: 250px;
 }
