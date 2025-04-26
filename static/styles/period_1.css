@@ -9,3 +9,45 @@
 .geninfo-imgcredits {
     color: var(--white);
 }
+
+.arttable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.arttable-pictures {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+.arttable-pictures img {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.arttable-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.arttable-text span {
+    font-size: 1.2em;
+}
+
+.arttable-text p {
+    margin-block: 1em 0;
+}
+
+@media (max-width: 800px) {
+    .arttable {
+        grid-template-columns: 1fr;
+    }
+}

@@ -227,9 +227,16 @@ img {
 }
 
 .bg-fancy {
-    background-image: url("/static/imgs/abstract.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.fancy1 {
+    background-image: url("/static/imgs/abstract.jpg");
+}
+
+.fancy2 {
+    background-image: url("/static/imgs/abstract_alt.jpg");
 }
 
 .bg-page {
@@ -408,12 +415,14 @@ ol {
 }
 
 .pagetitle-credits-artwork,
-.geninfo-artwork {
+.geninfo-artwork,
+.artobject-artwork {
     font-weight: 400;
 }
 
 .pagetitle-credits-artist,
-.geninfo-artist {
+.geninfo-artist,
+.artobject-artist {
     font-weight: 900;
 }
 
@@ -477,11 +486,6 @@ ol {
 .textblock p {
     margin-block: 1em;
 }
-
-
-
-
-
 
 
 
