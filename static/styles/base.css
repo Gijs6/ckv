@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 :root {
     --black: #011627;
@@ -7,14 +7,16 @@
     --red: #ff4a1c;
     --blue: #197bbd;
     --green: #04a777;
-    
+
     --dark-red: #b52500;
     --dark-green: #024330;
-    
+
     --white-transparent: #e9f0f380;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +27,7 @@ body {
     font-family: Sora, sans-serif;
     color: var(--black);
     background: var(--white);
-    font-size: 1.1em;
+    font-size: clamp(0.8em, 2.5vw, 1.05em);
 }
 
 a {
@@ -41,7 +43,7 @@ header {
     height: 100%;
     background: var(--blue);
     color: var(--white);
-    z-index: 10;
+    z-index: 1000;
     top: 0;
     left: 0;
 }
@@ -69,18 +71,19 @@ nav {
     z-index: 100;
 }
 
-.menu-item:hover, .menu-item-active {
-    background: #15679E;
+.menu-item:hover,
+.menu-item-active {
+    background: #15679e;
 }
 
 .menu-item-title {
     display: none;
-    font-size: .65em;
+    font-size: 0.65em;
     position: absolute;
     left: 100%;
     width: max-content;
     height: 100%;
-    background: #15679E;
+    background: #15679e;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
@@ -101,11 +104,11 @@ header div {
 header div h1 {
     font-size: 1em;
     font-weight: 900;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 header div h2 {
-    font-size: .85em;
+    font-size: 0.85em;
     font-weight: 500;
 }
 
@@ -128,19 +131,18 @@ footer {
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-    font-size: .8em;
+    font-size: 0.8em;
     color: var(--white);
 }
-
 
 footer a {
     color: inherit;
 }
 
-#footer-right h2, #footer-right h3 {
+#footer-right h2,
+#footer-right h3 {
     font-size: 1.25em;
 }
-
 
 .pagetitle-small {
     font-size: 2.5em;
@@ -152,21 +154,20 @@ footer a {
     padding: 50px 100px;
 }
 
-
 .pageblock.columns {
     padding: 0;
     height: unset !important;
 }
 
-.pageblock.columns div {
+.pageblock.columns > div {
     padding: 50px 25px;
 }
 
-.pageblock.columns div:first-child {
+.pageblock.columns > div:first-child {
     padding-left: 100px;
 }
 
-.pageblock.columns div:last-child {
+.pageblock.columns > div:last-child {
     padding-right: 100px;
 }
 
@@ -176,7 +177,7 @@ footer a {
     flex-wrap: wrap;
 }
 
-.columns.col-gap {
+.flex-gap {
     gap: 30px;
 }
 
@@ -217,7 +218,7 @@ img {
 }
 
 .bg-green {
-    background: var(--green)
+    background: var(--green);
 }
 
 .bg-dark-green {
@@ -294,7 +295,7 @@ p.center {
 }
 
 .button:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .artwork-basic {
@@ -307,17 +308,18 @@ p.center {
     text-align: center;
 }
 
-
-.artwork-basic img, .artwork-basic audio {
+.artwork-basic img,
+.artwork-basic audio {
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 .artwork-basic .artbasic-artwork {
-    font-weight: 400
+    font-weight: 400;
 }
 
 .artwork-basic .artbasic-artist {
-    font-weight: 900
+    font-weight: 900;
 }
 
 .pageblock > h1 {
@@ -339,11 +341,11 @@ p.center {
 }
 
 .titleblock.bg-fancy {
-    padding: 100px;
+    padding: 100px 10px;
 }
 
 .titleblock.bg-fancy > h1 > i {
-    margin-inline-start: .25em;
+    margin-inline-start: 0.25em;
 }
 
 h1 {
@@ -355,15 +357,15 @@ h2 {
 }
 
 .margin-bottom {
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 .bigart-artwork {
-    font-weight: 400
+    font-weight: 400;
 }
 
 .bigart-artist {
-    font-weight: 900
+    font-weight: 900;
 }
 
 audio {
@@ -372,7 +374,8 @@ audio {
     height: fit-content;
 }
 
-ul, ol {
+ul,
+ol {
     padding-inline-start: 1em;
 }
 
@@ -392,7 +395,8 @@ ul, ol {
     padding: 0 !important;
 }
 
-.pagetitle-credits, .geninfo-imgcredits {
+.pagetitle-credits,
+.geninfo-imgcredits {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -402,17 +406,22 @@ ul, ol {
     text-align: right;
 }
 
-.pagetitle-credits-artwork, .geninfo-artwork {
+.pagetitle-credits-artwork,
+.geninfo-artwork {
     font-weight: 400;
 }
 
-.pagetitle-credits-artist, .geninfo-artist {
-    font-weight: 900
+.pagetitle-credits-artist,
+.geninfo-artist {
+    font-weight: 900;
 }
 
-.pageblock > h1, .pageblock > h2, .pageblock > h3, .blockheader {
+.pageblock > h1,
+.pageblock > h2,
+.pageblock > h3,
+.blockheader {
     text-align: center;
-    margin-bottom: .75em;
+    margin-bottom: 0.75em;
 }
 
 .pagetitle-big.pagetitle-video {
@@ -435,7 +444,6 @@ ul, ol {
     object-fit: cover;
 }
 
-
 .pageblock.general-information {
     padding: 100px 75px;
     background-size: cover;
@@ -455,22 +463,27 @@ ul, ol {
     max-width: 750px;
 }
 
-
 @media (max-width: 650px) {
+    * {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
     header {
         height: 75px;
         width: 100%;
-        padding: 0 15px;
+        padding: 0 5px;
     }
-    
+
     nav {
         flex-direction: row;
-        gap: 15px;
+        gap: 5px;
         flex-wrap: wrap;
     }
-    
+
     .menu-item {
-        font-size: 1.25em;
+        font-size: 1.35em;
         aspect-ratio: unset;
         flex-grow: 1;
         width: unset;
@@ -479,16 +492,16 @@ ul, ol {
         z-index: unset;
         border-radius: 0;
     }
-    
+
     .menu-item i {
         z-index: 0;
         position: relative;
     }
-    
+
     .menu-item:hover i {
         z-index: 100000000;
     }
-    
+
     .menu-item-title {
         left: 50%;
         top: 0;
@@ -496,7 +509,8 @@ ul, ol {
         height: fit-content;
         padding: 15px 7.5px;
         transform: translate(-50%, 0);
-        padding-top: 90px; /* 75px + 15px padding */
+        padding-top: 90px;
+        /* 75px + 15px padding */
         z-index: 10000000;
         max-width: 225%;
         text-align: center;
@@ -505,13 +519,39 @@ ul, ol {
         hyphens: auto;
         min-width: 100%;
     }
-    
+
     #scrollable {
         margin-left: 0;
         margin-top: 75px;
     }
-    
+
     header div {
         display: none;
+    }
+
+    .bcbg-out,
+    .bcbg-in,
+    .general-information-text {
+        padding: 20px;
+    }
+
+    .pageblock {
+        padding: 20px;
+    }
+
+    .pageblock.columns > div:first-child {
+        padding: 25px;
+    }
+
+    .pageblock.columns > div:last-child {
+        padding: 25px;
+    }
+
+    .columns > * {
+        min-width: 50%;
+    }
+
+    .pageblock.general-information {
+        padding: 25px 25px 75px 25px;
     }
 }

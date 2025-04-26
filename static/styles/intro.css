@@ -1,28 +1,29 @@
 .pageblock.pagetitle-big {
-  margin: auto;
-  background: linear-gradient(217deg, #ff00d6, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #b050ff, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #ff1600, rgba(0, 255, 0, 0) 70.71%) #ffffffe5;
-  background-blend-mode: overlay;
+    margin: auto;
+    background: linear-gradient(217deg, #ff00d6, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #b050ff, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #ff1600, rgba(0, 255, 0, 0) 70.71%) #ffffffe5;
+    background-blend-mode: overlay;
 }
 
 .pagetitle-big.columns div {
-  width: fit-content;
-  text-align: center;
-  max-width: 600px;
-  margin: auto;
+    width: fit-content;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
 }
 
-
 .pagetitle-big.columns div.artwork-basic {
-  flex-grow: 0;
-  font-size: 1.4em;
+    flex-grow: 0;
+    font-size: 1.4em;
 }
 
 .lessonartexamples img {
-  height: fit-content;
-  max-width: 400px;
-  object-fit: contain;
+    height: fit-content;
+    max-width: 400px;
+    object-fit: contain;
 }
 
-.lessonartexamples audio, .lessonartexamples img {
-  margin: 15px auto;
+.lessonartexamples audio,
+.lessonartexamples img {
+    margin: 15px auto;
+    max-width: 100%;
 }

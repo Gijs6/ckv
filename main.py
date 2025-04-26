@@ -58,7 +58,7 @@ pages = [
         "title": "Blok 1",
         "undertitle_1": "Beeldend",
         "undertitle_2": "Het onzichtbare zichtbaar maken",
-        "img": "/static/imgs/brava.jpg",
+        "img": "/static/imgs/Brava!.jpg",
         "img_undertitle_1": "Brava! (2022)",
         "img_undertitle_2": "EJ Hill",
         "url": "/blok-1"
@@ -94,7 +94,7 @@ pages = [
         "title": "Introductielessen",
         "undertitle_1": "",
         "undertitle_2": "Liefde",
-        "img": "/static/imgs/White_Painting.jpg",
+        "img": "/static/imgs/intro/The_Lovers_II.jpg",
         "img_undertitle_1": "The Lovers II (1928)",
         "img_undertitle_2": "René Magritte",
         "url": "/introductielessen"
