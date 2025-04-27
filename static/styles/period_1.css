@@ -3,7 +3,7 @@
 }
 
 .pageblock.general-information {
-    background-image: url("/static/imgs/p1/colddarkmatter.jpg");
+    background-image: url("/static/imgs/p1/Cold_Dark_Matter.jpg");
 }
 
 .geninfo-imgcredits {
@@ -36,10 +36,6 @@
 .arttable-text {
     display: flex;
     flex-direction: column;
-}
-
-.arttable-text span {
-    font-size: 1.2em;
 }
 
 .arttable-text p {

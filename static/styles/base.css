@@ -46,6 +46,7 @@ header {
     z-index: 1000;
     top: 0;
     left: 0;
+    border-right: 1px solid var(--white);
 }
 
 nav {
@@ -231,12 +232,18 @@ img {
     background-position: center;
 }
 
+.seperator {
+    padding: 0;
+    height: 5em;
+}
+
 .fancy1 {
     background-image: url("/static/imgs/abstract.jpg");
 }
 
 .fancy2 {
     background-image: url("/static/imgs/abstract_alt.jpg");
+    background-position: top;
 }
 
 .bg-page {
@@ -288,7 +295,7 @@ p.center {
 }
 
 .button {
-    padding: 10px 15px;
+    padding: 10px 15px !important;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -297,7 +304,8 @@ p.center {
     text-decoration: none;
 }
 
-.button.bg-blue {
+.button-standard {
+    background: var(--blue);
     color: var(--white);
 }
 
@@ -479,15 +487,60 @@ ol {
     padding: revert;
 }
 
-.textblock h1, .textblock h2, .textblock h3 {
+.textblock section {
+    margin-block: 2em;
+}
+
+.textblock section:first-child {
+    margin-block-start: 0;
+}
+
+.textblock section:last-child {
+    margin-block-end: 0;
+}
+
+.textblock h1 {
     margin-block: 0 0.5em;
 }
 
-.textblock p {
-    margin-block: 1em;
+.textblock h2, .textblock h3 {
+    margin-block: 1em 0;
 }
 
+.textblock p {
+    margin-block: .75em;
+}
 
+.img-collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.img-collage img {
+    flex-grow: 1;
+    width: calc(33% - 1em);
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.img-collage img.img-big {
+    max-height: 750px;
+}
+
+.img-very-big {
+    min-width: 100%;
+    max-width: 100% !important;
+}
+
+.artobj-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.artobject-artist, .artobject-artwork {
+    font-size: 1.2em
+}
 
 @media (max-width: 650px) {
     * {
@@ -500,6 +553,8 @@ ol {
         height: 75px;
         width: 100%;
         padding: 0 5px;
+        border-left: none;
+        border-bottom: 1px solid var(--white);
     }
 
     nav {
