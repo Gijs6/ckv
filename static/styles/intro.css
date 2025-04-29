@@ -1,4 +1,4 @@
-.pageblock.pagetitle-big {
+.pagetitle-big {
     margin: auto;
     background: linear-gradient(217deg, #ff00d6, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #b050ff, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #ff1600, rgba(0, 255, 0, 0) 70.71%) #ffffffe5;
     background-blend-mode: overlay;
@@ -9,6 +9,7 @@
     text-align: center;
     max-width: 600px;
     margin: auto;
+    padding: 0 !important;
 }
 
 .pagetitle-big.columns div.artwork-basic {

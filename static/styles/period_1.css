@@ -2,7 +2,7 @@
     color: var(--white);
 }
 
-.pageblock.general-information {
+.general-information {
     background-image: url("/static/imgs/p1/Cold_Dark_Matter.jpg");
 }
 
