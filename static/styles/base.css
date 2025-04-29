@@ -581,6 +581,7 @@ ol {
         border-radius: 15px 15px 0 0;
         z-index: unset;
         border-radius: 0;
+        padding: unset;
     }
 
     .menu-item i {
