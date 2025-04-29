@@ -1,75 +1,54 @@
 {% extends "base.html" %}
 
-{% set active_page = "b3" %}
-
 {% block title %}Blok 3{% endblock %}
 
 {% block extra_headers %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvb3.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvblokpaginas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/period_3.css') }}">
 {% endblock %}
 
 {% block content %}
-    <div class="pageblock megapaginatitel img" id="megapaginatitelBlok3">
-        <div class="megatitel-titeltekst">
-            <span class="megatitel-activiteit">Jouw interpretatie</span>
-            <span class="megatitel-blokendisci">Blok 3 - Film</span>
-        </div>
-        <div class="megatitel-credits">
-            <span class="megatitelkunstwerk"><em>Opnames van</em> 20 Days in Mariupol (2023)</span>
-            <span class="megatitelkunstenaar">Mstyslav Chernov</span>
-        </div>
-    </div>
-    <div class="pageblock alginfoblok">
-        <div class="alginfo-imgentext-container">
-            <img class="alginfo-imgbackground" id="alginfo-imgbackground-blok3" src="/static/imgs/p3/no_other_land.jpg">
-            <div class="alginfo-imgcredits">
-                <span class="alginfo-kunstwerk">No Other Land (2024)</span>
-                <span class="alginfo-kunstenaar">Basel Adra, Hamdan Ballal,<br>Yuval Abraham en Rachel Szor</span>
-            </div>
-        </div>
-        <div class="alginfo-textcontainer">
-            <div class="alginfo-alginfobox">
-                <h1>Algemene informatie</h1>
-                <p>
-                    Dit blok was ik ingedeeld bij de discipline <strong>film</strong> met als thema <strong>jouw interpretatie</strong>. Dit blok onderzochten we hoe gebeurtenissen en emoties in een film door iedereen wordt geïnterpreteerd.<br>
-                    Dit blok kreeg ik les van <strong>mw. te Loo</strong>.<br>
-                    De eerste twee lessen van dit blok gingen niet door. De derde les (<em>de facto</em> dus de eerste les) gingen we naar de documentaire <em><strong>No Other Land</strong></em> in <strong>Wenneker Cinema</strong>. De vierde les van dit blok (<em>de facto</em> dus de tweede les) kregen we een aantal opdrachten rond de interpretatie van de film.
-                </p>
-            </div>
+    <div class="pageblock pagetitle-big pagetitle-full bg-page">
+        <h1>Jouw interpretatie</h1>
+        <h2>Blok 3 - Film</h2>
+        <div class="pagetitle-credits">
+            <span class="pagetitle-credits-artwork">20 Days in Mariupol (2023)</span>
+            <span class="pagetitle-credits-artist">Mstyslav Chernov</span>
         </div>
     </div>
 
-
-
-    <div class="pageblock kleurvak-buiten rood">
-        <div class="textblok kleurvak-binnen textleft">
-            <h1>Kleine verklaring & uitleg</h1>
+    <div class="pageblock general-information">
+        <div class="geninfo-imgcredits">
+            <span class="geninfo-artwork">No Other Land (2024)</span>
+            <span class="geninfo-artist">Basel Adra, Hamdan Ballal,<br>Yuval Abraham en Rachel Szor</span>
+        </div>
+        <div class="general-information-text">
+            <h1>Algemene informatie</h1>
             <p>
-                Op deze pagina vindt u de inhoud uit het tussenverslag in combinatie met een overzicht wat ik tijdens de les heb gedaan.<br>
-                <br>
-                Veel leesplezier!
+                Dit blok was ik ingedeeld bij de discipline <strong>film</strong> met als thema <strong>jouw interpretatie</strong>. Dit blok onderzochten we hoe gebeurtenissen en emoties in een film door iedereen wordt geïnterpreteerd.<br>
+                Dit blok kreeg ik les van <strong>mw. te Loo</strong>.<br>
+                De eerste twee lessen van dit blok gingen niet door. De derde les (<em>de facto</em> dus de eerste les) gingen we naar de documentaire <em><strong>No Other Land</strong></em> in <strong>Wenneker Cinema</strong>. De vierde les van dit blok (<em>de facto</em> dus de tweede les) kregen we een aantal opdrachten rond de interpretatie van de film.
             </p>
         </div>
     </div>
 
-    <div class="pageblock verslagtekst">
-        <div class="verslagtekst-tekststukje">
+
+    <div class="pageblock textblock">
+        <section>
             <h1>Waarom heb ik dit blok gekozen?</h1>
             <p>Ik heb voor "Jouw Interpretatie" gekozen omdat het me interessant leek om mijn eigen visie op de film <em>No Other Land</em> te onderzoeken. Het maken van een filmposter leek me een interessante manier om dit te doen. Ook vond ik het boeiend om kunst te gebruiken om maatschappelijke thema's over te brengen.</p>
-        </div>
-        <div class="verslagtekst-tekststukje">
+        </section>
+        <section>
             <h1>Verwachtingen vooraf</h1>
             <p>Vooraf had ik verwacht dat ik tijdens dit blok vooral zou leren hoe ik een film visueel kan interpreteren en mijn eigen interpretatie duidelijk over kan brengen. Daarnaast verwachtte ik dat het blok me zou helpen om gebeurtenissen uit verschillende perspectieven te bekijken. Tenslotte verwachtte ik ervaring op te doen met het "vertalen" van een boodschap naar een poster.</p>
-        </div>
+        </section>
     </div>
 
 
-    <div class="pageblock scheiding blauw"></div>
+    <div class="pageblock seperator bg-blue"></div>
 
 
-    <div class="pageblock verslagtekst">
-        <div class="verslagtekst-voorwoordje">
+    <div class="pageblock textblock">
+        <section>
             <h1>Les 1 (les 3-3): excursie</h1>
             <p>
                 Deze les begon in het lokaal, waar we met zijn allen de trailer van de documentaire bekeken. Tijdens deze bijeenkomst kregen we ook een korte uitleg over wat we dit blok voor de rest gingen doen en welke onderwerpen aan bod zouden komen. Dit zorgde voor duidelijkheid en een overzicht van de verwachtingen.<br>
@@ -77,20 +56,21 @@
                 De documentaire <em>No Other Land</em> richt zich op het leven van Palestijnen in Masafer Yatta, een gebied op de bezette Westelijke Jordaanoever. De film maakte duidelijk welke invloed recente gebeurtenissen hebben gehad op de lokale gemeenschap. Door middel van een verzameling beelden die gedurende de afgelopen twintig jaar zijn gemaakt, wordt het dagelijks leven van de bewoners in deze regio in beeld gebracht.<br>
                 Daarnaast gaat de documentaire over de (onwaarschijnlijke) vriendschap die is ontstaan tussen Basel Adra en de Israëlische journalist Yuval Abraham, wat een extra dimensie toevoegt aan het verhaal over de complexe realiteit in het gebied.
             </p>
-        </div>
+        </section>
     </div>
     
 
-    <div class="pageblock scheiding blauw"></div>
+    <div class="pageblock seperator bg-blue"></div>
 
 
-    <div class="pageblock verslagtekst">
-        <div class="verslagtekst-voorwoordje">
+    <div class="pageblock textblock">
+        <section>
             <h1>Les 2 (les 3-4): interpretatie</h1>
             <p>Deze les begon met een nabespreking van de documentaire. Daarna hebben we nog een verwerkingsopdracht gedaan rond het thema "onwaarschijnlijke vriendschappen". Tenslotte heeft iedereen een filmposter gemaakt voor de documentaire.</p>
-        </div>
+        </section>
         
-        <div class="verslagtekst-tekststukje">
+        <section>
+            <h2>Analyse</h2>
             <p>
                 Om de film na te bespreken en te analyseren kreeg iedereen een blaadje en de opdracht om de volgende vragen te beantwoorden. U ziet mijn eigen antwoorden eronder staan.
             </p>
@@ -124,9 +104,10 @@
                     <em>Dat ze ondanks verschillende afkomsten en meningsverschillen toch goede vrienden kunnen zijn. Ook vond ik het inspirerend hoe ze praatten over het conflict; ze toonden beide steeds veel empathie en inlevingsvermogen voor de verschillende situaties.</em>
                 </li>
             </ol>
-        </div>
+        </section>
 
-        <div class="verslagtekst-tekststukje">
+        <section>
+            <h2>onwaarschijnlijke vriendschappen</h2>
             <p>Vervolgens zijn we verder ingegaan op het thema <strong>"onwaarschijnlijke vriendschappen"</strong>. We kregen de volgende opdracht:</p>
             <ul>
                 <li>Bedenk een andere onwaarschijnlijke vriendschappen</li>
@@ -142,7 +123,7 @@
                 </li>
             </ul>
             <p>
-                <br>Hieronder leest u mijn eigen scenario rond een onwaarschijnlijke vriendschap:<br>
+                Hieronder leest u mijn eigen scenario rond een onwaarschijnlijke vriendschap:<br>
                 Dit scenario speelt zich af in de <em>DMZ</em> (de gedemilitariseerde zone tussen Noord- en Zuid-Korea). Het conflict in deze vriendschap is de Koreaoorlog.<br>
                 Dit is mijn scène:<br>
                 <p class="text-indented">
@@ -159,7 +140,6 @@
                     <strong>Seong-Hun</strong>: Tot de volgende keer.<br>
                     <strong>Jun-Ho</strong>: Tot de volgende keer.<br>
                 </p>
-                <br>
                 <ul>
                     <li>
                         <strong>Wat is de blik van de een en van de ander?</strong><br>
@@ -176,9 +156,10 @@
                     </li>
                 </ul>
             </p>
-        </div>
+        </section>
 
-        <div class="verslagtekst-tekststukje">
+        <section>
+            <h2>Filmposter</h2>
             <p>Tenslotte heeft iedereen een filmposter gemaakt voor de documentaire <em>No Other Land</em>. Hieronder leest u de opdracht:</p>
             <ul>
                 <li>Maak een filmposter voor de film 'No Other Land'</li>
@@ -188,35 +169,43 @@
                 <li>Zet ook een beoordeling op de poster in een aantal sterren.</li>
                 <li>Zet je naam op de poster.</li>
             </ul>
-            <p><br>Hieronder ziet u mijn eigen poster:</p>
-            <div class="kunstwerkmetcredits eigenwerk eindwerk">
-                <img src="/static/imgs/p3/poster.jpg" id="eindwerkimg">
+            <div class="columns flex-gap">
+                <section>
+                    <h2>Eigen werk</h2>
+                    <p>
+                        <br>De 3 momenten uit de documentaire die ik heb gekozen zijn de <strong>demonstratie</strong>, de <strong>sloop van de school</strong> en het <strong>bezoek van Tony Blair</strong> (hoopvol moment). Ik heb gekozen voor de pakkende zin "Emoties in perspectief", omdat ik vind dat de film de emoties een "gezicht geeft" (het zet ze dus in een perspectief).
+                    </p>
+                </section>
+                <div class="artwork-basic">
+                    <img src="/static/imgs/p3/Poster.jpg" alt="Poster No Other Land (2025) - Gijs ten Berg">
+                    <span class="artbasic-artwork">Poster No Other Land (2025)</span>
+                    <span class="artbasic-artist">Gijs ten Berg</span>
+                </div>
             </div>
-            <p><br>De 3 momenten uit de documentaire die ik heb gekozen zijn de <strong>demonstratie</strong>, de <strong>sloop van de school</strong> en het <strong>bezoek van Tony Blair</strong> (hoopvol moment). Ik heb gekozen voor de pakkende zin "Emoties in perspectief", omdat ik vind dat de film de emoties een "gezicht geeft" (het zet ze dus in een perspectief).</p>
-        </div>
+        </section>
     </div>
 
 
-    <div class="pageblock scheiding blauw"></div>
+    <div class="pageblock seperator bg-blue"></div>
 
 
-    <div class="pageblock verslagtekst">
-        <div class="verslagtekst-tekststukje">
+    <div class="pageblock textblock">
+        <section>
             <h1>Ontdekt, gemaakt & geleerd</h1>
             <p>
                 Ik heb <strong>ontdekt</strong> dat het vertalen van een film naar een visueel concept veel meer is dan alleen het bekijken van de film en op basis daarvan een poster maken; het gaat om het overbrengen van een boodschap en gevoel.<br>
                 Ik heb een filmposter <strong>gemaakt</strong> die de kern van No Other Land weergeeft. Ook heb ik een filmscene geschreven over een (andere) onwaarschijnlijke vriendschap.<br>
                 Ik heb <strong>geleerd</strong> hoe belangrijk het is om de juiste elementen uit de film te kiezen die de essentie van het onderwerp vertegenwoordigen. Ook heb ik meer inzicht gekregen in grafisch ontwerp en de manier waarop beelden kunnen communiceren zonder woorden. Het belangrijkste wat ik deze periode heb geleerd is het interpreteren van een film en deze interpretatie verwerken in een visuele boodschap.
             </p>
-        </div>
+        </section>
     </div>
 
 
-    <div class="pageblock scheiding blauw"></div>
+    <div class="pageblock seperator bg-blue"></div>
 
 
-    <div class="pageblock verslagtekst">
-        <div class="verslagtekst-tekststukje">
+    <div class="pageblock textblock">
+        <section>
             <h1>Vorm, inhoud & materiaal</h1>
             <p>
                 Opvallend is het verschil in vorm, inhoud en materiaal als je kijkt naar de documentaire en de filmposter die ik gemaakt heb voor de documentaire.<br><br>
@@ -225,38 +214,37 @@
                     <li><strong>Vorm</strong>: de documentaire bestaat zowel uit beelden die zijn opgenomen door de lokale bevolking over de afgelopen 20 jaar als uit nieuwe beelden.</li>
                     <li><strong>Inhoud</strong>: de documentaire gaat over de gedwongen verdrijving van Palestijnen in Masafer Yatta. De documentaire richt zich vooral op de impact van deze gebeurtenissen en de (onwaarschijnlijke) vriendschap tussen de Palestijnse activist Basel Adra en de Israëlische journalist Yuval Abraham.</li>
                     <li><strong>Materiaal</strong>: de documentaire bestaat uit videobeelden die over een periode van meerdere jaren zijn opgenomen, waaronder opnames van de filmmakers zelf en archiefmateriaal verzameld door inwoners van het gebied.)</li>
-                </ul><br>
+                </ul>
                 Mijn poster:
                 <ul>
                     <li><strong>Vorm</strong>: een filmposter voor de documentaire <em>No Other Land</em>. De poster bevat tekeningen van gebeurtenissen die terugkomen in de documentaire.</li>
                     <li><strong>Inhoud</strong>: de poster bevat elementen die verwijzen naar de gebeurtenissen en emoties in de documentaire. De boodschap van de poster lijkt te verwijzen naar de gevolgen van politieke en militaire beslissingen voor de mensen die erbij betrokken zijn.</li>
                     <li><strong>Materiaal</strong>: papier, potlood, viltstiften</li>
-                </ul><br>
+                </ul>
                 Wat opvalt is het feit dat de inhoud van de poster erg duidelijk verwijst naar de inhoud van de documentaire. Door bepaalde elementen uit de film terug te brengen in de poster wordt duidelijk wat de inhoud van de film is.<br>
                 Een ander opvallend verschil is de interpretatie: de inhoud van de documentaire zet mensen aan het denken (het geeft context bij gebeurtenissen en het vertelt het verhaal uit verschillende perspectieven, waardoor iedereen een andere conclusie trekt), terwijl de poster een directe interpretatie is van de documentaire. Hierdoor kan de boodschap (en dus de inhoud) onbewust eenzijdig overkomen; er is minder ruimte voor nuance. Hierdoor is de inhoud ook eenzijdiger.<br>
                 De documentaire geeft dus meer ruimte voor een eigen interpretatie  van de inhoud dan de poster.
             </p>
-        </div>
+        </section>
     </div>
 
 
-    <div class="pageblock scheiding blauw"></div>
+    <div class="pageblock seperator bg-blue"></div>
 
 
-    <div class="pageblock verslagtekst">
-        <div class="verslagtekst-tekststukje">
+    <div class="pageblock textblock">
+        <section>
             <h1>Terugblik verwachtingen</h1>
             <p>
                 Mijn verwachtingen komen goed overeen met wat ik daadwerkelijk heb gedaan tijdens dit blok. Ik heb veel geleerd over het interpreteren van een film en welke visuele elementen worden ingezet om een bepaalde sfeer, boodschap of emotie over te brengen. Daarnaast heb ik ervaren hoe ik mijn eigen interpretatie op een kan communiceren. Dit was niet alleen van toepassing op mondelinge besprekingen, maar ook op de manier waarop ik mijn ideeën en keuzes heb verwerkt in de visuele uitwerking van mijn poster. Dit blok voldeed dus aan mijn verwachtingen.
             </p>
-        </div>
-        <div class="verslagtekst-tekststukje">
+        </section>
+        <section>
             <h1>Terugblik dit blok</h1>
             <p>
                 Al met al kijk ik met een positief gevoel terug op dit blok. Ik heb veel geleerd over de interpretatie van een film en ik heb deze kennis ook daadwerkelijk gebruik in het maken van de filmposter. Ik heb veel geleerd over hoe een film verschillende emoties en interpretaties kan oproepen. Het was interessant om te zien hoe iedereen de documentaire op een eigen manier beleefde.<br>
                 Over het algemeen vond ik dit een boeiend en leerzaam blok. Het heeft me bewuster gemaakt van hoe films een boodschap overbrengen en hoe je daar als kijker invloed op hebt met jouw eigen perspectief en <strong>jouw interpretatie</strong>.
             </p>
-        </div>
+        </section>
     </div>
-
 {% endblock %}

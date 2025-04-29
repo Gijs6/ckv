@@ -1,0 +1,11 @@
+.bg-page {
+    background-image: url("/static/imgs/p4/Sutra2.jpg");
+}
+
+.pagetitle-big, .geninfo-imgcredits {
+    color: var(--white)
+}
+
+.general-information {
+    background-image: url("/static/imgs/p4/No_Other_Land2.jpg");
+}

@@ -61,8 +61,8 @@ nav {
 
 .menu-item {
     width: 100%;
-    aspect-ratio: 1/1;
-    font-size: 1.75em;
+    padding: 15px;
+    font-size: 1.5em;
     color: inherit;
     display: flex;
     align-items: center;
@@ -392,7 +392,7 @@ audio {
 
 ul,
 ol {
-    padding-inline-start: 1em;
+    padding-inline-start: 1em !important;
 }
 
 .pagetitle-big {
@@ -408,7 +408,7 @@ ol {
 }
 
 .pagetitle-big.pagetitle-full {
-    height: 90vh;
+    height: 100vh;
 }
 
 .pagetitle-big > * {
@@ -545,6 +545,10 @@ ol {
 
 .artobject-artist, .artobject-artwork {
     font-size: 1.2em
+}
+
+.text-indented {
+    margin-inline-start: 1em;
 }
 
 @media (max-width: 650px) {

@@ -76,7 +76,7 @@ pages = [
         "title": "Blok 3",
         "undertitle_1": "Film",
         "undertitle_2": "Jouw interpretatie",
-        "img": "/static/imgs/nootherland.jpg",
+        "img": "/static/imgs/No_Other_land1.jpg",
         "img_undertitle_1": "No Other Land (2024)",
         "img_undertitle_2": "O.a. Basel Adra",
         "url": "/blok-3"
@@ -85,7 +85,7 @@ pages = [
         "title": "Blok 4",
         "undertitle_1": "Dans",
         "undertitle_2": "Vechtkunst",
-        "img": "/static/imgs/sutra.jpg",
+        "img": "/static/imgs/Sutra1.jpg",
         "img_undertitle_1": "Sutra (2008)",
         "img_undertitle_2": "O.a. Sidi Larbi Cherkaoui",
         "url": "/blok-4"
@@ -175,6 +175,13 @@ def period_3():
 def period_4():
     return render_template("period_4.html")
 
+@app.route("/gijstenberg4a2/blok-5")
+def period_5():
+    return render_template("period_5.html")
+
+@app.route("/gijstenberg4a2/blok-6")
+def period_6():
+    return render_template("period_6.html")
 
 
 

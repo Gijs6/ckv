@@ -1,44 +1,33 @@
 {% extends "base.html" %}
 
-{% set active_page = "b4" %}
-
 {% block title %}Blok 4{% endblock %}
 
 {% block extra_headers %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvb4.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/ckvblokpaginas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/period_4.css') }}">
 {% endblock %}
 
 {% block content %}
-    <div class="pageblock bloknietbegonnen">
-        <span class="bloknietbegonnenblok">Blok</span>
-        <div class="bloknietbegonnennumsdiv">
-            <span class="numrij-12">4</span>
-            <span class="numrij-11">4</span>
-            <span class="numrij-10">4</span>
-            <span class="numrij-9">4</span>
-            <span class="numrij-8">4</span>
-            <span class="numrij-7">4</span>
-            <span class="numrij-6">4</span>
-            <span class="numrij-5">4</span>
-            <span class="numrij-4">4</span>
-            <span class="numrij-3">4</span>
-            <span class="numrij-2">4</span>
-            <span class="numrij-1">4</span>
-            <span class="numrij-0">4</span>
-            <span class="numrij-1">4</span>
-            <span class="numrij-2">4</span>
-            <span class="numrij-3">4</span>
-            <span class="numrij-4">4</span>
-            <span class="numrij-5">4</span>
-            <span class="numrij-6">4</span>
-            <span class="numrij-7">4</span>
-            <span class="numrij-8">4</span>
-            <span class="numrij-9">4</span>
-            <span class="numrij-10">4</span>
-            <span class="numrij-11">4</span>
-            <span class="numrij-12">4</span>
+    <div class="pageblock pagetitle-big pagetitle-full bg-page">
+        <h1>Vechtkunst</h1>
+        <h2>Blok 4 - Dans</h2>
+        <div class="pagetitle-credits">
+            <span class="pagetitle-credits-artwork">Sutra (2008)</span>
+            <span class="pagetitle-credits-artist">O.a. Sidi Larbi Cherkaoui</span>
         </div>
-        <span class="bloknietbegonnentekst">Deze pagina is nog niet beschikbaar. Kom later terug!</span>
+    </div>
+
+    <div class="pageblock general-information">
+        <div class="geninfo-imgcredits">
+            <span class="geninfo-artwork">No Other Land (2024)</span>
+            <span class="geninfo-artist">Basel Adra, Hamdan Ballal,<br>Yuval Abraham en Rachel Szor</span>
+        </div>
+        <div class="general-information-text">
+            <h1>Algemene informatie</h1>
+            <p>
+                Dit blok was ik ingedeeld bij de discipline <strong>film</strong> met als thema <strong>jouw interpretatie</strong>. Dit blok onderzochten we hoe gebeurtenissen en emoties in een film door iedereen wordt geïnterpreteerd.<br>
+                Dit blok kreeg ik les van <strong>mw. te Loo</strong>.<br>
+                De eerste twee lessen van dit blok gingen niet door. De derde les (<em>de facto</em> dus de eerste les) gingen we naar de documentaire <em><strong>No Other Land</strong></em> in <strong>Wenneker Cinema</strong>. De vierde les van dit blok (<em>de facto</em> dus de tweede les) kregen we een aantal opdrachten rond de interpretatie van de film.
+            </p>
+        </div>
     </div>
 {% endblock %}
