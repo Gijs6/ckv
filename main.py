@@ -1,8 +1,9 @@
 from flask import Flask, render_template, url_for, redirect, send_from_directory
+from datetime import datetime
 import json
 import random
 import os
-
+import subprocess
 
 app = Flask(__name__)
 
@@ -26,6 +27,36 @@ def redirecter(path):
     imgurl, artwork, artist, txtcolor = randomBackground()
     return render_template("error.html", e="Error redirecting", errornum="404", message1="Die pagina bestaat niet!", message2="De URL die je hebt verzocht bestaat niet.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 404
 
+
+def get_commit_and_deploy_date():
+    try:
+        with open(os.path.join(BASE_DIR, "data", "last_deploy.txt"), "r") as f:
+            latest_deploy_date = f.read().strip()
+    except FileNotFoundError:
+        latest_deploy_date = "unknown"
+        print("No latest deploy date found.")
+
+    latest_commit_hash = subprocess.check_output(["git", "log", "-1", "--pretty=format:%h"], cwd=BASE_DIR).strip().decode()
+    latest_commit_hash_long = subprocess.check_output(["git", "log", "-1", "--pretty=format:%H"], cwd=BASE_DIR).strip().decode()
+    latest_commit_timestamp = int(subprocess.check_output(["git", "log", "-1", "--pretty=format:%ct"], cwd=BASE_DIR).strip())
+    latest_commit_date = datetime.fromtimestamp(latest_commit_timestamp).strftime("%d-%m-%Y om %H:%M:%S")
+
+    comdepdata = {
+        "latest_deploy_date": latest_deploy_date,
+        "latest_commit_hash": latest_commit_hash,
+        "latest_commit_hash_long": latest_commit_hash_long,
+        "latest_commit_date": latest_commit_date
+    }
+
+    return comdepdata
+
+
+comdepdata = get_commit_and_deploy_date()
+
+
+@app.context_processor
+def inject_comdepdata():
+    return comdepdata
 
 
 # File stuff

@@ -48,13 +48,16 @@
 
             <footer>
                 <div id="footer-left">
+                    <h1>CKV-website</h1>
                     <h1>Gijs ten Berg</h1>
                     <h2>4A2</h2>
                 </div>
                 <div id="footer-right">
-                    <h1>CKV-website</h1>
-                    <h2><a href="/colofon">Colofon</a></h2>
-                    <h3><a href="https://github.com/Gijs6/CKVsite" target="_blank"><i class="fa-brands fa-github"></i> Broncode</a></h3>
+                    <p>Versie van commit <a href="https://github.com/Gijs6/CKVsite/commit/{{ latest_commit_hash_long }}">{{ latest_commit_hash }}</a> (gecommit op {{ latest_commit_date }} UTC)</p>
+                    <p>Voor het laatst gedeployed op {{ latest_deploy_date }} UTC</p>
+                    <p>Inhoud en code vallen onder het <strong>publieke domein</strong> volgens de <a href="https://unlicense.org/" target="_blank">Unlicense</a> en <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a></p>
+                    <p>Gemaakt met <a href="https://github.com/pallets/flask" target="_blank">Flask</a> en <a href="https://github.com/pallets/jinja" target="_blank">Jinja</a>, gehost op <a href="https://eu.pythonanywhere.com/" target="_blank">PythonAnywhere</a></p>
+                    <p><a href="https://github.com/Gijs6/CKVsite" target="_blank">Broncode op GitHub</a></p>
                 </div>
             </footer>
         </div>

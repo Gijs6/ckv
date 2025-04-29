@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 import re
 import subprocess
@@ -48,6 +49,11 @@ for root, dirs, files in os.walk("."):
             start_comment, end_comment = get_comment_syntax(file_path)
             if start_comment and end_comment:
                 remove_dev_blocks(file_path, start_comment, end_comment)
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(BASE_DIR, "data", "last_deploy.txt"), "w") as file:
+    file.write(datetime.now().strftime("%d-%m-%Y at %H:%M:%S"))
 
 
 subprocess.run(["touch", "/var/www/ckv_gijs6_nl_wsgi.py"], check=True)
