@@ -36,6 +36,7 @@
     background: var(--blue);
     color: var(--white);
     border-radius: 25px;
+    min-width: fit-content;
 }
 
 #tile1 {
