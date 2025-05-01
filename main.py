@@ -89,7 +89,7 @@ pages = [
         "title": "Blok 1",
         "undertitle_1": "Beeldend",
         "undertitle_2": "Het onzichtbare zichtbaar maken",
-        "img": "/static/imgs/Brava!.jpg",
+        "img": "/static/imgs/Brava!1.jpg",
         "img_undertitle_1": "Brava! (2022)",
         "img_undertitle_2": "EJ Hill",
         "url": "/blok-1"

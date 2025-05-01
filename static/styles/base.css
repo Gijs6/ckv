@@ -47,6 +47,7 @@ header {
     top: 0;
     left: 0;
     border-right: 1px solid var(--white);
+    gap: 2em;
 }
 
 nav {
@@ -550,6 +551,24 @@ ol {
 
 .text-indented {
     margin-inline-start: 1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 650px) {
