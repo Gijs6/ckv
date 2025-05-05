@@ -27,7 +27,7 @@ body {
     font-family: Sora, sans-serif;
     color: var(--black);
     background: var(--white);
-    font-size: clamp(0.8em, 2.5vw, 1.05em);
+    font-size: clamp(0.85em, 2.5vw, 1.05em);
 }
 
 a {

@@ -12,4 +12,6 @@ Built with [Flask](https://github.com/pallets/flask) and [Jinja](https://github.
 
 ## Run yourself
 
-If you want to run the site yourself, just clone this repo, install all the required packages via `pip install -r requirements.txt` and run `py main.py` (`flask --app main run` also works, but that could be with some diffrent settings). You can then visit the site at `localhost:5000` (or another link, the correct link will be printed in the terminal).
+Clone the repo, install packages with `pip install -r requirements.txt` and run the webapp with `flask --app main run`.
+
+For more detailed instructions, please view [localhost.md](localhost.md).
