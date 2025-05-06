@@ -52,6 +52,11 @@
     border-radius: 30px;
     width: min-content;
     min-width: min(100%, 500px);
+    transition: transform 300ms ease-in-out;
+}
+
+.lop-item:hover {
+    transform: scale(1.025);
 }
 
 .lop-item-left {
@@ -103,7 +108,7 @@
 }
 
 .lop-item-right img {
-    width: 250px;
+    width: max(100%, 150px);
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
