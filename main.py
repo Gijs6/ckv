@@ -10,20 +10,20 @@ app = Flask(__name__)
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-# Redirecters
 
+# Redirecters
 @app.route("/")
 def redirecthome():
-    return redirect(url_for('home')), 301
+    return redirect(url_for("home")), 301
 
 
-@app.route('/<path:path>')
+@app.route("/<path:path>")
 def redirecter(path):
     if path in ["favicon", "security", "robots"]:
         return redirect(f"/{path}")
     elif not path.startswith("gijstenberg4a2"):
         return redirect(f"/gijstenberg4a2/{path}")
-    
+
     imgurl, artwork, artist, txtcolor = randomBackground()
     return render_template("error.html", e="Error redirecting", errornum="404", message1="Die pagina bestaat niet!", message2="De URL die je hebt verzocht bestaat niet.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 404
 
@@ -41,12 +41,7 @@ def get_commit_and_deploy_date():
     latest_commit_timestamp = int(subprocess.check_output(["git", "log", "-1", "--pretty=format:%ct"], cwd=BASE_DIR).strip())
     latest_commit_date = datetime.fromtimestamp(latest_commit_timestamp).strftime("%d-%m-%Y om %H:%M:%S")
 
-    comdepdata = {
-        "latest_deploy_date": latest_deploy_date,
-        "latest_commit_hash": latest_commit_hash,
-        "latest_commit_hash_long": latest_commit_hash_long,
-        "latest_commit_date": latest_commit_date
-    }
+    comdepdata = {"latest_deploy_date": latest_deploy_date, "latest_commit_hash": latest_commit_hash, "latest_commit_hash_long": latest_commit_hash_long, "latest_commit_date": latest_commit_date}
 
     return comdepdata
 
@@ -61,19 +56,22 @@ def inject_comdepdata():
 
 # File stuff
 
-@app.route('/favicon.ico')
-@app.route('/favicon')
+
+@app.route("/favicon.ico")
+@app.route("/favicon")
 def favicon():
-    return send_from_directory('static', "favs/main.ico", mimetype='image/vnd.microsoft.icon')
+    return send_from_directory("static", "favs/main.ico", mimetype="image/vnd.microsoft.icon")
 
 
 @app.route("/.well-known/security.txt")
 def securitytxt():
-    return send_from_directory('static', "security.txt", mimetype="text/plain")
+    return send_from_directory("static", "security.txt", mimetype="text/plain")
+
 
 @app.route("/security.txt")
 def securitytxtredirect():
-    return redirect(url_for('securitytxt')), 301
+    return redirect(url_for("securitytxt")), 301
+
 
 @app.route("/robots")
 @app.route("/robots.txt")
@@ -81,70 +79,18 @@ def robots():
     return send_from_directory("static", "robots.txt", mimetype="text/plain")
 
 
-
 # Pages
 
 pages = [
-    {
-        "title": "Blok 1",
-        "undertitle_1": "Beeldend",
-        "undertitle_2": "Het onzichtbare zichtbaar maken",
-        "img": "/static/imgs/Kryptos.jpg",
-        "img_undertitle_1": "Kryptos (1990)",
-        "img_undertitle_2": "Jim Sanborn",
-        "url": "/blok-1"
-    },
-    {
-        "title": "Blok 2",
-        "undertitle_1": "Film",
-        "undertitle_2": "Speciale effecten",
-        "img": "/static/imgs/Interstellar.png",
-        "img_undertitle_1": "Interstellar (2014)",
-        "img_undertitle_2": "O.a. Christopher Nolan",
-        "url": "/blok-2"
-    },
-    {
-        "title": "Blok 3",
-        "undertitle_1": "Film",
-        "undertitle_2": "Jouw interpretatie",
-        "img": "/static/imgs/No_Other_land1.jpg",
-        "img_undertitle_1": "No Other Land (2024)",
-        "img_undertitle_2": "O.a. Basel Adra",
-        "url": "/blok-3"
-    },
-    {
-        "title": "Blok 4",
-        "undertitle_1": "Dans",
-        "undertitle_2": "Vechtkunst",
-        "img": "/static/imgs/Sutra1.jpg",
-        "img_undertitle_1": "Sutra (2008)",
-        "img_undertitle_2": "O.a. Sidi Larbi Cherkaoui",
-        "url": "/blok-4"
-    },
-    {
-        "title": "Introductielessen",
-        "undertitle_1": "",
-        "undertitle_2": "Liefde",
-        "img": "/static/imgs/intro/The_Lovers_II.jpg",
-        "img_undertitle_1": "The Lovers II (1928)",
-        "img_undertitle_2": "René Magritte",
-        "url": "/introductielessen"
-    },
-    {
-        "title": "Over mij",
-        "undertitle_1": "",
-        "undertitle_2": "",
-        "img": "",
-        "url": "/over-mij"
-    },
-    {
-        "title": "Eigen initiatieven",
-        "undertitle_1": "",
-        "undertitle_2": "",
-        "img": "",
-        "url": "/eigen-initiatieven"
-    }
+    {"title": "Blok 1", "undertitle_1": "Beeldend", "undertitle_2": "Het onzichtbare zichtbaar maken", "img": "/static/imgs/Kryptos.jpg", "img_undertitle_1": "Kryptos (1990)", "img_undertitle_2": "Jim Sanborn", "url": "/blok-1"},
+    {"title": "Blok 2", "undertitle_1": "Film", "undertitle_2": "Speciale effecten", "img": "/static/imgs/Interstellar.png", "img_undertitle_1": "Interstellar (2014)", "img_undertitle_2": "O.a. Christopher Nolan", "url": "/blok-2"},
+    {"title": "Blok 3", "undertitle_1": "Film", "undertitle_2": "Jouw interpretatie", "img": "/static/imgs/No_Other_land1.jpg", "img_undertitle_1": "No Other Land (2024)", "img_undertitle_2": "O.a. Basel Adra", "url": "/blok-3"},
+    {"title": "Blok 4", "undertitle_1": "Dans", "undertitle_2": "Vechtkunst", "img": "/static/imgs/Sutra1.jpg", "img_undertitle_1": "Sutra (2008)", "img_undertitle_2": "O.a. Sidi Larbi Cherkaoui", "url": "/blok-4"},
+    {"title": "Introductielessen", "undertitle_1": "", "undertitle_2": "Liefde", "img": "/static/imgs/intro/The_Lovers_II.jpg", "img_undertitle_1": "The Lovers II (1928)", "img_undertitle_2": "René Magritte", "url": "/introductielessen"},
+    {"title": "Over mij", "undertitle_1": "", "undertitle_2": "", "img": "", "url": "/over-mij"},
+    {"title": "Eigen initiatieven", "undertitle_1": "", "undertitle_2": "", "img": "", "url": "/eigen-initiatieven"},
 ]
+
 
 @app.route("/gijstenberg4a2")
 def home():
@@ -154,6 +100,7 @@ def home():
 @app.route("/gijstenberg4a2/over-mij")
 def about_me():
     return render_template("about_me.html")
+
 
 @app.route("/gijstenberg4a2/introductielessen")
 def intro():
@@ -170,9 +117,9 @@ own_ini_list = [
         "img_url": "/static/imgs/own_ini/Olijfgaard.jpg",
         "artwork": "Olijfgaard (1889)",
         "artist": "Vincent van Gogh",
-        "bg": "yellow"
+        "bg": "yellow",
     },
-    {   
+    {
         "act_type": "Architectuur",
         "act_name": "Depot Boijmans Van Beuningen",
         "act_loc": "Museumpark (Rotterdam)",
@@ -181,8 +128,8 @@ own_ini_list = [
         "img_url": "/static/imgs/own_ini/Depot_Boijmans_Van_Beuningen.jpg",
         "artwork": "Depot Boijmans van Beuningen",
         "artist": "MVRDV",
-        "bg": "red"
-    }
+        "bg": "red",
+    },
 ]
 
 
@@ -190,34 +137,38 @@ own_ini_list = [
 def own_initiatives():
     return render_template("own_ini.html", own_ini_list=own_ini_list)
 
+
 @app.route("/gijstenberg4a2/blok-1")
 def period_1():
     return render_template("period_1.html")
+
 
 @app.route("/gijstenberg4a2/blok-2")
 def period_2():
     return render_template("period_2.html")
 
+
 @app.route("/gijstenberg4a2/blok-3")
 def period_3():
     return render_template("period_3.html")
+
 
 @app.route("/gijstenberg4a2/blok-4")
 def period_4():
     return render_template("period_4.html")
 
+
 @app.route("/gijstenberg4a2/blok-5")
 def period_5():
     return render_template("period_5.html")
+
 
 @app.route("/gijstenberg4a2/blok-6")
 def period_6():
     return render_template("period_6.html")
 
 
-
 # Error pages
-
 def randomBackground():
     try:
         with open(os.path.join(BASE_DIR, "data", "backgroundlist.json"), "r") as file:
@@ -234,11 +185,12 @@ def not_found(e):
     imgurl, artwork, artist, txtcolor = randomBackground()
     return render_template("error.html", e=e, errornum="404", message1="Die pagina bestaat niet!", message2="De URL die je hebt verzocht bestaat niet.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 404
 
+
 @app.errorhandler(500)
 def internal_error(e):
     imgurl, artwork, artist, txtcolor = randomBackground()
     return render_template("error.html", e=e, errornum="404", message1="Oeps! Er is iets misgegaan", message2="Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later nog eens.", imgurl=imgurl, artwork=artwork, artist=artist, txtcolor=txtcolor), 505
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
