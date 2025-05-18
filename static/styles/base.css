@@ -153,7 +153,7 @@ footer a {
 }
 
 .pageblock {
-    padding: 50px 100px;
+    padding: 50px 125px;
 }
 
 .pageblock.columns {
@@ -166,11 +166,11 @@ footer a {
 }
 
 .pageblock.columns > *:first-child {
-    padding-left: 100px;
+    padding-left: 125px;
 }
 
 .pageblock.columns > *:last-child {
-    padding-right: 100px;
+    padding-right: 125px;
 }
 
 .columns {
@@ -272,7 +272,7 @@ p.center {
 }
 
 .pagetitle-big h1 {
-    font-size: 3.25em;
+    font-size: 4.5em;
     font-weight: 900;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -359,7 +359,7 @@ p.center {
 }
 
 .titleblock.bg-fancy {
-    padding: 100px 10px;
+    padding: 125px 10px;
 }
 
 .titleblock.bg-fancy > h1 > i {
@@ -465,7 +465,7 @@ ol {
 }
 
 .general-information {
-    padding: 100px 75px;
+    padding: 125px;
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
