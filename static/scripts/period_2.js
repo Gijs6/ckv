@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
-        document.querySelectorAll(".tile").forEach(tile => {
+        document.querySelectorAll(".tile").forEach((tile) => {
             const tileContent = tile.querySelector(".tile-content");
-            
-    
+
             const width = tile.offsetWidth + "px";
             const height = tile.offsetHeight + "px";
-        
-        
+
             tile.style.width = width;
             tile.style.height = height;
 

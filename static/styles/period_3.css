@@ -2,8 +2,9 @@
     background-image: url("/static/imgs/p3/20_Days_in_Mariupol.jpg");
 }
 
-.pagetitle-credits, .geninfo-imgcredits {
-    color: var(--white)
+.pagetitle-credits,
+.geninfo-imgcredits {
+    color: var(--white);
 }
 
 .general-information {

@@ -31,7 +31,7 @@
 .tile {
     padding: 30px;
     position: absolute;
-    transition: 500ms all cubic-bezier(.25,.46,.45,.94);
+    transition: 500ms all cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: 1;
     border-radius: 25px;
     min-width: fit-content;
@@ -86,33 +86,28 @@
     top: 63%;
 }
 
-
-
-
-
-
-#tile1, #tile5 {
+#tile1,
+#tile5 {
     background: var(--blue);
     color: var(--white);
 }
 
-#tile2, #tile7 {
+#tile2,
+#tile7 {
     background: #0b9a5d;
     color: var(--white);
 }
 
-#tile3, #tile6 {
+#tile3,
+#tile6 {
     background: var(--yellow);
 }
 
-#tile4, #tile8 {
+#tile4,
+#tile8 {
     background: var(--red);
-    color: var(--white)
+    color: var(--white);
 }
-
-
-
-
 
 .tile.tile-active {
     top: 0% !important;
@@ -123,7 +118,7 @@
     min-width: unset;
     max-width: unset;
     cursor: unset;
-    padding: 50px 125px;
+    padding: 50px 175px;
 }
 
 .tile.tile-active .tile-header {

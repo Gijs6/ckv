@@ -153,7 +153,7 @@ footer a {
 }
 
 .pageblock {
-    padding: 50px 125px;
+    padding: 50px 175px;
 }
 
 .pageblock.columns {
@@ -166,11 +166,11 @@ footer a {
 }
 
 .pageblock.columns > *:first-child {
-    padding-left: 125px;
+    padding-left: 175px;
 }
 
 .pageblock.columns > *:last-child {
-    padding-right: 125px;
+    padding-right: 175px;
 }
 
 .columns {
@@ -359,7 +359,7 @@ p.center {
 }
 
 .titleblock.bg-fancy {
-    padding: 125px 10px;
+    padding: 175px 10px;
 }
 
 .titleblock.bg-fancy > h1 > i {
@@ -465,7 +465,7 @@ ol {
 }
 
 .general-information {
-    padding: 125px;
+    padding: 175px;
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -482,7 +482,6 @@ ol {
     border-radius: 20px;
     max-width: 750px;
 }
-
 
 .textblock * {
     margin: revert;
@@ -505,12 +504,13 @@ ol {
     margin-block: 0 0.5em;
 }
 
-.textblock h2, .textblock h3 {
+.textblock h2,
+.textblock h3 {
     margin-block: 1em 0;
 }
 
 .textblock p {
-    margin-block: .75em;
+    margin-block: 0.75em;
 }
 
 .img-collage {
@@ -545,8 +545,9 @@ ol {
     flex-direction: column;
 }
 
-.artobject-artist, .artobject-artwork {
-    font-size: 1.2em
+.artobject-artist,
+.artobject-artwork {
+    font-size: 1.2em;
 }
 
 .text-indented {

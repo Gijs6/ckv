@@ -3,7 +3,7 @@
 {% block title %}Eigen initiatieven{% endblock %}
 
 {% block extra_headers %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/own_ini.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/own_ini.css') }}" />
 {% endblock %}
 
 {% block content %}
@@ -34,7 +34,7 @@
                     <a href="{{ own_ini.pdf_url }}" class="button button-standard" target="_blank">Bekijk verslag <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="artwork-basic center">
-                    <img src="{{ own_ini.img_url }}" alt="{{ own_ini.artwork }} - {{ own_ini.artist }}">
+                    <img src="{{ own_ini.img_url }}" alt="{{ own_ini.artwork }} - {{ own_ini.artist }}" />
                     <span class="artbasic-artwork">{{ own_ini.artwork }}</span>
                     <span class="artbasic-artist">{{ own_ini.artist }}</span>
                 </div>

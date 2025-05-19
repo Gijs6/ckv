@@ -2,8 +2,9 @@
     background-image: url("/static/imgs/p4/Sutra2.jpg");
 }
 
-.pagetitle-big, .geninfo-imgcredits {
-    color: var(--white)
+.pagetitle-big,
+.geninfo-imgcredits {
+    color: var(--white);
 }
 
 .general-information {
