@@ -6,4 +6,4 @@ I built it with [Flask](https://github.com/pallets/flask) and [Jinja](https://gi
 
 ## Run yourself
 
-Clone the repo, install dependencies with `pip install -r requirements.txt` and run the webapp with `flask --app main run`.
+Clone the repo, install dependencies with `pip install -r requirements.txt` and run the web app with `flask --app main run`.
