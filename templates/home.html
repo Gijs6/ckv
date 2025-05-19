@@ -40,7 +40,7 @@
                 </div>
                 {% if page.img %}
                     <div class="lop-item-right artwork-basic">
-                        <img src="{{ page.img }}" alt="{{ page.img_undertitle_1 if page.img_undertitle_1 }} - {{ page.img_undertitle_2 if page.img_undertitle_2 }}" />
+                        <img src="{{ page.img }}" alt="{% if page.img_undertitle_1 %}{{ page.img_undertitle_1 }}{% endif %}{% if page.img_undertitle_2 %} - {{ page.img_undertitle_2 }}{% endif %}" />
                         {% if page.img_undertitle_1 %}
                             <span class="lop-item-img-under1 artbasic-artwork">{{ page.img_undertitle_1 }}</span>
                         {% endif %}
