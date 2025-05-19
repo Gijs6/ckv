@@ -572,7 +572,7 @@ ol {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     * {
         word-break: break-word;
         overflow-wrap: break-word;

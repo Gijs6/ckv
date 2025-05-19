@@ -39,7 +39,7 @@
     margin-top: 15px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     .own-ini-item .artwork-basic {
         flex-grow: 1;
     }

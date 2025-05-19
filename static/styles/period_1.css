@@ -42,7 +42,7 @@
     margin-block: 1em 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .arttable {
         grid-template-columns: 1fr;
     }
