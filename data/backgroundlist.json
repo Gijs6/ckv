@@ -1,54 +1,54 @@
 [
     {
-        "imgurl": "/static/imgs/error/Primordial_Chaos.jpg",
+        "imgurl": "/static/imgs/error/primordial_chaos.jpg",
         "artwork": "Primordial Chaos - No 16 (1906-1907)",
         "artist": "Hilma af Klint",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Compositie_VIII.jpg",
+        "imgurl": "/static/imgs/error/compositie_viii.jpg",
         "artwork": "Compositie VIII (1923)",
         "artist": "Wassily Kandinsky",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Brava!.jpg",
+        "imgurl": "/static/imgs/error/brava!.jpg",
         "artwork": "Brava! (2022)",
         "artist": "EJ Hill",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Simultaneous_Contrasts.jpg",
+        "imgurl": "/static/imgs/error/simultaneous_contrasts.jpg",
         "artwork": "Simultaneous Contrasts (1913)",
         "artist": "Sonia Delaunay",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Composition_No_11.jpg",
+        "imgurl": "/static/imgs/error/composition_no_11.jpg",
         "artwork": "Composition No. 11. (1913)",
         "artist": "Piet Mondriaan",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Burg_und_Sonne.jpg",
+        "imgurl": "/static/imgs/error/burg_und_sonne.jpg",
         "artwork": "Burg und Sonne (1928)",
         "artist": "Paul Klee",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Composition_II.jpg",
+        "imgurl": "/static/imgs/error/composition_ii.jpg",
         "artwork": "Composition II in Red, Blue, and Yellow (1930)",
         "artist": "Piet Mondriaan",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Compositie_in_dissonanten.jpg",
+        "imgurl": "/static/imgs/error/compositie_in_dissonanten.jpg",
         "artwork": "Compositie in dissonanten (1918)",
         "artist": "Theo van Doesburg",
         "txtcolor": "white"
     },
     {
-        "imgurl": "/static/imgs/error/Colored_Composition_of_Forms.jpg",
+        "imgurl": "/static/imgs/error/colored_composition_of_forms.jpg",
         "artwork": "Colored Composition of Forms (1914)",
         "artist": "August Macke",
         "txtcolor": "white"
