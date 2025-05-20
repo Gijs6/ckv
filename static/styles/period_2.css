@@ -2,6 +2,11 @@
     background-image: url("/static/imgs/p2/the_mandalorian.jpg");
 }
 
+.pagetitle-big h1 {
+    mix-blend-mode: difference;
+    color: white;
+}
+
 .pagetitle-big h2 {
     background: var(--white-transparent);
     padding: 5px !important;
