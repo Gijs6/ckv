@@ -3,9 +3,37 @@
 {% block title %}Eindverslag{% endblock %}
 
 {% block extra_headers %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/final_report.css') }}" />
+    <style>
+        #final-report-container {
+            margin: auto;
+            max-width: 1000px;
+            padding: 30px;
+        }
+    </style>
 {% endblock %}
 
 {% block content %}
+    <div id="final-report-container">
+        <img src="/static/imgs/final_report.png">
+    </div>
 
+    <div class="pageblock textblock">
+        <section>
+            <h1>Linkjes (want in een afbeelding kunnen helaas niet makkelijk linkjes)</h1>
+            <ul>
+                <li>
+                    <a href="https://commons.wikimedia.org/wiki/File:Excerpt_from_First_Tacet_Edition_of_John_Cage%27s_4%2733%27_(1960).png">Afbeelding uit 4'33" van John Cage, die ik heb gebruikt tijdens mij onderzoek</a>
+                </li>
+                <li>
+                    Documentaire over Kryptos: <a href="https://www.lemmi.no/p/the-unbreakable-kryptos-code">The Unbreakable Kryptos Code</a>
+                </li>
+                <li>
+                    Die Mimik der Tethys project: <a href="https://juliusvonbismarck.com/bank/index.php/projects/die-mimik-der-thetys/">Projectpagina</a>, <a href="https://www.youtube.com/watch?v=mD-hv3VN7RY">Video op YouTube</a>
+                </li>
+                <li>
+                    <a href="https://youtube.com/playlist?list=PLRGLrixvgE7qshvcvAKKTB9omIrG3KLXN">Muziek van M83 (een paar van mijn favoriete nummers)</a>
+                </li>
+            </ul>
+        </section>
+    </div>
 {% endblock %}

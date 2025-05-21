@@ -2,6 +2,14 @@
 
 {% block title %}Over mij{% endblock %}
 
+{% block extra_headers %}
+    <style>
+        #button-final-report {
+            margin: auto;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
     <h1 class="pageblock pagetitle-small">Over mij</h1>
     <div class="pageblock columns">
@@ -22,4 +30,5 @@
             </p>
         </div>
     </div>
+    <a href="/eindverslag" class="button button-standard" id="button-final-report">Naar het eindverslag <i class="fa-solid fa-arrow-right"></i></a>
 {% endblock %}
