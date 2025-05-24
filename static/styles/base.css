@@ -53,11 +53,12 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*! align-items: center; */
     width: 100%;
     flex-grow: 1;
     position: relative;
     z-index: 10;
+    height: 100%;
 }
 
 .menu-item {
@@ -587,7 +588,6 @@ ol {
     header {
         height: 75px;
         width: 100%;
-        padding: 0 5px;
         border-left: none;
         border-bottom: 1px solid var(--white);
     }
@@ -608,6 +608,7 @@ ol {
         z-index: unset;
         border-radius: 0;
         padding: unset;
+        max-height: unset;
     }
 
     .menu-item i {
