@@ -116,72 +116,10 @@ def robots():
 
 # Pages
 
-pages = [
-    {
-        "title": "Blok 1",
-        "undertitle_1": "Beeldend",
-        "undertitle_2": "Het onzichtbare zichtbaar maken",
-        "img": "/static/imgs/kryptos.jpg",
-        "img_undertitle_1": "Kryptos (1990)",
-        "img_undertitle_2": "Jim Sanborn",
-        "url": "/blok-1",
-    },
-    {
-        "title": "Blok 2",
-        "undertitle_1": "Film",
-        "undertitle_2": "Speciale effecten",
-        "img": "/static/imgs/interstellar.png",
-        "img_undertitle_1": "Interstellar (2014)",
-        "img_undertitle_2": "O.a. Christopher Nolan",
-        "url": "/blok-2",
-    },
-    {
-        "title": "Blok 3",
-        "undertitle_1": "Film",
-        "undertitle_2": "Jouw interpretatie",
-        "img": "/static/imgs/no_other_land1.jpg",
-        "img_undertitle_1": "No Other Land (2024)",
-        "img_undertitle_2": "O.a. Basel Adra",
-        "url": "/blok-3",
-    },
-    {
-        "title": "Blok 4",
-        "undertitle_1": "Dans",
-        "undertitle_2": "Vechtkunst",
-        "img": "/static/imgs/sutra1.jpg",
-        "img_undertitle_1": "Sutra (2008)",
-        "img_undertitle_2": "O.a. Sidi Larbi Cherkaoui",
-        "url": "/blok-4",
-    },
-    {
-        "title": "Introductielessen",
-        "undertitle_1": "",
-        "undertitle_2": "Liefde",
-        "img": "/static/imgs/intro/the_lovers_ii.jpg",
-        "img_undertitle_1": "The Lovers II (1928)",
-        "img_undertitle_2": "René Magritte",
-        "url": "/introductielessen",
-    },
-    {
-        "title": "Over mij",
-        "undertitle_1": "",
-        "undertitle_2": "",
-        "img": "",
-        "url": "/over-mij",
-    },
-    {
-        "title": "Eigen initiatieven",
-        "undertitle_1": "",
-        "undertitle_2": "",
-        "img": "",
-        "url": "/eigen-initiatieven",
-    },
-]
-
 
 @app.route("/gijstenberg4a2")
 def home():
-    return render_template("home.html", pagelist=pages)
+    return render_template("home.html")
 
 
 @app.route("/gijstenberg4a2/over-mij")
@@ -194,35 +132,9 @@ def intro():
     return render_template("intro.html")
 
 
-own_ini_list = [
-    {
-        "act_type": "Beeldend",
-        "act_name": "Zoeken naar zingeving",
-        "act_loc": "Kröller-Müller Museum (Otterlo)",
-        "act_date": "30 oktober 2024",
-        "pdf_url": "/static/pdfs/ei1-beeldend-zoekennaarzingeving.pdf",
-        "img_url": "/static/imgs/own_ini/olijfgaard.jpg",
-        "artwork": "Olijfgaard (1889)",
-        "artist": "Vincent van Gogh",
-        "bg": "yellow",
-    },
-    {
-        "act_type": "Architectuur",
-        "act_name": "Depot Boijmans Van Beuningen",
-        "act_loc": "Museumpark (Rotterdam)",
-        "act_date": "28 februari 2025",
-        "pdf_url": "/static/pdfs/ei2-architectuur-depot.pdf",
-        "img_url": "/static/imgs/own_ini/depot_boijmans_van_beuningen.jpg",
-        "artwork": "Depot Boijmans van Beuningen",
-        "artist": "MVRDV",
-        "bg": "red",
-    },
-]
-
-
 @app.route("/gijstenberg4a2/eigen-initiatieven")
 def own_initiatives():
-    return render_template("own_ini.html", own_ini_list=own_ini_list)
+    return render_template("own_ini.html")
 
 
 @app.route("/gijstenberg4a2/blok-1")

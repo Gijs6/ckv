@@ -27,28 +27,86 @@
         </div>
     </div>
     <div class="pageblock" id="list-of-pages">
-        {% for page in pagelist %}
-            <div class="lop-item">
-                <div class="lop-item-left">
-                    <span class="lop-item-title">{{ page.title }}</span>
-                    {% if page.undertitle_1 %}<span class="lop-item-under1">{{ page.undertitle_1 }}</span>{% endif %}
-                    {% if page.undertitle_2 %}<span class="lop-item-under2">{{ page.undertitle_2 }}</span>{% endif %}
-                    <a href="{{ page.url }}" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                {% if page.img %}
-                    <div class="lop-item-right artwork-basic">
-                        <img src="{{ page.img }}"
-                             alt="{% if page.img_undertitle_1 %}{{ page.img_undertitle_1 }}{% endif %}{% if page.img_undertitle_2 %} - {{ page.img_undertitle_2 }}{% endif %}" />
-                        {% if page.img_undertitle_1 %}
-                            <span class="lop-item-img-under1 artbasic-artwork">{{ page.img_undertitle_1 }}</span>
-                        {% endif %}
-                        {% if page.img_undertitle_2 %}
-                            <span class="lop-item-img-under2 artbasic-artist">{{ page.img_undertitle_2 }}</span>
-                        {% endif %}
-                    </div>
-                {% endif %}
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Blok 1</span>
+                <span class="lop-item-under1">Beeldend</span>
+                <span class="lop-item-under2">Het onzichtbare zichtbaar maken</span>
+                <a href="/blok-1" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-        {% endfor %}
+            <div class="lop-item-right artwork-basic">
+                <img src="/static/imgs/kryptos.jpg" alt="Kryptos (1990) - Jim Sanborn" />
+                <span class="lop-item-img-under1 artbasic-artwork">Kryptos (1990)</span>
+                <span class="lop-item-img-under2 artbasic-artist">Jim Sanborn</span>
+            </div>
+        </div>
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Blok 2</span>
+                <span class="lop-item-under1">Film</span>
+                <span class="lop-item-under2">Speciale effecten</span>
+                <a href="/blok-2" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="lop-item-right artwork-basic">
+                <img src="/static/imgs/interstellar.png"
+                     alt="Interstellar (2014) - O.a. Christopher Nolan" />
+                <span class="lop-item-img-under1 artbasic-artwork">Interstellar (2014)</span>
+                <span class="lop-item-img-under2 artbasic-artist">O.a. Christopher Nolan</span>
+            </div>
+        </div>
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Blok 3</span>
+                <span class="lop-item-under1">Film</span>
+                <span class="lop-item-under2">Jouw interpretatie</span>
+                <a href="/blok-3" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="lop-item-right artwork-basic">
+                <img src="/static/imgs/no_other_land1.jpg"
+                     alt="No Other Land (2024) - O.a. Basel Adra" />
+                <span class="lop-item-img-under1 artbasic-artwork">No Other Land (2024)</span>
+                <span class="lop-item-img-under2 artbasic-artist">O.a. Basel Adra</span>
+            </div>
+        </div>
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Blok 4</span>
+                <span class="lop-item-under1">Dans</span>
+                <span class="lop-item-under2">Vechtkunst</span>
+                <a href="/blok-4" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="lop-item-right artwork-basic">
+                <img src="/static/imgs/sutra1.jpg"
+                     alt="Sutra (2008) - O.a. Sidi Larbi Cherkaoui" />
+                <span class="lop-item-img-under1 artbasic-artwork">Sutra (2008)</span>
+                <span class="lop-item-img-under2 artbasic-artist">O.a. Sidi Larbi Cherkaoui</span>
+            </div>
+        </div>
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Introductielessen</span>
+                <span class="lop-item-under2">Liefde</span>
+                <a href="/introductielessen" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="lop-item-right artwork-basic">
+                <img src="/static/imgs/intro/the_lovers_ii.jpg"
+                     alt="The Lovers II (1928) - René Magritte" />
+                <span class="lop-item-img-under1 artbasic-artwork">The Lovers II (1928)</span>
+                <span class="lop-item-img-under2 artbasic-artist">René Magritte</span>
+            </div>
+        </div>
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Over mij</span>
+                <a href="/over-mij" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="lop-item">
+            <div class="lop-item-left">
+                <span class="lop-item-title">Eigen initiatieven</span>
+                <a href="/eigen-initiatieven" class="button bg-white">Naar pagina <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
     </div>
     <script type="module">
         import Spheres2Background from "https://cdn.jsdelivr.net/npm/threejs-components@0.0.8/build/backgrounds/spheres2.cdn.min.js";

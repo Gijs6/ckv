@@ -21,26 +21,44 @@
             </p>
         </div>
     </div>
-    {% for own_ini in own_ini_list %}
-        <div class="pageblock bcbg-out bg-{{ own_ini.bg }}">
-            <div class="bcbg-in bg-white columns own-ini-item flex-gap">
-                <div class="own-ini-info center">
-                    <h1>Eigen initiatief {{ loop.index }}</h1>
-                    <h2 class="activity-type">{{ own_ini.act_type }}</h2>
-                    <h2 class="activity-name">{{ own_ini.act_name }}</h2>
-                    <h3 class="activity-loc">{{ own_ini.act_loc }}</h3>
-                    <h3 class="activity-date">Bezocht op {{ own_ini.act_date }}</h3>
-                    <a href="{{ own_ini.pdf_url }}"
-                       class="button button-standard"
-                       target="_blank">Bekijk verslag <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="artwork-basic center">
-                    <img src="{{ own_ini.img_url }}"
-                         alt="{{ own_ini.artwork }} - {{ own_ini.artist }}" />
-                    <span class="artbasic-artwork">{{ own_ini.artwork }}</span>
-                    <span class="artbasic-artist">{{ own_ini.artist }}</span>
-                </div>
+    <div class="pageblock bcbg-out bg-yellow">
+        <div class="bcbg-in bg-white columns own-ini-item flex-gap">
+            <div class="own-ini-info center">
+                <h1>Eigen initiatief 1</h1>
+                <h2 class="activity-type">Beeldend</h2>
+                <h2 class="activity-name">Zoeken naar zingeving</h2>
+                <h3 class="activity-loc">Kröller-Müller Museum (Otterlo)</h3>
+                <h3 class="activity-date">Bezocht op 30 oktober 2024</h3>
+                <a href="/static/pdfs/ei1-beeldend-zoekennaarzingeving.pdf"
+                   class="button button-standard"
+                   target="_blank">Bekijk verslag <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="artwork-basic center">
+                <img src="/static/imgs/own_ini/olijfgaard.jpg"
+                     alt="Olijfgaard (1889) - Vincent van Gogh" />
+                <span class="artbasic-artwork">Olijfgaard (1889)</span>
+                <span class="artbasic-artist">Vincent van Gogh</span>
             </div>
         </div>
-    {% endfor %}
+    </div>
+    <div class="pageblock bcbg-out bg-red">
+        <div class="bcbg-in bg-white columns own-ini-item flex-gap">
+            <div class="own-ini-info center">
+                <h1>Eigen initiatief 2</h1>
+                <h2 class="activity-type">Architectuur</h2>
+                <h2 class="activity-name">Depot Boijmans Van Beuningen</h2>
+                <h3 class="activity-loc">Museumpark (Rotterdam)</h3>
+                <h3 class="activity-date">Bezocht op 28 februari 2025</h3>
+                <a href="/static/pdfs/ei2-architectuur-depot.pdf"
+                   class="button button-standard"
+                   target="_blank">Bekijk verslag <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="artwork-basic center">
+                <img src="/static/imgs/own_ini/depot_boijmans_van_beuningen.jpg"
+                     alt="Depot Boijmans van Beuningen - MVRDV" />
+                <span class="artbasic-artwork">Depot Boijmans van Beuningen</span>
+                <span class="artbasic-artist">MVRDV</span>
+            </div>
+        </div>
+    </div>
 {% endblock %}
