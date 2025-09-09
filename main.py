@@ -46,10 +46,28 @@ def get_commit_and_deploy_date():
         latest_deploy_date = "unknown"
         print("No latest deploy date found.")
 
-    latest_commit_hash = subprocess.check_output(["git", "log", "-1", "--pretty=format:%h"], cwd=BASE_DIR).strip().decode()
-    latest_commit_hash_long = subprocess.check_output(["git", "log", "-1", "--pretty=format:%H"], cwd=BASE_DIR).strip().decode()
-    latest_commit_timestamp = int(subprocess.check_output(["git", "log", "-1", "--pretty=format:%ct"], cwd=BASE_DIR).strip())
-    latest_commit_date = datetime.fromtimestamp(latest_commit_timestamp).strftime("%d-%m-%Y om %H:%M:%S")
+    latest_commit_hash = (
+        subprocess.check_output(
+            ["git", "log", "-1", "--pretty=format:%h"], cwd=BASE_DIR
+        )
+        .strip()
+        .decode()
+    )
+    latest_commit_hash_long = (
+        subprocess.check_output(
+            ["git", "log", "-1", "--pretty=format:%H"], cwd=BASE_DIR
+        )
+        .strip()
+        .decode()
+    )
+    latest_commit_timestamp = int(
+        subprocess.check_output(
+            ["git", "log", "-1", "--pretty=format:%ct"], cwd=BASE_DIR
+        ).strip()
+    )
+    latest_commit_date = datetime.fromtimestamp(latest_commit_timestamp).strftime(
+        "%d-%m-%Y om %H:%M:%S"
+    )
 
     comdepdata = {
         "latest_deploy_date": latest_deploy_date,
@@ -75,7 +93,9 @@ def inject_comdepdata():
 @app.route("/favicon.ico")
 @app.route("/favicon")
 def favicon():
-    return send_from_directory("static", "favs/main.ico", mimetype="image/vnd.microsoft.icon")
+    return send_from_directory(
+        "static", "favs/main.ico", mimetype="image/vnd.microsoft.icon"
+    )
 
 
 @app.route("/.well-known/security.txt")
@@ -147,7 +167,7 @@ pages = [
         "undertitle_1": "",
         "undertitle_2": "",
         "img": "",
-        "url": "/over-mij"
+        "url": "/over-mij",
     },
     {
         "title": "Eigen initiatieven",

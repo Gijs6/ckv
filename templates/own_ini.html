@@ -1,11 +1,9 @@
 {% extends "base.html" %}
-
 {% block title %}Eigen initiatieven{% endblock %}
-
 {% block extra_headers %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/own_ini.css') }}" />
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='styles/own_ini.css') }}" />
 {% endblock %}
-
 {% block content %}
     <div class="pageblock pagetitle-big bg-page">
         <h1>Eigen initiatieven</h1>
@@ -18,10 +16,11 @@
     <div class="pageblock bcbg-out bg-green" id="introduction">
         <div class="bcbg-in bg-white center">
             <h1>Welkom!</h1>
-            <p class="center">Op deze pagina vindt u alle eigen initiatieven die ik dit jaar heb gedaan met de bijbehorende verslagen.</p>
+            <p class="center">
+                Op deze pagina vindt u alle eigen initiatieven die ik dit jaar heb gedaan met de bijbehorende verslagen.
+            </p>
         </div>
     </div>
-
     {% for own_ini in own_ini_list %}
         <div class="pageblock bcbg-out bg-{{ own_ini.bg }}">
             <div class="bcbg-in bg-white columns own-ini-item flex-gap">
@@ -31,10 +30,13 @@
                     <h2 class="activity-name">{{ own_ini.act_name }}</h2>
                     <h3 class="activity-loc">{{ own_ini.act_loc }}</h3>
                     <h3 class="activity-date">Bezocht op {{ own_ini.act_date }}</h3>
-                    <a href="{{ own_ini.pdf_url }}" class="button button-standard" target="_blank">Bekijk verslag <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="{{ own_ini.pdf_url }}"
+                       class="button button-standard"
+                       target="_blank">Bekijk verslag <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="artwork-basic center">
-                    <img src="{{ own_ini.img_url }}" alt="{{ own_ini.artwork }} - {{ own_ini.artist }}" />
+                    <img src="{{ own_ini.img_url }}"
+                         alt="{{ own_ini.artwork }} - {{ own_ini.artist }}" />
                     <span class="artbasic-artwork">{{ own_ini.artwork }}</span>
                     <span class="artbasic-artist">{{ own_ini.artist }}</span>
                 </div>

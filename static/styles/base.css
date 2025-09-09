@@ -309,7 +309,7 @@ p.center {
     border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
-    margin-block: .5em !important;
+    margin-block: 0.5em !important;
 }
 
 .button-standard {

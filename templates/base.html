@@ -3,37 +3,51 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{% block title %}{% endblock %} - CKV - Gijs ten Berg</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}" />
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favs/main.ico') }}" />
-        <script src="https://kit.fontawesome.com/4a94c21782.js" crossorigin="anonymous"></script>
+        <title>
+            {% block title %}{% endblock %}
+        - CKV - Gijs ten Berg</title>
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='styles/base.css') }}" />
+        <link rel="icon"
+              type="image/x-icon"
+              href="{{ url_for('static', filename='favs/main.ico') }}" />
+        <script src="https://kit.fontawesome.com/4a94c21782.js"
+                crossorigin="anonymous"></script>
         {% block extra_headers %}{% endblock %}
     </head>
     <body>
         <header>
             <nav>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2' %} menu-item-active{% endif %}" href="/">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2' %} menu-item-active{% endif %}"
+                   href="/">
                     <i class="fa-solid fa-house"></i> <span class="menu-item-title">Home</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/over-mij' %} menu-item-active{% endif %}" href="/over-mij">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/over-mij' %} menu-item-active{% endif %}"
+                   href="/over-mij">
                     <i class="fa-solid fa-user"></i> <span class="menu-item-title">Over mij</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/introductielessen' %} menu-item-active{% endif %}" href="/introductielessen">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/introductielessen' %} menu-item-active{% endif %}"
+                   href="/introductielessen">
                     <i class="fa-solid fa-person-chalkboard"></i> <span class="menu-item-title">Introductielessen</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/eigen-initiatieven' %} menu-item-active{% endif %}" href="/eigen-initiatieven">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/eigen-initiatieven' %} menu-item-active{% endif %}"
+                   href="/eigen-initiatieven">
                     <i class="fa-solid fa-building-columns"></i> <span class="menu-item-title">Eigen initiatieven</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-1' %} menu-item-active{% endif %}" href="/blok-1">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-1' %} menu-item-active{% endif %}"
+                   href="/blok-1">
                     <i class="fa-solid fa-1"></i> <span class="menu-item-title">Blok 1</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-2' %} menu-item-active{% endif %}" href="/blok-2">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-2' %} menu-item-active{% endif %}"
+                   href="/blok-2">
                     <i class="fa-solid fa-2"></i> <span class="menu-item-title">Blok 2</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-3' %} menu-item-active{% endif %}" href="/blok-3">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-3' %} menu-item-active{% endif %}"
+                   href="/blok-3">
                     <i class="fa-solid fa-3"></i> <span class="menu-item-title">Blok 3</span>
                 </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-4' %} menu-item-active{% endif %}" href="/blok-4">
+                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-4' %} menu-item-active{% endif %}"
+                   href="/blok-4">
                     <i class="fa-solid fa-4"></i> <span class="menu-item-title">Blok 4</span>
                 </a>
             </nav>
@@ -42,10 +56,10 @@
                 <h2>4A2</h2>
             </div>
         </header>
-
         <div id="scrollable">
-            <main>{% block content %}{% endblock %}</main>
-
+            <main>
+                {% block content %}{% endblock %}
+            </main>
             <footer>
                 <div id="footer-left">
                     <h1>CKV-website</h1>
@@ -53,11 +67,19 @@
                     <h2>4A2</h2>
                 </div>
                 <div id="footer-right">
-                    <p>Versie van commit <a href="https://github.com/Gijs6/CKVsite/commit/{{ latest_commit_hash_long }}">{{ latest_commit_hash }}</a> (gecommit op {{ latest_commit_date }} UTC)</p>
+                    <p>
+                        Versie van commit <a href="https://github.com/Gijs6/CKVsite/commit/{{ latest_commit_hash_long }}">{{ latest_commit_hash }}</a> (gecommit op {{ latest_commit_date }} UTC)
+                    </p>
                     <p>Voor het laatst gedeployed op {{ latest_deploy_date }} UTC</p>
-                    <p>Inhoud en code vallen onder het <strong>publieke domein</strong></p>
-                    <p>Gemaakt met <a href="https://github.com/pallets/flask" target="_blank">Flask</a> en <a href="https://github.com/pallets/jinja" target="_blank">Jinja</a>, gehost op <a href="https://eu.pythonanywhere.com/" target="_blank">PythonAnywhere</a></p>
-                    <p><a href="https://github.com/Gijs6/CKVsite" target="_blank">Broncode op GitHub</a></p>
+                    <p>
+                        Inhoud en code vallen onder het <strong>publieke domein</strong>
+                    </p>
+                    <p>
+                        Gemaakt met <a href="https://github.com/pallets/flask" target="_blank">Flask</a> en <a href="https://github.com/pallets/jinja" target="_blank">Jinja</a>, gehost op <a href="https://eu.pythonanywhere.com/" target="_blank">PythonAnywhere</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Gijs6/CKVsite" target="_blank">Broncode op GitHub</a>
+                    </p>
                 </div>
             </footer>
         </div>
