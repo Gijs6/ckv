@@ -1,15 +1,6 @@
-.venv/
-.idea/
-vids/
-music/
+__pycache__
+.venv
 
-__pycache__/
-
-# Just large files
 *.mp3
 *.mp4
-
-dekstop.ini
-**/desktop.ini
-
-eindverslag/
+*.webm
