@@ -1,10 +1,3 @@
-{% macro menu_item(endpoint, icon, label) %}
-<a class="menu-item{% if request.endpoint == endpoint %} menu-item-active{% endif %}"
-   href="{{ url_for(endpoint) }}">
-    <i class="fa-solid fa-{{ icon }}"></i> <span class="menu-item-title">{{ label }}</span>
-</a>
-{% endmacro %}
-
 <!DOCTYPE html>
 <html lang="nl">
     <head>
@@ -25,6 +18,12 @@
     <body>
         <header>
             <nav>
+                {% macro menu_item(endpoint, icon, label) %}
+                    <a class="menu-item{% if request.endpoint == endpoint %} menu-item-active{% endif %}"
+                       href="{{ url_for(endpoint) }}">
+                        <i class="fa-solid fa-{{ icon }}"></i> <span class="menu-item-title">{{ label }}</span>
+                    </a>
+                {% endmacro %}
                 {{ menu_item('home', 'house', 'Home') }}
                 {{ menu_item('about_me', 'user', 'Over mij') }}
                 {{ menu_item('intro', 'person-chalkboard', 'Introductielessen') }}

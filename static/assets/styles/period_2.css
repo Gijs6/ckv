@@ -1,5 +1,5 @@
 .bg-page {
-    background-image: url("/static/imgs/p2/the_mandalorian.jpg");
+    background-image: url("/static/images/period_2/the_mandalorian.jpg");
 }
 
 .pagetitle-big h1 {
@@ -18,7 +18,7 @@
 }
 
 .general-information {
-    background-image: url("/static/imgs/p2/dune.jpg");
+    background-image: url("/static/images/period_2/dune.jpg");
 }
 
 .geninfo-imgcredits {

@@ -244,11 +244,11 @@ img {
 }
 
 .fancy1 {
-    background-image: url("/static/imgs/abstract.jpg");
+    background-image: url("/static/images/common/abstract.jpg");
 }
 
 .fancy2 {
-    background-image: url("/static/imgs/abstract_alt.jpg");
+    background-image: url("/static/images/common/abstract_alt.jpg");
     background-position: top;
 }
 
