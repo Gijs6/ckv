@@ -6,7 +6,7 @@
         <title>{{ errornum }} - {{ e }}</title>
         <link rel="icon"
               type="image/x-icon"
-              href="{{ url_for('static', filename='favs/error.ico') }}" />
+              href="{{ url_for('static', filename='assets/icons/error.ico') }}" />
         <link rel="stylesheet"
               href="{{ url_for('static', filename='assets/styles/error.css') }}" />
         <style>
@@ -24,7 +24,7 @@
                 <span id="message2">{{ message2 }}</span>
                 <small>{{ e }}</small>
             </div>
-            <a href="/">Naar homepagina</a>
+            <a href="{{ url_for('home') }}">Naar homepagina</a>
         </div>
         <div id="credits">
             <span id="artwork">{{ artwork }}</span>

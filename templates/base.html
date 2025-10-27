@@ -1,3 +1,10 @@
+{% macro menu_item(endpoint, icon, label) %}
+<a class="menu-item{% if request.endpoint == endpoint %} menu-item-active{% endif %}"
+   href="{{ url_for(endpoint) }}">
+    <i class="fa-solid fa-{{ icon }}"></i> <span class="menu-item-title">{{ label }}</span>
+</a>
+{% endmacro %}
+
 <!DOCTYPE html>
 <html lang="nl">
     <head>
@@ -18,38 +25,14 @@
     <body>
         <header>
             <nav>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2' %} menu-item-active{% endif %}"
-                   href="/">
-                    <i class="fa-solid fa-house"></i> <span class="menu-item-title">Home</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/over-mij' %} menu-item-active{% endif %}"
-                   href="/over-mij">
-                    <i class="fa-solid fa-user"></i> <span class="menu-item-title">Over mij</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/introductielessen' %} menu-item-active{% endif %}"
-                   href="/introductielessen">
-                    <i class="fa-solid fa-person-chalkboard"></i> <span class="menu-item-title">Introductielessen</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/eigen-initiatieven' %} menu-item-active{% endif %}"
-                   href="/eigen-initiatieven">
-                    <i class="fa-solid fa-building-columns"></i> <span class="menu-item-title">Eigen initiatieven</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-1' %} menu-item-active{% endif %}"
-                   href="/blok-1">
-                    <i class="fa-solid fa-1"></i> <span class="menu-item-title">Blok 1</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-2' %} menu-item-active{% endif %}"
-                   href="/blok-2">
-                    <i class="fa-solid fa-2"></i> <span class="menu-item-title">Blok 2</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-3' %} menu-item-active{% endif %}"
-                   href="/blok-3">
-                    <i class="fa-solid fa-3"></i> <span class="menu-item-title">Blok 3</span>
-                </a>
-                <a class="menu-item{% if request.path == '/gijstenberg4a2/blok-4' %} menu-item-active{% endif %}"
-                   href="/blok-4">
-                    <i class="fa-solid fa-4"></i> <span class="menu-item-title">Blok 4</span>
-                </a>
+                {{ menu_item('home', 'house', 'Home') }}
+                {{ menu_item('about_me', 'user', 'Over mij') }}
+                {{ menu_item('intro', 'person-chalkboard', 'Introductielessen') }}
+                {{ menu_item('own_initiatives', 'building-columns', 'Eigen initiatieven') }}
+                {{ menu_item('period_1', '1', 'Blok 1') }}
+                {{ menu_item('period_2', '2', 'Blok 2') }}
+                {{ menu_item('period_3', '3', 'Blok 3') }}
+                {{ menu_item('period_4', '4', 'Blok 4') }}
             </nav>
             <div>
                 <h1>Gijs ten Berg</h1>

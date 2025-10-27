@@ -68,7 +68,7 @@ def intro():
 
 @app.route("/gijstenberg4a2/eigen-initiatieven")
 def own_initiatives():
-    return render_template("own_ini.html")
+    return render_template("own_initiatives.html")
 
 
 @app.route("/gijstenberg4a2/blok-1")
@@ -114,7 +114,7 @@ def render_error(e, errornum, message1, message2):
         errornum=errornum,
         message1=message1,
         message2=message2,
-        imgurl="/static/images/error/primordial_chaos.jpg",
+        imgurl=url_for("static", filename="images/error/primordial_chaos.jpg"),
         artwork="Primordial Chaos - No 16 (1906-1907)",
         artist="Hilma af Klint",
         txtcolor="white",
