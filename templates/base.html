@@ -7,10 +7,10 @@
             {% block title %}{% endblock %}
         - CKV - Gijs ten Berg</title>
         <link rel="stylesheet"
-              href="{{ url_for('static', filename='styles/base.css') }}" />
+              href="{{ url_for('static', filename='assets/styles/base.css') }}" />
         <link rel="icon"
               type="image/x-icon"
-              href="{{ url_for('static', filename='favs/main.ico') }}" />
+              href="{{ url_for('static', filename='assets/icons/favicon.ico') }}" />
         <script src="https://kit.fontawesome.com/4a94c21782.js"
                 crossorigin="anonymous"></script>
         {% block extra_headers %}{% endblock %}
@@ -67,10 +67,6 @@
                     <h2>4A2</h2>
                 </div>
                 <div id="footer-right">
-                    <p>
-                        Versie van commit <a href="https://github.com/Gijs6/CKVsite/commit/{{ latest_commit_hash_long }}">{{ latest_commit_hash }}</a> (gecommit op {{ latest_commit_date }} UTC)
-                    </p>
-                    <p>Voor het laatst gedeployed op {{ latest_deploy_date }} UTC</p>
                     <p>
                         Inhoud en code vallen onder het <strong>publieke domein</strong>
                     </p>

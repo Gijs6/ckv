@@ -1,90 +1,24 @@
-from flask import Flask, render_template, url_for, redirect, send_from_directory
-from datetime import datetime
-import json
-import random
-import os
-import subprocess
+from flask import (
+    Flask,
+    render_template,
+    url_for,
+    redirect,
+    send_from_directory,
+    request,
+)
 
 app = Flask(__name__)
 
 
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-
-
-# Redirectors
-@app.route("/")
-def redirect_home():
-    return redirect(url_for("home")), 301
-
-
-@app.route("/<path:path>")
-def redirecter(path):
-    if path in ["favicon", "security", "robots"]:
-        return redirect(f"/{path}")
-    elif not path.startswith("gijstenberg4a2"):
-        return redirect(f"/gijstenberg4a2/{path}")
-
-    imgurl, artwork, artist, txtcolor = random_background()
-    return render_template(
-        "error.html",
-        e="Error redirecting",
-        errornum="404",
-        message1="Deze pagina bestaat niet!",
-        message2="De URL die je hebt opgevraagd bestaat niet.",
-        imgurl=imgurl,
-        artwork=artwork,
-        artist=artist,
-        txtcolor=txtcolor,
-    ), 404
-
-
-def get_commit_and_deploy_date():
-    try:
-        with open(os.path.join(BASE_DIR, "data", "last_deploy.txt"), "r") as f:
-            latest_deploy_date = f.read().strip()
-    except FileNotFoundError:
-        latest_deploy_date = "unknown"
-        print("No latest deploy date found.")
-
-    latest_commit_hash = (
-        subprocess.check_output(
-            ["git", "log", "-1", "--pretty=format:%h"], cwd=BASE_DIR
-        )
-        .strip()
-        .decode()
-    )
-    latest_commit_hash_long = (
-        subprocess.check_output(
-            ["git", "log", "-1", "--pretty=format:%H"], cwd=BASE_DIR
-        )
-        .strip()
-        .decode()
-    )
-    latest_commit_timestamp = int(
-        subprocess.check_output(
-            ["git", "log", "-1", "--pretty=format:%ct"], cwd=BASE_DIR
-        ).strip()
-    )
-    latest_commit_date = datetime.fromtimestamp(latest_commit_timestamp).strftime(
-        "%d-%m-%Y om %H:%M:%S"
-    )
-
-    comdepdata = {
-        "latest_deploy_date": latest_deploy_date,
-        "latest_commit_hash": latest_commit_hash,
-        "latest_commit_hash_long": latest_commit_hash_long,
-        "latest_commit_date": latest_commit_date,
-    }
-
-    return comdepdata
-
-
-comdepdata = get_commit_and_deploy_date()
-
-
-@app.context_processor
-def inject_comdepdata():
-    return comdepdata
+@app.before_request
+def handle_redirects():
+    path = request.path
+    if path == "/":
+        return redirect(url_for("home")), 301
+    if path.lstrip("/") in ["favicon", "security", "robots"]:
+        return None
+    if not path.startswith("/gijstenberg4a2") and not path.startswith("/static"):
+        return redirect(f"/gijstenberg4a2{path}")
 
 
 # File routes
@@ -94,7 +28,7 @@ def inject_comdepdata():
 @app.route("/favicon")
 def favicon():
     return send_from_directory(
-        "static", "favs/main.ico", mimetype="image/vnd.microsoft.icon"
+        "static/assets/icons", "favicon.ico", mimetype="image/vnd.microsoft.icon"
     )
 
 
@@ -173,41 +107,28 @@ def final_report():
 
 
 # Error pages
-def random_background():
-    try:
-        with open(os.path.join(BASE_DIR, "data", "backgroundlist.json"), "r") as file:
-            data = json.load(file)
-        random_background_choice = random.choice(data)
-
-        return (
-            random_background_choice.get("imgurl"),
-            random_background_choice.get("artwork"),
-            random_background_choice.get("artist"),
-            random_background_choice.get("txtcolor"),
-        )
-    except Exception:
-        return (
-            "/static/imgs/error/primordial_chaos.jpg",
-            "Primordial Chaos - No 16 (1906-1907)",
-            "Hilma af Klint",
-            "white",
-        )
+def render_error(e, errornum, message1, message2):
+    return render_template(
+        "error.html",
+        e=e,
+        errornum=errornum,
+        message1=message1,
+        message2=message2,
+        imgurl="/static/images/error/primordial_chaos.jpg",
+        artwork="Primordial Chaos - No 16 (1906-1907)",
+        artist="Hilma af Klint",
+        txtcolor="white",
+    )
 
 
 @app.errorhandler(404)
 def not_found(e):
-    imgurl, artwork, artist, txtcolor = random_background()
     return (
-        render_template(
-            "error.html",
-            e=e,
-            errornum="404",
-            message1="Deze pagina bestaat niet!",
-            message2="De URL die je hebt opgevraagd bestaat niet.",
-            imgurl=imgurl,
-            artwork=artwork,
-            artist=artist,
-            txtcolor=txtcolor,
+        render_error(
+            e,
+            "404",
+            "Deze pagina bestaat niet!",
+            "De URL die je hebt opgevraagd bestaat niet.",
         ),
         404,
     )
@@ -215,18 +136,12 @@ def not_found(e):
 
 @app.errorhandler(500)
 def internal_error(e):
-    imgurl, artwork, artist, txtcolor = random_background()
     return (
-        render_template(
-            "error.html",
-            e=e,
-            errornum="500",
-            message1="Oeps! Er is iets misgegaan",
-            message2="Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later opnieuw.",
-            imgurl=imgurl,
-            artwork=artwork,
-            artist=artist,
-            txtcolor=txtcolor,
+        render_error(
+            e,
+            "500",
+            "Oeps! Er is iets misgegaan",
+            "Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later opnieuw.",
         ),
         500,
     )
