@@ -1,0 +1,4 @@
+name: ckv
+image: gijs6/ckv
+registry: ghcr.io
+host: dec
