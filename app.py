@@ -107,10 +107,9 @@ def final_report():
 
 
 # Error pages
-def render_error(e, errornum, message1, message2):
+def render_error(errornum, message1, message2):
     return render_template(
         "error.html",
-        e=e,
         errornum=errornum,
         message1=message1,
         message2=message2,
@@ -122,10 +121,9 @@ def render_error(e, errornum, message1, message2):
 
 
 @app.errorhandler(404)
-def not_found(e):
+def not_found():
     return (
         render_error(
-            e,
             "404",
             "Deze pagina bestaat niet!",
             "De URL die je hebt opgevraagd bestaat niet.",
@@ -135,10 +133,9 @@ def not_found(e):
 
 
 @app.errorhandler(500)
-def internal_error(e):
+def internal_error():
     return (
         render_error(
-            e,
             "500",
             "Oeps! Er is iets misgegaan",
             "Er lijkt een probleem te zijn op de server. De pagina kon niet worden geladen. Probeer het later opnieuw.",
