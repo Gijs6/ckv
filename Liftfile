@@ -1,4 +1,4 @@
-name: ckv
-image: gijs6/ckv
+name: ckv.gijs6.nl
+image: gijs6/ckv.gijs6.nl
 registry: ghcr.io
 host: dec
