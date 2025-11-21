@@ -15,7 +15,7 @@ def handle_redirects():
     path = request.path
     if path == "/":
         return redirect(url_for("home")), 301
-    if path.lstrip("/") in ["favicon", "security", "robots"]:
+    if path.lstrip("/") in ["favicon"]:
         return None
     if not path.startswith("/gijstenberg4a2") and not path.startswith("/static"):
         return redirect(f"/gijstenberg4a2{path}")
@@ -30,22 +30,6 @@ def favicon():
     return send_from_directory(
         "static/assets/icons", "favicon.ico", mimetype="image/vnd.microsoft.icon"
     )
-
-
-@app.route("/.well-known/security.txt")
-def security_txt():
-    return send_from_directory("static", "security.txt", mimetype="text/plain")
-
-
-@app.route("/security.txt")
-def security_txt_redirect():
-    return redirect(url_for("security_txt")), 301
-
-
-@app.route("/robots")
-@app.route("/robots.txt")
-def robots():
-    return send_from_directory("static", "robots.txt", mimetype="text/plain")
 
 
 # Pages
